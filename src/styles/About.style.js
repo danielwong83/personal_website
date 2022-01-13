@@ -120,6 +120,20 @@ export const LichessImg = styled.img`
     }
 `
 
+export const GithubImg = styled.img`
+    height: 26px;
+    width: 26px;
+    margin-top: 4px;
+    margin-left: 17px;
+    opacity: 0.35;
+    filter: grayscale(70%);
+
+    &:hover {
+        opacity: 1;
+        filter: grayscale(0%);
+    }
+`
+
 export const ATag = styled.a`
     display: flex;
 `

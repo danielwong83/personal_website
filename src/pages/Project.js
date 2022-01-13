@@ -21,6 +21,7 @@ import turtle from '../images/turtle.svg'
 
 
 const dashboardlink = "https://sndw1.shinyapps.io/dashboard/"
+const blackjacklink = "https://github.com/danielwong83/blackjack"
 
 
 const Project = () => {
@@ -60,7 +61,7 @@ const Project = () => {
                     <IndividualProject>
                         <ProjectPhoto src = {blackjack}/>
                         <ProjectContent>
-                            <ProjectName>BlackJack (4 Players)</ProjectName>
+                            <ProjectName><ATag href= {blackjacklink} target='_blank' rel='noopener noreferrer'>BlackJack (4 Players)</ATag></ProjectName>
                             <Description>A recreation of the casino game, and my first code where I utilised OOP.</Description>
                             <Description>Languages: Python</Description>  
                             <Description>Future Plans: to create a UI for the game</Description>

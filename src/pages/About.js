@@ -12,17 +12,21 @@ import {AboutMe,
         GmailImg,
         LinkedinImg,
         ATag,
-        LichessImg} from '../styles/About.style'
+        LichessImg,
+        GithubImg} from '../styles/About.style'
 
 import resume from '../files/resume.pdf'
 import portrait from '../images/portrait.png'
 import gmailpic from '../images/gmail.svg'
 import linkedinpic from '../images/linkedin.svg'
+import githubpic from '../images/github.svg'
 import lichesspic from '../images/lichess.svg'
 
 const linkedin = "https://www.linkedin.com/in/daniel-wong83/"
 const gmail = "daniel.wong121@imperial.ac.uk"
+const github = "https://github.com/danielwong83"
 const lichess = "https://lichess.org/@/danielwong4"
+
 
 function About(){
     return (
@@ -49,6 +53,7 @@ function About(){
                 <SocialWrapper>
                     <ATag href = {linkedin} target='_blank' rel='noopener noreferrer'><LinkedinImg src={linkedinpic}/></ATag>
                     <ATag href = {`mailto:${gmail}`} target='_blank' rel='noopener noreferrer'><GmailImg src={gmailpic}/></ATag>
+                    <ATag href = {github} target='_blank' rel='noopener noreferrer'><GithubImg src={githubpic}/></ATag>
                     <ATag href = {lichess} target='_blank' rel='noopener noreferrer'><LichessImg src={lichesspic}/></ATag>       
                 </SocialWrapper>
 
