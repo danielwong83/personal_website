@@ -110,7 +110,7 @@ export const LichessImg = styled.img`
     height: 27px;
     width: 27px;
     margin-top: 4px;
-    margin-left: 17px;
+    margin-left: 16px;
     opacity: 0.35;
     filter: grayscale(70%);
 
@@ -123,7 +123,7 @@ export const LichessImg = styled.img`
 export const GithubImg = styled.img`
     height: 26px;
     width: 26px;
-    margin-top: 4px;
+    margin-top: 3px;
     margin-left: 17px;
     opacity: 0.35;
     filter: grayscale(70%);

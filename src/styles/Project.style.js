@@ -20,12 +20,21 @@ export const MainWrapper = styled.div`
     overflow-y: scroll;
 `
 
-export const ProjectWord = styled.h1`
+export const CurrentWord = styled.h1`
     font-family: 'Indie Flower';
     font-size: 51px;
     color: black;
     margin: 0;
     margin-top: 40px;
+    margin-bottom: 30px;
+`
+
+export const ProjectWord = styled.h1`
+    font-family: 'Indie Flower';
+    font-size: 51px;
+    color: black;
+    margin: 0;
+    margin-top: 10px;
     margin-bottom: 30px;
 `
 
@@ -79,6 +88,28 @@ export const ProjectPhotoTwo = styled.img`
     margin-bottom: 0px;
     margin-right: 35px;
 `
+
+export const FootballPhoto = styled.img`
+    display: flex;
+    height: 180px;
+    width: auto;
+    margin-top: 40px;
+    margin-left: 55px;
+    margin-bottom: 0px;
+    margin-right: 55px;
+`
+
+export const ScraperPhoto = styled.img`
+    display: flex;
+    height: 210px;
+    width: auto;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    margin-right: 40px;
+
+`
+
 export const TurtlePhoto = styled.img`
     display: flex;
     height: 240px;
