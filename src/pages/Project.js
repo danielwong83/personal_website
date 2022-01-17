@@ -29,6 +29,7 @@ import turtle from '../images/turtle.svg'
 const dashboardlink = "https://sndw1.shinyapps.io/dashboard/"
 const blackjacklink = "https://github.com/danielwong83/blackjack"
 const yahoofinancelink = "https://github.com/danielwong83/yahoo_finance_scraper"
+const mazelink = "https://github.com/danielwong83/maze_game"
 
 
 const Project = () => {
@@ -47,18 +48,18 @@ const Project = () => {
                                     bet on Over/Under 2.5 goal prop. </Description>
                                 <Description>Languages: R programming (for data), Python (for analysis + modelling)</Description>
                                 <Description></Description>
-                                <Updates>Current Status: Cleaning Data</Updates>    
+                                <Updates>Current Status: Cleaning Data + OLS</Updates>    
                             </ProjectContent>
                     </IndividualProject>
 
                     <IndividualProject>
                         <FootballPhoto src = {maze}/>
                             <ProjectContent>
-                                <ProjectName><ATag href= "/">Maze Memory Game</ATag></ProjectName> 
+                                <ProjectName><ATag href= {mazelink} target='_blank' rel='noopener noreferrer'>Maze Memory Game</ATag></ProjectName> 
                                 <Description>A Game where you have to have to memorize the path process to reach the finishing point. </Description>
                                 <Description>Languages: Python (for now)</Description>
                                 <Description></Description>
-                                <Updates>Current Status: Finished Backend</Updates>    
+                                <Updates>Current Status: Finished Backend and Mini UI on console</Updates>    
                             </ProjectContent>
                     </IndividualProject>
                 </ProjectWrapper>

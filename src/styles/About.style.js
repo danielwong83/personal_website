@@ -137,3 +137,12 @@ export const GithubImg = styled.img`
 export const ATag = styled.a`
     display: flex;
 `
+
+export const ChelseaTag = styled.a`
+    color: black;
+    text-decoration: none;
+`
+
+export const ResumeTag = styled.a`
+    color: #00548f;
+`

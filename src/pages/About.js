@@ -13,7 +13,9 @@ import {AboutMe,
         LinkedinImg,
         ATag,
         LichessImg,
-        GithubImg} from '../styles/About.style'
+        GithubImg,
+        ChelseaTag,
+        ResumeTag} from '../styles/About.style'
 
 import resume from '../files/resume.pdf'
 import portrait from '../images/portrait.png'
@@ -39,7 +41,7 @@ function About(){
                 
                 
                 <DescriptionTwo>Some fun facts about me:</DescriptionTwo>
-                <ListValue>{'\u2022'} Favorite football team is Chelsea. KTBFFH. </ListValue>
+                <ListValue>{'\u2022'} Favorite football team is <ChelseaTag href= "/#/chelsea">Chelsea. KTBFFH. </ChelseaTag> </ListValue>
                 <ListValue>{'\u2022'} d4 over e4 any day. </ListValue>
                 <ListValue>{'\u2022'} I sometimes replace rice with canned corn. </ListValue>
                 <ListValue>{'\u2022'} Favorite champion on League is Lillia. </ListValue>
@@ -47,8 +49,8 @@ function About(){
                 <ListValue>{'\u2022'} I want to go skydiving. </ListValue>
 
                 <DescriptionTwo>Feel free to message me! My contact info is below and this is my {' '}
-                    <a href= {resume} target='_blank' rel='noopener noreferrer'>
-                        resume</a>.</DescriptionTwo>
+                    <ResumeTag href= {resume} target='_blank' rel='noopener noreferrer'>
+                        resume</ResumeTag>.</DescriptionTwo>
                 
                 <SocialWrapper>
                     <ATag href = {linkedin} target='_blank' rel='noopener noreferrer'><LinkedinImg src={linkedinpic}/></ATag>
