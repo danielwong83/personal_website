@@ -7,6 +7,8 @@ import Project from './pages/Project'
 import About from './pages/About'
 import Chelsea from './pages/Chelsea'
 
+import Fixture from './components/ChelseaFixture'
+
 import NavBar from './components/Navbar'
 
 

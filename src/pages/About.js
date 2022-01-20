@@ -41,7 +41,7 @@ function About(){
                 
                 
                 <DescriptionTwo>Some fun facts about me:</DescriptionTwo>
-                <ListValue>{'\u2022'} Favorite football team is <ChelseaTag href= "/#/chelsea">Chelsea. KTBFFH. </ChelseaTag> </ListValue>
+                <ListValue>{'\u2022'} Favorite football team is <ChelseaTag href= "/#/chelsea">Chelsea</ChelseaTag>. KTBFFH. </ListValue>
                 <ListValue>{'\u2022'} d4 over e4 any day. </ListValue>
                 <ListValue>{'\u2022'} I sometimes replace rice with canned corn. </ListValue>
                 <ListValue>{'\u2022'} Favorite champion on League is Lillia. </ListValue>

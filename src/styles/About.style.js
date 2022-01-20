@@ -139,7 +139,7 @@ export const ATag = styled.a`
 `
 
 export const ChelseaTag = styled.a`
-    color: black;
+    color: #034694;
     text-decoration: none;
 `
 
