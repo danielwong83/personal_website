@@ -6,6 +6,7 @@ export const HomeColor = styled.div`
     height: calc( 100vh - 92px);
     position: relative;
     overflow: hidden;
+    overflow-y: scroll;
     z-index: 1
 `
 
@@ -62,13 +63,25 @@ export const ListValue = styled.p`
     margin-top: 0px;
     margin-bottom: 10px;
     margin-left: 10px;
-
 `
 
-export const Portrait = styled.img`
+
+export const PhotoWrapper = styled.div`
+    background: radial-gradient(circle, rgba(0,255,222,1) 0%, rgba(0,255,222,0.16) 70%, rgba(0,255,222,0.16) 100%);
     width: 50%;
+    border-radius: 15px;
+    margin-bottom: 25px;
     height: auto;
-    margin-top: -30px;
+`
+
+
+export const Portrait = styled.img`
+    width: 88%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    filter: contrast(105%);
 
 `
 

@@ -15,10 +15,11 @@ import {AboutMe,
         LichessImg,
         GithubImg,
         ChelseaTag,
-        ResumeTag} from '../styles/About.style'
+        ResumeTag,
+        PhotoWrapper} from '../styles/About.style'
 
 import resume from '../files/resume.pdf'
-import portrait from '../images/portrait.png'
+import portrait from '../images/portrait-beach.png'
 import gmailpic from '../images/gmail.svg'
 import linkedinpic from '../images/linkedin.svg'
 import githubpic from '../images/github.svg'
@@ -44,7 +45,7 @@ function About(){
                 <ListValue>{'\u2022'} Favorite football team is <ChelseaTag href= "/#/chelsea">Chelsea</ChelseaTag>. KTBFFH. </ListValue>
                 <ListValue>{'\u2022'} d4 over e4 any day. </ListValue>
                 <ListValue>{'\u2022'} I sometimes replace rice with canned corn. </ListValue>
-                <ListValue>{'\u2022'} Favorite champion on League is Lillia. </ListValue>
+                <ListValue>{'\u2022'} Favorite champion on League is Nocturne. </ListValue>
                 <ListValue>{'\u2022'} One of my drawings appeared in a children's newspaper when I was 9. </ListValue>
                 <ListValue>{'\u2022'} I want to go skydiving. </ListValue>
 
@@ -63,7 +64,10 @@ function About(){
             
             
             <PortraitWrapper>
-                <Portrait src = {portrait}></Portrait>
+                <PhotoWrapper>
+                    <Portrait src = {portrait}></Portrait>
+                </PhotoWrapper>
+                
             </PortraitWrapper>
 
         
