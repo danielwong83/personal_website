@@ -67,9 +67,9 @@ export const ListValue = styled.p`
 
 
 export const PhotoWrapper = styled.div`
-    background: radial-gradient(circle, rgba(0,255,222,1) 0%, rgba(0,255,222,0.16) 70%, rgba(0,255,222,0.16) 100%);
+    background: rgba(87,92,133,0.6);
     width: 50%;
-    border-radius: 15px;
+    border-radius: 25px;
     margin-bottom: 25px;
     height: auto;
 `
@@ -80,7 +80,7 @@ export const Portrait = styled.img`
     height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-radius: 15px;
+    border-radius: 25px;
     filter: contrast(105%);
 
 `
@@ -152,10 +152,10 @@ export const ATag = styled.a`
 `
 
 export const ChelseaTag = styled.a`
-    color: #034694;
+    color: #575c85;
     text-decoration: none;
 `
 
 export const ResumeTag = styled.a`
-    color: #00548f;
+    color: #575c85;
 `

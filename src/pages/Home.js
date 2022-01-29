@@ -134,7 +134,7 @@ class Home extends Component {
                             y={0}
                             points={[400, 555, 700, 310, 900, 420, 1300, 270, 1600, 555]}
                             tension={0.33}
-                            stroke="#468C26"
+                            stroke="#353C6D"
                             //stroke="#1566E9"
                         />
                     </Layer>

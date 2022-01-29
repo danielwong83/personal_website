@@ -6,11 +6,10 @@ import '../App.css'
 export const NavbarContainer = styled.nav`
     width: 100%;
     height: 90px;
-    background: linear-gradient(3deg, rgba(255,252,244,1) 0%, rgba(255,252,244,1) 35%, rgba(255,252,243,1) 47%, 
-    rgba(251,242,219,1) 64%, rgba(0,255,222,1) 100%);
+    background: linear-gradient(100deg, rgba(236,165,150,1) 0%, rgba(213,117,129,1) 25%, rgba(179,97,122,1) 50%, rgba(110,98,134,1) 75%, rgba(87,92,133,1) 100%);
     display: flex;
     flex-direction: column;
-    border-bottom: 2px solid #e0e0e0;
+    border-bottom: 2px solid #D1D1D1;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
 `
 
@@ -44,19 +43,19 @@ export const NavbarLinkContainer = styled.div`
 
 
 export const NavbarLink = styled(NavLink)`
-    color: #4F5254;
+    color: #D1D1D1;
     font-size: x-large;
     font-family: 'Megrim';
     text-decoration: none;
     margin: 15px;
 
     &:hover {
-        color: black;
+        color: white;
         font-weight: bold;
     }
 
     &.active {
-        color: black;
+        color: white;
         font-weight: bold;
     }
 

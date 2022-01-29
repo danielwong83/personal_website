@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Project from './pages/Project'
 import About from './pages/About'
 import Chelsea from './pages/Chelsea'
+import Chess from './pages/Chess'
 
 import Fixture from './components/ChelseaFixture'
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="about" element={<About />}></Route>
           <Route path="project" element={<Project />}></Route>
           <Route path="chelsea" element={<Chelsea />}></Route>
+          <Route path="chess" element={<Chess />}></Route>
         </Routes>
       </div>
     </div>

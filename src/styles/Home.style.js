@@ -62,7 +62,7 @@ export const ImperialCollegeArea = styled.div`
 export const Student = styled.h1`
     font-family: 'Indie Flower';
     font-size: 45px;
-    color: black;
+    color: rgba(179,97,122,1);
     margin-top: 40px;
 `
 
@@ -81,6 +81,6 @@ export const London = styled.h1`
 export const Name = styled.h1`
     font-family: 'Indie Flower';
     font-size: 170px;
-    color: black;
+    color: rgba(87,92,133,1);
     
 `

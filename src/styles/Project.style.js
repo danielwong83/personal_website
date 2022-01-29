@@ -14,6 +14,7 @@ export const MainWrapper = styled.div`
     position: relative;
     margin: 0 px;
     margin-left: 75px;
+    margin-bottom: 10px;
     flex-direction: column;
     text-align: left;
     width: 100%;
@@ -49,13 +50,34 @@ export const ProjectWrapper = styled.div`
 export const IndividualProject = styled.div`
     display: flex;
     position: relative;
-    background: rgba(0, 255, 222, 0.16);
+    background: rgba(236,165,150,0.16);
     width: 70%;
     justify-content: left;
     border-radius: 25px;
     margin-bottom: 25px;
     height: 260px;
+`
 
+export const IndividualProject2 = styled.div`
+    display: flex;
+    position: relative;
+    background: rgba(179,97,122,0.19);
+    width: 70%;
+    justify-content: left;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    height: 260px;
+`
+
+export const IndividualProject3 = styled.div`
+    display: flex;
+    position: relative;
+    background: rgba(87,92,133,0.22);
+    width: 70%;
+    justify-content: left;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    height: 350px;
 `
 
 export const ProjectName = styled.h1`
@@ -97,6 +119,7 @@ export const FootballPhoto = styled.img`
     margin-left: 55px;
     margin-bottom: 0px;
     margin-right: 55px;
+
 `
 
 export const ScraperPhoto = styled.img`
@@ -129,12 +152,22 @@ export const ProjectContent = styled.div`
     flex-direction: column;
 `
 
+export const FeaturesContent = styled.div`
+    display: flex;
+    position: relative;
+    text-align: left;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 30px;
+`
+
 export const Description = styled.p`
     font-family: 'Gentium Basic';
     font-size: 19px;
     color: black;
     margin: 0px;
     margin-bottom: 15px;
+    display: flex;
 `
 
 export const Updates = styled.p`

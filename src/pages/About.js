@@ -19,7 +19,7 @@ import {AboutMe,
         PhotoWrapper} from '../styles/About.style'
 
 import resume from '../files/resume.pdf'
-import portrait from '../images/portrait-beach.png'
+import portrait from '../images/portrait-beach-blue.png'
 import gmailpic from '../images/gmail.svg'
 import linkedinpic from '../images/linkedin.svg'
 import githubpic from '../images/github.svg'

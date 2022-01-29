@@ -4,11 +4,14 @@ import {HomeColor,
         MainWrapper, 
         ProjectWord, 
         ProjectWrapper, 
-        IndividualProject, 
+        IndividualProject,
+        IndividualProject2,
+        IndividualProject3, 
         ProjectName, 
         ProjectPhoto, 
         ProjectPhotoTwo, 
         ProjectContent, 
+        FeaturesContent,
         Description,
         Updates,
         TurtlePhoto,
@@ -67,7 +70,7 @@ const Project = () => {
                 <ProjectWord>Projects</ProjectWord>
 
                 <ProjectWrapper>
-                    <IndividualProject>
+                    <IndividualProject2>
                         <ProjectPhotoTwo src = {websitephoto}/>
                         <ProjectContent>
                             <ProjectName><ATag href= "/">Personal Website</ATag></ProjectName> 
@@ -77,9 +80,9 @@ const Project = () => {
                             <Updates>Last Updated: January 2022</Updates>    
                         </ProjectContent>
                                           
-                    </IndividualProject>
+                    </IndividualProject2>
 
-                    <IndividualProject>
+                    <IndividualProject2>
                             <ProjectPhotoTwo src = {dashboard}/>
                         <ProjectContent>
                             <ProjectName><ATag href= {dashboardlink} target='_blank' rel='noopener noreferrer'>Actuarial Dashboard</ATag></ProjectName>
@@ -89,9 +92,9 @@ const Project = () => {
                             <Updates>Last Updated: May 2021</Updates>    
                         </ProjectContent>
                                           
-                    </IndividualProject>
+                    </IndividualProject2>
 
-                    <IndividualProject>
+                    <IndividualProject2>
                         <ScraperPhoto src = {webscraping}/>
                         <ProjectContent>
                             <ProjectName><ATag href= {yahoofinancelink} target='_blank' rel='noopener noreferrer'>Yahoo Finance Scraper</ATag></ProjectName>
@@ -101,9 +104,9 @@ const Project = () => {
                             <Updates>Last Updated: January 2022</Updates>    
                         </ProjectContent>
                                           
-                    </IndividualProject>
+                    </IndividualProject2>
 
-                    <IndividualProject>
+                    <IndividualProject2>
                         <ProjectPhoto src = {blackjack}/>
                         <ProjectContent>
                             <ProjectName><ATag href= {blackjacklink} target='_blank' rel='noopener noreferrer'>BlackJack (4 Players)</ATag></ProjectName>
@@ -113,7 +116,7 @@ const Project = () => {
                             <Updates>Last Updated: June 2019</Updates>    
                         </ProjectContent>
                                           
-                    </IndividualProject>
+                    </IndividualProject2>
                     
                     {/*<IndividualProject>
                         <TurtlePhoto src = {turtle}/>
@@ -124,8 +127,22 @@ const Project = () => {
                     </IndividualProject>*/}
                     
 
-
                 </ProjectWrapper>
+
+                <ProjectWord>Website Features</ProjectWord>
+                
+                <ProjectWrapper>
+                    <IndividualProject3>
+                    <FeaturesContent>
+                            <Description><ATag href= "/">Homepage</ATag>- moveable stickman; stickman position on mountain is dependent on time</Description>
+                            <Description><ATag href= "/#/chelsea">Chelsea </ATag>- movable player objects, upcoming schedule API</Description>
+                            <Description><ATag href= "/#/chess">Chess</ATag></Description>
+                        </FeaturesContent>
+            
+                    </IndividualProject3>
+                </ProjectWrapper>
+                
+
             </MainWrapper>
         </HomeColor>
     )
