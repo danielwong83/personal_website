@@ -42,7 +42,6 @@ export const DescriptionOne = styled.p`
     font-size: 21px;
     color: black;
     margin-top: 12px;
-
 `
 
 export const DescriptionTwo = styled.p`
@@ -51,8 +50,6 @@ export const DescriptionTwo = styled.p`
     color: black;
     margin-top: 10px;
     margin-bottom: 10px;
-
-
 `
 
 
@@ -82,7 +79,6 @@ export const Portrait = styled.img`
     margin-bottom: 20px;
     border-radius: 25px;
     filter: contrast(105%);
-
 `
 
 export const SocialWrapper = styled.div`
@@ -99,7 +95,6 @@ export const GmailImg = styled.img`
     margin-left: 17px;
     opacity: 0.35;
     filter: grayscale(70%);
-
     &:hover {
         opacity: 1;
         filter: grayscale(0%) contrast(115%);
@@ -112,7 +107,6 @@ export const LinkedinImg = styled.img`
     margin-top: 4px;
     opacity: 0.35;
     filter: grayscale(70%);
-
     &:hover {
         opacity: 1;
         filter: grayscale(0%) contrast(160%);
@@ -126,7 +120,6 @@ export const LichessImg = styled.img`
     margin-left: 16px;
     opacity: 0.35;
     filter: grayscale(70%);
-
     &:hover {
         opacity: 1;
         filter: grayscale(0%);
@@ -140,7 +133,6 @@ export const GithubImg = styled.img`
     margin-left: 17px;
     opacity: 0.35;
     filter: grayscale(70%);
-
     &:hover {
         opacity: 1;
         filter: grayscale(0%);

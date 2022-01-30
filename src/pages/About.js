@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from "react";
 
 import {AboutMe, 
         AboutMeWrapper, 
@@ -6,7 +6,6 @@ import {AboutMe,
         DescriptionTwo, 
         HomeColor, 
         ListValue, 
-        PortraitWrapper, 
         Portrait, 
         SocialWrapper, 
         GmailImg,
@@ -16,10 +15,13 @@ import {AboutMe,
         GithubImg,
         ChelseaTag,
         ResumeTag,
+        PortraitWrapper,
         PhotoWrapper} from '../styles/About.style'
 
 import resume from '../files/resume.pdf'
 import portrait from '../images/portrait-beach-blue.png'
+import chessportrait from '../images/chess-photo.png'
+import hikingportrait from '../images/hiking.png'
 import gmailpic from '../images/gmail.svg'
 import linkedinpic from '../images/linkedin.svg'
 import githubpic from '../images/github.svg'
@@ -31,9 +33,43 @@ const github = "https://github.com/danielwong83"
 const lichess = "https://lichess.org/@/danielwong4"
 
 
-function About(){
+class About extends Component{
+
+    constructor(props) {
+        super(props);
+        this.state = {
+          images: [
+            portrait, chessportrait, hikingportrait
+          ],
+          selectedImage: portrait
+        };
+      }
+
+      componentDidMount() {
+        setInterval(() => {
+          this.setState(prevState => {
+            if (prevState.selectedImage === this.state.images[0]) {
+              return {
+                selectedImage: this.state.images[1]
+              };
+            } else if (prevState.selectedImage === this.state.images[1]){
+                return {
+                  selectedImage: this.state.images[2]
+                };
+            } else {
+              return {
+                selectedImage: this.state.images[0]
+              };
+            }
+          });
+        }, 6500);
+      }
+
+    render(){
     return (
         <HomeColor>
+
+
             <AboutMeWrapper>
                 <AboutMe>About Me</AboutMe>
                 <DescriptionOne>Hi, my name's Daniel, I'm from Hong Kong and I'm currently studying a Masters in Risk
@@ -61,11 +97,10 @@ function About(){
                 </SocialWrapper>
 
             </AboutMeWrapper>
-            
-            
+        
             <PortraitWrapper>
                 <PhotoWrapper>
-                    <Portrait src = {portrait}></Portrait>
+                    <Portrait src = {this.state.selectedImage}></Portrait>
                 </PhotoWrapper>
                 
             </PortraitWrapper>
@@ -74,6 +109,7 @@ function About(){
 
         </HomeColor>
     )
-}
+
+}}
 
 export default About;

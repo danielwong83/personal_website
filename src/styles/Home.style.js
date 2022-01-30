@@ -47,7 +47,7 @@ export const IndexCardCircle = styled.div`
     background-color: #fffcf4;
     width: 25px;
     height: 25px;
-    border: 1px solid black;
+    border: 1px solid #686159;
     margin-top: 15px;
     margin-left: 20px;
 
@@ -96,6 +96,7 @@ export const StudentWrapper = styled.div`
     margin-top: -40px;
     margin-left: -80px;
     margin-bottom: 60px;
+    user-select: none;
 `
 
 export const StudentArea = styled.div`
@@ -140,5 +141,12 @@ export const Name = styled.h1`
     margin-top: -305px;
     margin-left: 50px;
     margin-right: 50px;
-    
+    user-select: none;
+`
+
+export const Button = styled.button`
+    height: 50px;
+    width: 100%;
+    display: block;
+
 `
