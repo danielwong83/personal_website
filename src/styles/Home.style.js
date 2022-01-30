@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {animated} from 'react-spring'
 
 export const HomeColor = styled.div`
     background-color: #fffcf4;
@@ -30,6 +31,55 @@ export const MountainWrapper = styled.div`
 `
 
 
+export const IndexCard = styled(animated.div)`
+    display: inline-block;
+    background: #f7f7f7;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+    backdrop-filter: blur(10px);
+    border: 2px solid black;
+    background-clip: border-box;
+`
+
+export const IndexCardCircle = styled.div`
+    border-radius: 50%;
+    background-color: #fffcf4;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    margin-top: 15px;
+    margin-left: 20px;
+
+`
+
+export const Lines = styled.div`
+    display: absolute;
+    flex-direction: row;
+`
+
+export const NewLineRed = styled.div`
+    margin-top: 20px;
+`
+
+export const NewLine = styled.div`
+    margin-top: 30px;
+`
+
+export const IndexCardRed = styled.hr`
+    color: #f00;
+    background-color: #f00;
+    height: 2px;
+    width: 99.91%;
+`
+
+export const IndexCardBlue = styled.hr`
+    color: #001375;
+    background-color: rgba(0, 67, 239, 0.24);
+    height: 1px;
+    width: 99.91%;
+`
+
 export const NameWrapper = styled.div`
     justify-content: center;
     align-items: center;
@@ -40,11 +90,12 @@ export const NameWrapper = styled.div`
 
 export const StudentWrapper = styled.div`
     justify-content: center;
-    margin-top: 185px;
-    margin-right: 130px;
-    position: absolute;
     display: flex;
     flex-direction: row;
+    margin: 0px;
+    margin-top: -40px;
+    margin-left: -80px;
+    margin-bottom: 60px;
 `
 
 export const StudentArea = styled.div`
@@ -53,7 +104,6 @@ export const StudentArea = styled.div`
 
 export const ImperialCollegeArea = styled.div`
     margin-left: 17px;
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -61,26 +111,34 @@ export const ImperialCollegeArea = styled.div`
 
 export const Student = styled.h1`
     font-family: 'Indie Flower';
-    font-size: 45px;
+    font-size: 35px;
     color: rgba(179,97,122,1);
-    margin-top: 40px;
+    margin: 0px;
+    margin-top: 10px;
 `
 
 export const ImperialCollege = styled.h1`
     font-family: 'Indie Flower';
+    font-size: 35px;
     color: #00548f;
-    margin: 0;
+    margin: 0px;
+    margin-top: 10px;
 `
 
 export const London = styled.h1`
     font-family: 'Indie Flower';
+    font-size: 35px;
     color: #549dc5;
-    margin-top: -9px;
+    margin-top: -17px;
 `
 
 export const Name = styled.h1`
     font-family: 'Indie Flower';
-    font-size: 170px;
+    font-size: 130px;
     color: rgba(87,92,133,1);
+    margin: 0px;
+    margin-top: -305px;
+    margin-left: 50px;
+    margin-right: 50px;
     
 `
