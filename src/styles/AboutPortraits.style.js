@@ -63,5 +63,6 @@ export const Portrait = styled.img`
     margin-bottom: 20px;
     border-radius: 25px;
     filter: contrast(105%);
+    user-select: none;
 `
 

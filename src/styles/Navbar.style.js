@@ -64,6 +64,7 @@ export const NavbarLink = styled(NavLink)`
 export const Logo = styled.img`
     margin: 10px;
     height: 71px;
+    user-select: none;
 
 `
 

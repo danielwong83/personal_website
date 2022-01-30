@@ -13,24 +13,6 @@ export const HomeColor = styled.div`
     z-index: 1
 `
 
-export const StickmanWrapper = styled.div`
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-`
-
-
-export const MountainWrapper = styled.div`
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-`
-
-
 export const IndexCard = styled(animated.div)`
     display: inline-block;
     background: #f7f7f7;
@@ -47,7 +29,7 @@ export const IndexCardCircle = styled.div`
     background-color: #fffcf4;
     width: 25px;
     height: 25px;
-    border: 1px solid #686159;
+    border: 2px solid black;
     margin-top: 15px;
     margin-left: 20px;
 
@@ -70,14 +52,14 @@ export const IndexCardRed = styled.hr`
     color: #f00;
     background-color: #f00;
     height: 2px;
-    width: 99.91%;
+    width: 99.76%;
 `
 
 export const IndexCardBlue = styled.hr`
     color: #001375;
     background-color: rgba(0, 67, 239, 0.24);
     height: 1px;
-    width: 99.91%;
+    width: 99.76%;
 `
 
 export const NameWrapper = styled.div`

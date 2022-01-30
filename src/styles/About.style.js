@@ -52,7 +52,6 @@ export const DescriptionTwo = styled.p`
     margin-bottom: 10px;
 `
 
-
 export const ListValue = styled.p`
     font-family: 'Gentium Basic';
     font-size: 21px;
@@ -62,7 +61,6 @@ export const ListValue = styled.p`
     margin-left: 10px;
 `
 
-
 export const PhotoWrapper = styled.div`
     background: rgba(87,92,133,0.6);
     width: 50%;
@@ -71,7 +69,6 @@ export const PhotoWrapper = styled.div`
     height: auto;
 `
 
-
 export const Portrait = styled.img`
     width: 88%;
     height: auto;
@@ -79,6 +76,7 @@ export const Portrait = styled.img`
     margin-bottom: 20px;
     border-radius: 25px;
     filter: contrast(105%);
+    user-select: none;
 `
 
 export const SocialWrapper = styled.div`

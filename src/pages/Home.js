@@ -14,11 +14,10 @@ import {HomeColor,
         Lines,
         NewLine,
         NewLineRed,
-        IndexCardCircle,} from '../styles/Home.style'
+        IndexCardCircle} from '../styles/Home.style'
 
 
 import {useSpring} from 'react-spring'
-
 
 
 
@@ -27,7 +26,7 @@ const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg)
 
 const Home = () => {
 
-    const [props, set] = useSpring(() => ({xys: [0,0,1], config: {mass: 10, tension: 250, friction: 50}}))
+    const [props, set] = useSpring(() => ({xys: [0,0,1], config: {mass: 7, tension: 250, friction: 50}}))
 
     
         return(
