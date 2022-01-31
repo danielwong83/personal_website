@@ -52,14 +52,12 @@ export const IndexCardRed = styled.hr`
     color: #f00;
     background-color: #f00;
     height: 2px;
-    width: 99.76%;
 `
 
 export const IndexCardBlue = styled.hr`
     color: #001375;
     background-color: rgba(0, 67, 239, 0.24);
     height: 1px;
-    width: 99.76%;
 `
 
 export const NameWrapper = styled.div`
