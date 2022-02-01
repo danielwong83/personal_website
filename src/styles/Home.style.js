@@ -30,7 +30,7 @@ export const IndexCard = styled(animated.div)`
     border: 2px solid black;
     background-clip: border-box;
     height: 400px;
-    width: 740px;
+    width: 750px;
 `
 
 export const IndexCardCircle = styled.div`
@@ -51,7 +51,7 @@ export const IndexCardCircleBack = styled.div`
     height: 25px;
     border: 2px solid black;
     margin-top: 15px;
-    margin-left: 690px;
+    margin-left: 700px;
 
 `
 
