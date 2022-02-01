@@ -13,25 +13,45 @@ export const HomeColor = styled.div`
     z-index: 1
 `
 
+export const IndexCardWrapper = styled(animated.div)`
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    justify-content: center;
+`
+
 export const IndexCard = styled(animated.div)`
     display: inline-block;
     background: #f7f7f7;
     border-radius: 10px;
-    z-index: 1;
-    position: relative;
+    position: absolute;
     backdrop-filter: blur(10px);
     border: 2px solid black;
     background-clip: border-box;
+    height: 400px;
+    width: 740px;
 `
 
 export const IndexCardCircle = styled.div`
     border-radius: 50%;
-    background-color: #fffcf4;
+    background: #fffcf4;
     width: 25px;
     height: 25px;
     border: 2px solid black;
     margin-top: 15px;
     margin-left: 20px;
+
+`
+
+export const IndexCardCircleBack = styled.div`
+    border-radius: 50%;
+    background: #fffcf4;
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    margin-top: 15px;
+    margin-left: 690px;
 
 `
 
@@ -129,4 +149,18 @@ export const Button = styled.button`
     width: 100%;
     display: block;
 
+`
+
+export const FlipWord = styled.h1`
+    font-family: 'Indie Flower';
+    font-size: 45px;
+    color: black;
+    margin: 0px;
+    margin-top: -250px;
+    margin-left: -200px;
+    user-select: none;
+    justify-content: center;
+    display: flex;
+    transform: rotate(-30deg);
+    
 `

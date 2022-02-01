@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 
 import {HomeColor, 
@@ -14,7 +14,10 @@ import {HomeColor,
         Lines,
         NewLine,
         NewLineRed,
-        IndexCardCircle} from '../styles/Home.style'
+        IndexCardCircle,
+        IndexCardCircleBack,
+        IndexCardWrapper,
+        FlipWord} from '../styles/Home.style'
 
 
 import {useSpring} from 'react-spring'
@@ -26,18 +29,25 @@ const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg)
 
 const Home = () => {
 
-    const [props, set] = useSpring(() => ({xys: [0,0,1], config: {mass: 7, tension: 250, friction: 50}}))
-
+    const [flipped, set] = useState(false)
+    const [props, setflip] = useSpring(() => ({xys: [0,0,1], config: {mass: 7, tension: 250, friction: 50}}))
+    const { transform, opacity } = useSpring({
+        opacity: flipped ? 1 : 0,
+        transform: `perspective(700px) rotateY(${flipped ? 180 : 0}deg)`,
+        config: { mass: 4, tension: 500, friction: 50},
+      })
     
         return(
     
             <HomeColor>
 
+            <IndexCardWrapper onClick={() => set(state => !state)}
+            onMouseMove={({clientX: x, clientY: y}) => (setflip({xys: calc(x,y)}))}
+            onMouseLeave={() => (setflip({xys: [0,0,1]}))}
+            style={{transform: props.xys.interpolate(trans)}}>
+
             <IndexCard
-            onMouseMove={({clientX: x, clientY: y}) => (set({xys: calc(x,y)}))}
-            onMouseLeave={() => (set({xys: [0,0,1]}))}
-            style={{transform: props.xys.interpolate(trans)}}
-            >
+            style={{ opacity: opacity.to(o => 1 - o), transform }}>
 
                 <IndexCardCircle/>
 
@@ -89,7 +99,62 @@ const Home = () => {
                     </StudentWrapper>
 
 
+
+
+
             </IndexCard>
+
+            <IndexCard
+            style={{
+                opacity,
+                transform,
+                rotateY: '180deg',
+              }}>
+
+                <IndexCardCircleBack/>
+
+                    
+                    <Lines>
+                        <NewLineRed>
+                            <IndexCardRed/>
+                        </NewLineRed>
+                        <NewLine>
+                            <IndexCardBlue/>
+                        </NewLine>
+                        <NewLine>
+                            <IndexCardBlue/>
+                        </NewLine>
+                        <NewLine>
+                            <IndexCardBlue/>
+                        </NewLine>
+                        <NewLine>
+                            <IndexCardBlue/>
+                        </NewLine>
+                        <NewLine>
+                            <IndexCardBlue/>
+                        </NewLine>
+                        <NewLine>
+                            <IndexCardBlue/>
+                        </NewLine>
+                        <NewLine>
+                            <IndexCardBlue/>
+                        </NewLine>
+                        <NewLine>
+                            <IndexCardBlue/>
+                        </NewLine>
+                        <NewLine>
+                            <IndexCardBlue/>
+                        </NewLine>
+                    </Lines>
+
+                    
+                    <FlipWord>HEYY! 😡 flip me back</FlipWord>
+
+
+
+            </IndexCard>
+
+            </IndexCardWrapper>
 
             </HomeColor>
         
