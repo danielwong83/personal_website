@@ -80,13 +80,6 @@ export const IndexCardBlue = styled.hr`
     height: 1px;
 `
 
-export const NameWrapper = styled.div`
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-`
 
 export const StudentWrapper = styled.div`
     justify-content: center;
@@ -99,9 +92,6 @@ export const StudentWrapper = styled.div`
     user-select: none;
 `
 
-export const StudentArea = styled.div`
-    display: flex;
-`
 
 export const ImperialCollegeArea = styled.div`
     margin-left: 17px;
@@ -144,13 +134,6 @@ export const Name = styled.h1`
     user-select: none;
 `
 
-export const Button = styled.button`
-    height: 50px;
-    width: 100%;
-    display: block;
-
-`
-
 export const FlipWord = styled.h1`
     font-family: 'Indie Flower';
     font-size: 45px;
@@ -162,5 +145,16 @@ export const FlipWord = styled.h1`
     justify-content: center;
     display: flex;
     transform: rotate(-30deg);
-    
+`
+
+export const Quote = styled.h1`
+    font-family: 'Indie Flower';
+    font-size: 13px;
+    color: black;
+    margin: 0px;
+    margin-top: 180px;
+    margin-left: 490px;
+    user-select: none;
+    justify-content: center;
+    display: flex;
 `

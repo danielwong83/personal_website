@@ -17,7 +17,8 @@ import {HomeColor,
         IndexCardCircle,
         IndexCardCircleBack,
         IndexCardWrapper,
-        FlipWord} from '../styles/Home.style'
+        FlipWord,
+        Quote} from '../styles/Home.style'
 
 
 import {useSpring} from 'react-spring'
@@ -149,6 +150,8 @@ const Home = () => {
 
                     
                     <FlipWord>HEYY! 😡 flip me back</FlipWord>
+
+                    <Quote>"Who's your worm guy?" - Creed Bratton</Quote>
 
 
 
