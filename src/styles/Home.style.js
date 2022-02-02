@@ -129,8 +129,6 @@ export const Name = styled.h1`
     color: rgba(87,92,133,1);
     margin: 0px;
     margin-top: -305px;
-    margin-left: 50px;
-    margin-right: 50px;
     user-select: none;
 `
 
