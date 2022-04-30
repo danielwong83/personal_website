@@ -187,6 +187,7 @@ export const ChelseaSticker = styled.img`
     padding: 10px;
     transform: rotate(-30deg);
     user-select: none;
+    pointer-events: none;
     background-color: white;
     
 `
@@ -205,6 +206,7 @@ export const ChessSticker = styled.img`
     padding: 10px;
     transform: rotate(20deg);
     user-select: none;
+    pointer-events: none;
     background-color: white;
 `
 
@@ -222,6 +224,7 @@ export const DwightSticker = styled.img`
     padding: 5px;
     transform: rotate(20deg);
     user-select: none;
+    pointer-events: none;
     background-color: white;
 `
 
@@ -239,6 +242,7 @@ export const GuitarSticker = styled.img`
     padding: 5px;
     transform: rotate(-105deg);
     user-select: none;
+    pointer-events: none;
     background-color: white;
 `
 
@@ -254,6 +258,7 @@ export const MaxSticker = styled.img`
     border: 1px solid rgba(196, 196, 196, 0.76);
     border-radius: 100px;
     padding: 10px;
+    pointer-events: none;
     background-color: white;
 `
 
@@ -270,6 +275,7 @@ export const NgoloSticker = styled.img`
     border-radius: 100px;
     transform: rotate(-15deg);
     padding: 10px;
+    pointer-events: none;
     background-color: white;
 `
 
@@ -286,6 +292,7 @@ export const RamosSticker = styled.img`
     border-radius: 100px;
     transform: rotate(11deg);
     padding: 10px;
+    pointer-events: none;
     background-color: white;
 `
 
@@ -303,6 +310,7 @@ export const DogeSticker = styled.img`
     padding: 10px;
     transform: rotate(-10deg);
     user-select: none;
+    pointer-events: none;
     background-color: white;
 `
 
@@ -320,6 +328,7 @@ export const ElonSticker = styled.img`
     padding: 10px;
     transform: rotate(-10deg);
     user-select: none;
+    pointer-events: none;
     background-color: white;
 `
 export const LeagueSticker = styled.img`
@@ -335,6 +344,7 @@ export const LeagueSticker = styled.img`
     border-radius: 100px;
     transform: rotate(1deg);
     padding: 10px;
+    pointer-events: none;
     background-color: white;
 `
 
@@ -356,4 +366,5 @@ export const ImpierialPhoto = styled.img`
     margin-top: 40px;
     margin-bottom: 10px;
     user-select: none;
+    pointer-events: none;
 `
