@@ -6,23 +6,43 @@ import {HomeColor,
         London, 
         ImperialCollegeArea,
         Student,
-        StudentWrapper,
         Name,
         IndexCard,
-        IndexCardRed,
-        IndexCardBlue,
-        Lines,
-        NewLine,
-        NewLineRed,
-        IndexCardCircle,
-        IndexCardCircleBack,
+        Main,
         IndexCardWrapper,
-        FlipWord,
-        Quote} from '../styles/Home.style'
+        LeftSide,
+        RightSide,
+        ImpierialPhoto,
+        Bottom,
+        WhiteWords,
+        WhiteWordsBack,
+        Email,
+        ChelseaSticker,
+        ChessSticker,
+        DwightSticker,
+        GuitarSticker,
+        MaxSticker,
+        NgoloSticker,
+        RamosSticker,
+        DogeSticker,
+        ElonSticker,
+        LeagueSticker} from '../styles/Home.style'
 
 
 import {useSpring} from 'react-spring'
 
+import imperialphoto from '../images/imperial.png'
+
+import chelsea from '../images/chelsea.svg'
+import chess from '../images/stickers/chess.png'
+import schrute from '../images/stickers/schrute.png'
+import guitar from '../images/stickers/guitar.png'
+import max from '../images/stickers/max.png'
+import ngolo from '../images/stickers/ngolo.png'
+import ramos from '../images/stickers/ramos.png'
+import doge from '../images/stickers/doge.png'
+import elon from '../images/stickers/elon.png'
+import league from '../images/stickers/league.png'
 
 
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
@@ -50,54 +70,37 @@ const Home = () => {
             <IndexCard
             style={{ opacity: opacity.to(o => 1 - o), transform }}>
 
-                <IndexCardCircle/>
 
+                    <Main>
+
+                    <LeftSide>
+                      <Name>Daniel WONG</Name>
+
+                      <Student>Financial Engineering Student </Student>
+
+                      <Email>daniel.wong121@imperial.ac.uk</Email>
+
+
+
+
+                    </LeftSide>
                     
-                    <Lines>
-                        <NewLineRed>
-                            <IndexCardRed/>
-                        </NewLineRed>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                    </Lines>
+                    <RightSide>
+                      <ImpierialPhoto src = {imperialphoto}/>
 
+                      <ImperialCollegeArea>
+
+                          <ImperialCollege>Imperial College</ImperialCollege>
+                          <London>London</London>
+                      </ImperialCollegeArea>
+                    </RightSide>
                     
-                    <Name>Daniel Wong</Name>
 
-                    <StudentWrapper>
-                        <Student>Financial Engineering at </Student>
+                    </Main>
 
-                    <ImperialCollegeArea>
-                        <ImperialCollege>Imperial College</ImperialCollege>
-                        <London>London</London>
-                    </ImperialCollegeArea>
-
-                    </StudentWrapper>
+                    <Bottom>
+                      <WhiteWords>© Daniel Wong</WhiteWords>
+                    </Bottom>
 
 
 
@@ -112,46 +115,27 @@ const Home = () => {
                 rotateY: '180deg',
               }}>
 
-                <IndexCardCircleBack/>
 
-                    
-                    <Lines>
-                        <NewLineRed>
-                            <IndexCardRed/>
-                        </NewLineRed>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                    </Lines>
+                    <ChelseaSticker src = {chelsea}/>
+                    <ChessSticker src = {chess}/>
 
-                    
-                    <FlipWord>HEYY! 😡 flip me back</FlipWord>
+                    <DwightSticker src = {schrute}/>
+                    <GuitarSticker src = {guitar}/>
+                    <MaxSticker src = {max}/>
 
-                    <Quote>"Who's your worm guy?" - Creed Bratton</Quote>
+                    <NgoloSticker src = {ngolo}/>
+
+
+                    <DogeSticker src = {doge}/>
+                    <ElonSticker src = {elon}/>
+
+                    <LeagueSticker src = {league}/>
+
+                    <RamosSticker src = {ramos}/>
+
+                    <Bottom>
+                      <WhiteWordsBack>"Who's your worm guy?" - Creed Bratton</WhiteWordsBack>
+                    </Bottom>
 
 
 

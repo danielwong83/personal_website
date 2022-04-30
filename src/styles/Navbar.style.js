@@ -6,7 +6,8 @@ import '../App.css'
 export const NavbarContainer = styled.nav`
     width: 100%;
     height: 90px;
-    background: linear-gradient(100deg, rgba(236,165,150,1) 0%, rgba(213,117,129,1) 25%, rgba(179,97,122,1) 50%, rgba(110,98,134,1) 75%, rgba(87,92,133,1) 100%);
+    //background: linear-gradient(100deg, rgba(236,165,150,1) 0%, rgba(213,117,129,1) 25%, rgba(179,97,122,1) 50%, rgba(110,98,134,1) 75%, rgba(87,92,133,1) 100%);
+    background: #00548f;
     display: flex;
     flex-direction: column;
     border-bottom: 2px solid #D1D1D1;

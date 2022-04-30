@@ -33,111 +33,131 @@ export const IndexCard = styled(animated.div)`
     width: 750px;
 `
 
-export const IndexCardCircle = styled.div`
-    border-radius: 50%;
-    background: #fffcf4;
-    width: 25px;
-    height: 25px;
-    border: 2px solid black;
-    margin-top: 15px;
-    margin-left: 20px;
-
-`
-
-export const IndexCardCircleBack = styled.div`
-    border-radius: 50%;
-    background: #fffcf4;
-    width: 25px;
-    height: 25px;
-    border: 2px solid black;
-    margin-top: 15px;
-    margin-left: 700px;
-
-`
-
-export const Lines = styled.div`
-    display: absolute;
-    flex-direction: row;
-`
-
-export const NewLineRed = styled.div`
-    margin-top: 20px;
-`
-
-export const NewLine = styled.div`
-    margin-top: 30px;
-`
-
-export const IndexCardRed = styled.hr`
-    color: #f00;
-    background-color: #f00;
-    height: 2px;
-`
-
-export const IndexCardBlue = styled.hr`
-    color: #001375;
-    background-color: rgba(0, 67, 239, 0.24);
-    height: 1px;
-`
-
-
-export const StudentWrapper = styled.div`
-    justify-content: center;
+export const Main = styled.div`
     display: flex;
     flex-direction: row;
-    margin: 0px;
-    margin-top: -40px;
-    margin-left: -80px;
-    margin-bottom: 60px;
-    user-select: none;
 `
 
-
-export const ImperialCollegeArea = styled.div`
-    margin-left: 17px;
-    display: flex;
-    flex-direction: column;
+export const Bottom = styled.div`
     text-align: left;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #00548f;
+    border-bottom-left-radius: 7.5px;
+    border-bottom-right-radius: 7.5px;
+    border-top: 3px solid rgba(179,97,122,1);
+    //border-top: 2px solid black;
+`
+
+export const LeftSide = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    width: 65%;
+
+`
+export const RightSide = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    width: 35%;
+`
+
+
+export const Name = styled.h1`
+    direction: flex;
+    font-family: 'PT Sans';
+    font-size: 65px;
+    color: black;
+    user-select: none;
+    text-align: left;
+    margin: 0px;
+    margin-top: 50px;
+    margin-left: 45px;
 `
 
 export const Student = styled.h1`
-    font-family: 'Indie Flower';
-    font-size: 35px;
-    color: rgba(179,97,122,1);
-    margin: 0px;
-    margin-top: 10px;
-`
-
-export const ImperialCollege = styled.h1`
-    font-family: 'Indie Flower';
-    font-size: 35px;
+    font-family: 'PT Sans';
+    font-size: 25px;
+    //color: rgba(179,97,122,1);
     color: #00548f;
     margin: 0px;
     margin-top: 10px;
+    margin-left: 50px;
+    text-align: left;
+    user-select: none;
+    //font-style: italic;
 `
 
-export const London = styled.h1`
-    font-family: 'Indie Flower';
-    font-size: 35px;
-    color: #549dc5;
-    margin-top: -17px;
-`
-
-export const Name = styled.h1`
-    font-family: 'Indie Flower';
-    font-size: 130px;
-    color: rgba(87,92,133,1);
-    margin: 0px;
-    margin-top: -305px;
+export const ImperialCollegeArea = styled.div`
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     user-select: none;
 `
 
+
+
+export const ImperialCollege = styled.h1`
+    font-family: 'PT Sans';
+    font-size: 20px;
+    color: #00548f;
+    margin: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+`
+
+export const London = styled.h1`
+    font-family: 'PT Sans';
+    font-size: 20px;
+    color: #549dc5;
+    margin-top: 0px;
+`
+
+export const Email = styled.h1`
+    font-family: 'PT Sans';
+    font-size: 17px;
+    color: black;
+    margin: 0px;
+    margin-top: 40px;
+    margin-left: 50px;
+    text-align: left;
+    user-select: none;
+    font-style: italic;
+
+`
+
+export const WhiteWords = styled.h1`
+    font-family: 'PT Sans';
+    font-size: 17px;
+    color: white;
+    margin-left: 30px;
+    user-select: none;
+`
+
+export const WhiteWordsBack = styled.h1`
+    font-family: 'PT Sans';
+    font-size: 17px;
+    color: white;
+    text-align: right;
+    margin-right: 30px;
+    user-select: none;
+`
+
+
+
+
 export const FlipWord = styled.h1`
-    font-family: 'Indie Flower';
+    font-family: 'PT Sans';
     font-size: 45px;
     color: black;
     margin: 0px;
-    margin-top: -250px;
+    margin-top: 130px;
     margin-left: -200px;
     user-select: none;
     justify-content: center;
@@ -145,14 +165,195 @@ export const FlipWord = styled.h1`
     transform: rotate(-30deg);
 `
 
+export const Sticker = styled.div`
+    display: flex;
+    padding: 10px;
+    background-color: white;
+
+
+`
+
+export const ChelseaSticker = styled.img`
+    height: 120px;
+    width: auto;
+    margin: 0px;
+    margin-top: 25px;
+    margin-left: 50px;
+    user-select: none;
+    justify-content: center;
+    display: flex;
+    border: 1px solid rgba(196, 196, 196, 0.76);
+    border-radius: 100px;
+    padding: 10px;
+    transform: rotate(-30deg);
+    user-select: none;
+    background-color: white;
+    
+`
+
+export const ChessSticker = styled.img`
+    height: 100px;
+    width: auto;
+    margin: 0px;
+    margin-top: -140px;
+    margin-left: 500px;
+    user-select: none;
+    justify-content: center;
+    display: flex;
+    border: 1px solid rgba(196, 196, 196, 0.76);
+    border-radius: 100px;
+    padding: 10px;
+    transform: rotate(20deg);
+    user-select: none;
+    background-color: white;
+`
+
+export const DwightSticker = styled.img`
+    height: 120px;
+    width: auto;
+    margin: 0px;
+    margin-top: 0px;
+    margin-left: 200px;
+    user-select: none;
+    justify-content: center;
+    display: flex;
+    border: 1px solid rgba(196, 196, 196, 0.76);
+    border-radius: 100px;
+    padding: 5px;
+    transform: rotate(20deg);
+    user-select: none;
+    background-color: white;
+`
+
+export const GuitarSticker = styled.img`
+    height: 73px;
+    width: auto;
+    margin: 0px;
+    margin-top: -100px;
+    margin-left: 520px;
+    user-select: none;
+    justify-content: center;
+    display: flex;
+    border: 1px solid rgba(196, 196, 196, 0.76);
+    border-radius: 100px;
+    padding: 5px;
+    transform: rotate(-105deg);
+    user-select: none;
+    background-color: white;
+`
+
+export const MaxSticker = styled.img`
+    height: 120px;
+    width: auto;
+    margin: 0px;
+    margin-top: -250px;
+    margin-left: 375px;
+    user-select: none;
+    justify-content: center;
+    display: flex;
+    border: 1px solid rgba(196, 196, 196, 0.76);
+    border-radius: 100px;
+    padding: 10px;
+    background-color: white;
+`
+
+export const NgoloSticker = styled.img`
+    height: 120px;
+    width: auto;
+    margin: 0px;
+    margin-top: -140px;
+    margin-left: 160px;
+    user-select: none;
+    justify-content: center;
+    display: flex;
+    border: 1px solid rgba(196, 196, 196, 0.76);
+    border-radius: 100px;
+    transform: rotate(-15deg);
+    padding: 10px;
+    background-color: white;
+`
+
+export const RamosSticker = styled.img`
+    height: 140px;
+    width: auto;
+    margin: 0px;
+    margin-top: -245px;
+    margin-left: 290px;
+    user-select: none;
+    justify-content: center;
+    display: flex;
+    border: 1px solid rgba(196, 196, 196, 0.76);
+    border-radius: 100px;
+    transform: rotate(11deg);
+    padding: 10px;
+    background-color: white;
+`
+
+export const DogeSticker = styled.img`
+    height: 100px;
+    width: auto;
+    margin: 0px;
+    margin-top: 30px;
+    margin-left: 25px;
+    user-select: none;
+    justify-content: center;
+    display: flex;
+    border: 1px solid rgba(196, 196, 196, 0.76);
+    border-radius: 100px;
+    padding: 10px;
+    transform: rotate(-10deg);
+    user-select: none;
+    background-color: white;
+`
+
+export const ElonSticker = styled.img`
+    height: 100px;
+    width: auto;
+    margin: 0px;
+    margin-top: -100px;
+    margin-left: 110px;
+    user-select: none;
+    justify-content: center;
+    display: flex;
+    border: 1px solid rgba(196, 196, 196, 0.76);
+    border-radius: 100px;
+    padding: 10px;
+    transform: rotate(-10deg);
+    user-select: none;
+    background-color: white;
+`
+export const LeagueSticker = styled.img`
+    height: auto;
+    width: 200px;
+    margin: 0px;
+    margin-top: -120px;
+    margin-left: 340px;
+    user-select: none;
+    justify-content: center;
+    display: flex;
+    border: 1px solid rgba(196, 196, 196, 0.76);
+    border-radius: 100px;
+    transform: rotate(1deg);
+    padding: 10px;
+    background-color: white;
+`
+
 export const Quote = styled.h1`
-    font-family: 'Indie Flower';
+    font-family: 'PT Sans';
     font-size: 13px;
     color: black;
     margin: 0px;
-    margin-top: 180px;
     margin-left: 490px;
     user-select: none;
     justify-content: center;
     display: flex;
+`
+
+export const ImpierialPhoto = styled.img`
+    display: flex;
+    height: 150px;
+    width: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    user-select: none;
 `

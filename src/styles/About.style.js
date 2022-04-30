@@ -31,21 +31,21 @@ export const PortraitWrapper = styled.div`
 `
 
 export const AboutMe = styled.h1`
-    font-family: 'Indie Flower';
+    font-family: 'PT Sans';
     font-size: 51px;
     color: black;
     margin: 0;
 `
 
 export const DescriptionOne = styled.p`
-    font-family: 'Gentium Basic';
+    font-family: 'PT Sans';
     font-size: 21px;
     color: black;
     margin-top: 12px;
 `
 
 export const DescriptionTwo = styled.p`
-    font-family: 'Gentium Basic';
+    font-family: 'PT Sans';
     font-size: 21px;
     color: black;
     margin-top: 10px;
@@ -53,7 +53,7 @@ export const DescriptionTwo = styled.p`
 `
 
 export const ListValue = styled.p`
-    font-family: 'Gentium Basic';
+    font-family: 'PT Sans';
     font-size: 21px;
     color: black;
     margin-top: 0px;
@@ -62,7 +62,7 @@ export const ListValue = styled.p`
 `
 
 export const PhotoWrapper = styled.div`
-    background: rgba(87,92,133,0.6);
+background: rgba(63, 191, 191, 0.18);
     width: 50%;
     border-radius: 25px;
     margin-bottom: 25px;

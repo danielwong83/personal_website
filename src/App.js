@@ -8,6 +8,8 @@ import About from './pages/About'
 import Chelsea from './pages/Chelsea'
 import Chess from './pages/Chess'
 import AboutPortraits from './pages/AboutPortraits'
+import HomeVersionOne from './pages/HomeVersionOne'
+import HomeVersionTwo from './pages/HomeVersionTwo'
 
 import Fixture from './components/ChelseaFixture'
 
@@ -33,6 +35,8 @@ function App() {
           <Route path="project" element={<Project />}></Route>
           <Route path="chelsea" element={<Chelsea />}></Route>
           <Route path="chess" element={<Chess />}></Route>
+          <Route path="home_vers_1" element={<HomeVersionOne/>}></Route>
+          <Route path="home_vers_2" element={<HomeVersionTwo/>}></Route>
         </Routes>
       </div>
     </div>

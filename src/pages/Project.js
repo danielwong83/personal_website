@@ -6,6 +6,7 @@ import {HomeColor,
         ProjectWrapper, 
         IndividualProject,
         IndividualProject2,
+        IndividualProject2Website,
         IndividualProject3, 
         ProjectName, 
         ProjectPhoto, 
@@ -13,12 +14,15 @@ import {HomeColor,
         ProjectContent, 
         FeaturesContent,
         Description,
+        DescriptionWebsite,
+        ListValue,
         Updates,
         TurtlePhoto,
         ScraperPhoto,
         CurrentWord,
         FootballPhoto,
-        ATag} from '../styles/Project.style'
+        ATag,
+        ATagTwo} from '../styles/Project.style'
 
 import blackjack from '../images/blackjack.svg'
 import dashboard from '../images/dashboard.svg'
@@ -60,9 +64,9 @@ const Project = () => {
                             <ProjectContent>
                                 <ProjectName><ATag href= {mazelink} target='_blank' rel='noopener noreferrer'>Maze Memory Game</ATag></ProjectName> 
                                 <Description>A Game where you have to have to memorize the path process to reach the finishing point. </Description>
-                                <Description>Languages: Python (for now)</Description>
+                                <Description>Languages: Python</Description>
                                 <Description></Description>
-                                <Updates>Current Status: Finished Backend and Mini UI on console</Updates>    
+                                <Updates>Current Status: Creating Frontend for gameplay</Updates>    
                             </ProjectContent>
                     </IndividualProject>
                 </ProjectWrapper>
@@ -70,17 +74,27 @@ const Project = () => {
                 <ProjectWord>Projects</ProjectWord>
 
                 <ProjectWrapper>
-                    <IndividualProject2>
+                    <IndividualProject2Website>
                         <ProjectPhotoTwo src = {websitephoto}/>
                         <ProjectContent>
                             <ProjectName><ATag href= "/">Personal Website</ATag></ProjectName> 
-                            <Description>A fun little JavaScript project I created with no prior experience.</Description>
+                            <Description>A fun little JavaScript React project I created with no prior experience.</Description>
                             <Description>Languages: JavaScript (React), HTML</Description>  
-                            <Description>Future Plans: to animate a motion for the stickman in the home page, to optimise for mobile device</Description>
-                            <Updates>Last Updated: January 2022</Updates>    
+                            <Description>Future Plans: use Threejs to create a home scenario; to optimise for mobile device</Description>
+                            <Description>Previous Home Page Progression and Features:  </Description>
+                            <DescriptionWebsite><ATagTwo href= "/#/home_vers_1">V1.0 </ATagTwo>
+                                <ListValue>{'\u2022'} name with mountain and moveable stickman</ListValue>
+                                <ListValue>{'\u2022'} 24 different spawn locations fo the stickman, dependant on viewer's local time </ListValue> 
+                            </DescriptionWebsite>
+                            <DescriptionWebsite><ATagTwo href= "/#/home_vers_2">V2.0 </ATagTwo> 
+                                <ListValue>{'\u2022'} name on a flippable and hooverable index card</ListValue>
+                                <ListValue>{'\u2022'} drew inspiration from my elementary days, when my name was written on index cards</ListValue>
+                                <ListValue>{'\u2022'} quote by one of my favorite characters from my favorite tv show</ListValue>
+                            </DescriptionWebsite>
+                            <Updates>Last Updated: May 2022 (Current Version 2.1)</Updates>    
                         </ProjectContent>
                                           
-                    </IndividualProject2>
+                    </IndividualProject2Website>
 
                     <IndividualProject2>
                             <ProjectPhotoTwo src = {dashboard}/>

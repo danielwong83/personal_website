@@ -1,5 +1,5 @@
 import React from 'react'
-import photo from '../images/logo.png'
+import photo from '../images/logo_no_background.png'
 
 import {NavbarContainer, 
     LeftContainer, 

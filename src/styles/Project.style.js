@@ -22,7 +22,7 @@ export const MainWrapper = styled.div`
 `
 
 export const CurrentWord = styled.h1`
-    font-family: 'Indie Flower';
+    font-family: 'PT Sans';
     font-size: 51px;
     color: black;
     margin: 0;
@@ -31,7 +31,7 @@ export const CurrentWord = styled.h1`
 `
 
 export const ProjectWord = styled.h1`
-    font-family: 'Indie Flower';
+    font-family: 'PT Sans';
     font-size: 51px;
     color: black;
     margin: 0;
@@ -50,8 +50,9 @@ export const ProjectWrapper = styled.div`
 export const IndividualProject = styled.div`
     display: flex;
     position: relative;
-    background: rgba(236,165,150,0.16);
-    width: 70%;
+    //background: rgba(236,165,150,0.16);
+    background: rgba(63, 191, 191, 0.18);
+    width: 73%;
     justify-content: left;
     border-radius: 25px;
     margin-bottom: 25px;
@@ -61,19 +62,33 @@ export const IndividualProject = styled.div`
 export const IndividualProject2 = styled.div`
     display: flex;
     position: relative;
-    background: rgba(179,97,122,0.19);
-    width: 70%;
+    //background: rgba(179,97,122,0.19);
+    background: rgba(63, 191, 191, 0.18);
+    width: 73%;
     justify-content: left;
     border-radius: 25px;
     margin-bottom: 25px;
     height: 260px;
 `
 
+export const IndividualProject2Website = styled.div`
+    display: flex;
+    position: relative;
+    //background: rgba(179,97,122,0.19);
+    background: rgba(63, 191, 191, 0.18);
+    width: 73%;
+    justify-content: left;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    height: 550px;
+`
+
 export const IndividualProject3 = styled.div`
     display: flex;
     position: relative;
-    background: rgba(87,92,133,0.22);
-    width: 70%;
+    //background: rgba(87,92,133,0.22);
+    background: rgba(63, 191, 191, 0.18);
+    width: 73%;
     justify-content: left;
     border-radius: 25px;
     margin-bottom: 25px;
@@ -81,7 +96,7 @@ export const IndividualProject3 = styled.div`
 `
 
 export const ProjectName = styled.h1`
-    font-family: 'Indie Flower';
+    font-family: 'PT Sans';
     opacity: 1;
     font-size: 31px;
     color: black;
@@ -162,7 +177,7 @@ export const FeaturesContent = styled.div`
 `
 
 export const Description = styled.p`
-    font-family: 'Gentium Basic';
+    font-family: 'PT Sans';
     font-size: 19px;
     color: black;
     margin: 0px;
@@ -170,8 +185,28 @@ export const Description = styled.p`
     display: flex;
 `
 
+export const DescriptionWebsite = styled.p`
+    font-family: 'PT Sans';
+    font-size: 19px;
+    color: black;
+    flex-direction: column;
+    margin: 0px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    display: flex;
+`
+
+export const ListValue = styled.p`
+    font-family: 'PT Sans';
+    font-size: 19px;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+`
+
 export const Updates = styled.p`
-    font-family: 'Gentium Basic';
+    font-family: 'PT Sans';
     font-size: 19px;
     color: #B7B7B7;
     margin: 0px;
@@ -183,4 +218,9 @@ export const ATag = styled.a`
     display: flex;
     text-decoration: None;
     color: black;
+`
+
+export const ATagTwo = styled.a`
+    display: flex;
+    color: #575c85;
 `

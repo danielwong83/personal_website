@@ -35,7 +35,7 @@ export const RightSide = styled.div`
 
 
 export const PreferredTeam = styled.h1`
-    font-family: 'Indie Flower';
+    font-family: 'PT Sans';
     font-size: 51px;
     color: black;
     margin: 0;
@@ -43,21 +43,21 @@ export const PreferredTeam = styled.h1`
 `
 
 export const PreferredSubs = styled.h1`
-    font-family: 'Indie Flower';
+    font-family: 'PT Sans';
     font-size: 30px;
     color: black;
     margin-top: 90px;
 `
 
 export const Reserves = styled.h1`
-    font-family: 'Indie Flower';
+    font-family: 'PT Sans';
     font-size: 30px;
     color: black;
     margin-top: 175px;
 `
 
 export const Injury = styled.h1`
-    font-family: 'Indie Flower';
+    font-family: 'PT Sans';
     font-size: 30px;
     color: red;
     margin-top: 95px;
