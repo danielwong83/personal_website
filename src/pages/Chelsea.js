@@ -13,31 +13,31 @@ class Chelsea extends Component{
 
     render (){
         
-        const mendyx = 1220
-        const mendyy = 670
-        const kepax = 150
-        const kepay = 450
+        const mendyx = 150
+        const mendyy = 450
+        const kepax = 1220
+        const kepay = 270
         const bettinellix = 1220
-        const bettinelliy = 270
+        const bettinelliy = 510
 
 
-        const davex = 525
-        const davey = 200
+        const davex = 375 
+        const davey = 590
         const silvax = 325
         const silvay = 450
         const rudigerx = 375
         const rudigery = 310
-        const chilwellx = 1320
+        const chilwellx = 1220
         const chilwelly = 670
-        const jamesx = 1420
-        const jamesy = 670
-        const alonsox = 1320
-        const alonsoy = 270
-        const christensenx = 375
-        const christenseny = 590
-        const chalobahx = 1220
+        const jamesx = 525
+        const jamesy = 700
+        const alonsox = 525 
+        const alonsoy = 200
+        const christensenx = 1320
+        const christenseny = 270
+        const chalobahx = 1320
         const chalobahy = 360
-        const sarrx = 1320
+        const sarrx = 1520
         const sarry = 510
 
 
@@ -47,14 +47,14 @@ class Chelsea extends Component{
         const kovacicy = 560
         const jorginhox = 1420
         const jorginhoy = 270
-        const cheekx = 1620
-        const cheeky = 270
-        const barkleyx = 1220
+        const cheekx = 1220
+        const cheeky = 360
+        const barkleyx = 1420
         const barkleyy = 510
         const ziyechx = 1520
         const ziyechy = 360
         const saulx = 1320
-        const sauly = 360
+        const sauly = 510
 
 
         const wernerx = 825
@@ -65,8 +65,8 @@ class Chelsea extends Component{
         const havertzy = 450
         const lukakux = 1520
         const lukakuy = 270
-        const pulisicx = 525
-        const pulisicy = 700
+        const pulisicx = 1620
+        const pulisicy = 270
         const odoix = 1420
         const odoiy = 360
         

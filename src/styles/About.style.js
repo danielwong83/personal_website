@@ -82,9 +82,9 @@ export const Portrait = styled.img`
 export const SocialWrapper = styled.div`
     display: flex;
     position: relative;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 5px;
-    
+    padding-bottom: 20px;
 `
 
 export const GmailImg = styled.img`

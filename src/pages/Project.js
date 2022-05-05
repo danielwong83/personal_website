@@ -148,7 +148,7 @@ const Project = () => {
                 <ProjectWrapper>
                     <IndividualProject3>
                     <FeaturesContent>
-                            <Description><ATag href= "/">Homepage</ATag>- hooverable index card</Description>
+                            <Description><ATag href= "/">Homepage</ATag>- hooverable + flippable name card</Description>
                             <Description><ATag href= "/#/chelsea">Chelsea </ATag>- movable player objects, upcoming schedule API</Description>
                             <Description><ATag href= "/#/chess">Chess</ATag></Description>
                             <Description><ATag href= "/#/aboutphotos">About Photos</ATag>- create animation from photos to about me page</Description>
