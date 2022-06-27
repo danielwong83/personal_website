@@ -37,6 +37,13 @@ export const BoardWrapper = styled.div`
     width: 70%;
 `
 
+export const GraphWrapper = styled.div`
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+
+`
+
 export const ChessWord = styled.h1`
     font-family: 'PT Sans';
     font-size: 51px;
@@ -61,6 +68,8 @@ export const Tab = styled.button`
     font-size: 15px;
     position: relative;
     margin-right: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 
     border: ${(props) => (props.active ? "1px solid #00548f" : "1px solid #00548f")};
     border-bottom: ${(props) => (props.active ? "none" : "none")};
@@ -105,9 +114,9 @@ export const LiveGameText = styled.h1`
 
 export const Profile = styled.a`
     font-family: 'PT Sans';
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     color: #575c85;
     margin: 0;
-    margin-top: 40px;
+    margin-top: 30px;
 `

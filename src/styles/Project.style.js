@@ -80,7 +80,7 @@ export const IndividualProject2Website = styled.div`
     justify-content: left;
     border-radius: 25px;
     margin-bottom: 25px;
-    height: 550px;
+    height: 750px;
 `
 
 export const IndividualProject3 = styled.div`
@@ -92,7 +92,7 @@ export const IndividualProject3 = styled.div`
     justify-content: left;
     border-radius: 25px;
     margin-bottom: 25px;
-    height: 350px;
+    height: 370px;
 `
 
 export const ProjectName = styled.h1`
@@ -134,7 +134,16 @@ export const FootballPhoto = styled.img`
     margin-left: 55px;
     margin-bottom: 0px;
     margin-right: 55px;
+`
 
+export const NBAPhoto = styled.img`
+    display: flex;
+    height: 180px;
+    width: auto;
+    margin-top: 40px;
+    margin-left: 105px;
+    margin-bottom: 0px;
+    margin-right: 105px;
 `
 
 export const ScraperPhoto = styled.img`
@@ -170,11 +179,29 @@ export const ProjectContent = styled.div`
 export const FeaturesContent = styled.div`
     display: flex;
     position: relative;
-    text-align: left;
     flex-direction: column;
     margin-top: 25px;
     margin-left: 30px;
 `
+
+export const FeaturesWrapper = styled.div`
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+`
+
+export const FeaturesPhoto = styled.img`
+    display: flex;
+    height: 65px;
+    width: auto;
+    margin-bottom: 15px;
+    margin-right: 25px; 
+    border-radius: 120px;
+`
+
+
 
 export const Description = styled.p`
     font-family: 'PT Sans';
@@ -182,6 +209,7 @@ export const Description = styled.p`
     color: black;
     margin: 0px;
     margin-bottom: 15px;
+    margin-right: 20px;
     display: flex;
 `
 
@@ -193,6 +221,7 @@ export const DescriptionWebsite = styled.p`
     margin: 0px;
     margin-bottom: 15px;
     margin-left: 15px;
+    margin-right: 20px;
     display: flex;
 `
 

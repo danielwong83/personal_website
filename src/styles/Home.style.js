@@ -348,6 +348,40 @@ export const LeagueSticker = styled.img`
     background-color: white;
 `
 
+export const AlcarazSticker = styled.img`
+    height: 60px;
+    width: auto;
+    margin: 0px;
+    margin-top: 5px;
+    margin-left: 235px;
+    user-select: none;
+    justify-content: center;
+    display: flex;
+    border: 1px solid rgba(196, 196, 196, 0.76);
+    border-radius: 100px;
+    transform: rotate(-10deg);
+    padding: 10px;
+    pointer-events: none;
+    background-color: white;
+`
+
+export const ChecoSticker = styled.img`
+    height: 100px;
+    width: auto;
+    margin: 0px;
+    margin-top: -240px;
+    margin-left: 525px;
+    user-select: none;
+    justify-content: center;
+    display: flex;
+    border: 1px solid rgba(196, 196, 196, 0.76);
+    border-radius: 100px;
+    padding: 10px;
+    transform: rotate(10deg);
+    pointer-events: none;
+    background-color: white;
+`
+
 export const Quote = styled.h1`
     font-family: 'PT Sans';
     font-size: 13px;

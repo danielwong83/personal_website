@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {Fixture} from '../styles/ChelseaFixture.style'
 
+import moment from 'moment'
+
 
 class ChelseaFixture extends Component {
 
@@ -28,6 +30,7 @@ class ChelseaFixture extends Component {
                 console.log(([response.matches[0]]))
                 this.setState({
                     data:[response.matches[0]],
+                    time:[response.matches[0].utcDate]
                 })
             })
 
@@ -38,6 +41,8 @@ class ChelseaFixture extends Component {
         return (
             this.state.data.map((fixtures) =>
 
+            
+
             <div>
                 {
                     <div>
@@ -47,7 +52,7 @@ class ChelseaFixture extends Component {
                         {fixtures.homeTeam.name === "Chelsea FC"? <Fixture>Next Fixture: {fixtures.awayTeam.name} (Home)</Fixture>
                         : <Fixture>Next Fixture: {fixtures.homeTeam.name} (Away)</Fixture>}
 
-                        <Fixture>Time: {fixtures.utcDate}</Fixture>
+                        <Fixture>Game Time: {moment(fixtures.utcDate).format('MMMM Do YYYY, h:mm a')} ~ {' '}{moment(fixtures.utcDate).endOf('hour').fromNow()}</Fixture>
                     </div>
                 }
             </div>

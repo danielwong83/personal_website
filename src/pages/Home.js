@@ -26,7 +26,9 @@ import {HomeColor,
         RamosSticker,
         DogeSticker,
         ElonSticker,
-        LeagueSticker} from '../styles/Home.style'
+        LeagueSticker,
+        AlcarazSticker,
+        ChecoSticker} from '../styles/Home.style'
 
 
 import {useSpring} from 'react-spring'
@@ -43,6 +45,8 @@ import ramos from '../images/stickers/ramos.png'
 import doge from '../images/stickers/doge.png'
 import elon from '../images/stickers/elon.png'
 import league from '../images/stickers/league.png'
+import checo from '../images/stickers/perez.png'
+import alcaraz from '../images/stickers/alcaraz.png'
 
 
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
@@ -75,13 +79,8 @@ const Home = () => {
 
                     <LeftSide>
                       <Name>Daniel WONG</Name>
-
                       <Student>Financial Engineering Student </Student>
-
                       <Email>daniel.wong121@imperial.ac.uk</Email>
-
-
-
 
                     </LeftSide>
                     
@@ -89,22 +88,16 @@ const Home = () => {
                       <ImpierialPhoto src = {imperialphoto}/>
 
                       <ImperialCollegeArea>
-
                           <ImperialCollege>Imperial College</ImperialCollege>
                           <London>London</London>
                       </ImperialCollegeArea>
                     </RightSide>
                     
-
                     </Main>
 
                     <Bottom>
                       <WhiteWords>© Daniel Wong</WhiteWords>
                     </Bottom>
-
-
-
-
 
             </IndexCard>
 
@@ -118,20 +111,17 @@ const Home = () => {
 
                     <ChelseaSticker src = {chelsea}/>
                     <ChessSticker src = {chess}/>
-
                     <DwightSticker src = {schrute}/>
                     <GuitarSticker src = {guitar}/>
                     <MaxSticker src = {max}/>
-
                     <NgoloSticker src = {ngolo}/>
-
-
                     <DogeSticker src = {doge}/>
                     <ElonSticker src = {elon}/>
-
                     <LeagueSticker src = {league}/>
-
                     <RamosSticker src = {ramos}/>
+                    <AlcarazSticker src = {alcaraz}/>
+                    <ChecoSticker src = {checo}/>
+
 
                     <Bottom>
                       <WhiteWordsBack>"Who's your worm guy?" - Creed Bratton</WhiteWordsBack>

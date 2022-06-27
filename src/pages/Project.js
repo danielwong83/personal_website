@@ -13,6 +13,8 @@ import {HomeColor,
         ProjectPhotoTwo, 
         ProjectContent, 
         FeaturesContent,
+        FeaturesWrapper,
+        FeaturesPhoto,
         Description,
         DescriptionWebsite,
         ListValue,
@@ -21,6 +23,7 @@ import {HomeColor,
         ScraperPhoto,
         CurrentWord,
         FootballPhoto,
+        NBAPhoto,
         ATag,
         ATagTwo} from '../styles/Project.style'
 
@@ -31,6 +34,11 @@ import football from '../images/football.svg'
 import webscraping from '../images/webscraping.svg'
 import maze from '../images/maze.svg'
 import turtle from '../images/turtle.svg'
+import chess from '../images/chess-board.svg'
+import chelsea from '../images/chelsea.svg'
+import home_page from '../images/home-page.svg'
+import about_photos from '../images/about-photos.svg'
+import nba from '../images/nba.png'
 
 
 const dashboardlink = "https://sndw1.shinyapps.io/dashboard/"
@@ -47,6 +55,18 @@ const Project = () => {
                 <CurrentWord>Current Projects</CurrentWord>
 
                 <ProjectWrapper>
+                    
+                    <IndividualProject>
+                        <NBAPhoto src = {nba}/>
+                            <ProjectContent>
+                                <ProjectName><ATag href= "/"> Systematic Spread Trading in the NBA Betting Market</ATag></ProjectName> 
+                                <Description>To create a prediction model that can calculate the spread between two teams.</Description>
+                                <Description>Languages: Python (for analysis + modelling)</Description>
+                                <Description></Description>
+                                <Updates>Current Status: Reading Relevant Papers + Model Creation Stage (Logit Model)</Updates>    
+                            </ProjectContent>
+                    </IndividualProject>
+
                     <IndividualProject>
                         <FootballPhoto src = {football}/>
                             <ProjectContent>
@@ -91,7 +111,12 @@ const Project = () => {
                                 <ListValue>{'\u2022'} drew inspiration from my elementary days, when my name was written on index cards</ListValue>
                                 <ListValue>{'\u2022'} quote by one of my favorite characters from my favorite tv show</ListValue>
                             </DescriptionWebsite>
-                            <Updates>Last Updated: May 2022 (Current Version 2.1)</Updates>    
+                            <DescriptionWebsite> Current Version 
+                                <ListValue>{'\u2022'} name on a flippable and hooverable index card</ListValue>
+                                <ListValue>{'\u2022'} flipped side are stickers of my hobbies + interests</ListValue>
+                                <ListValue>{'\u2022'} quote by one of my favorite characters from my favorite tv show</ListValue>
+                            </DescriptionWebsite>
+                            <Updates>Last Updated: June 2022 (Current Version 2.1)</Updates>    
                         </ProjectContent>
                                           
                     </IndividualProject2Website>
@@ -146,13 +171,46 @@ const Project = () => {
                 <ProjectWord>Website Features</ProjectWord>
                 
                 <ProjectWrapper>
+
                     <IndividualProject3>
+
                     <FeaturesContent>
-                            <Description><ATag href= "/">Homepage</ATag>- hooverable + flippable name card</Description>
-                            <Description><ATag href= "/#/chelsea">Chelsea </ATag>- movable player objects, upcoming schedule API</Description>
-                            <Description><ATag href= "/#/chess">Chess</ATag></Description>
-                            <Description><ATag href= "/#/aboutphotos">About Photos</ATag>- create animation from photos to about me page</Description>
-                        </FeaturesContent>
+
+                            <FeaturesWrapper>
+
+                                <ATag href= "/"><FeaturesPhoto src = {home_page}/></ATag>
+
+                                <Description>Homepage - hooverable, flippable name card</Description>
+
+                            </FeaturesWrapper>
+
+
+                            <FeaturesWrapper>
+
+                                <ATag href= "/#/chelsea"><FeaturesPhoto src = {chelsea}/></ATag>
+
+                                <Description>Chelsea - draggable player objects and upcoming fixture</Description>
+
+                            </FeaturesWrapper>
+
+                            <FeaturesWrapper>
+
+                                <ATag href= "/#/chess"><FeaturesPhoto src = {chess}/></ATag>
+
+                                <Description>Chess - current chess ratings, favorite game, and rating history</Description>
+
+                            </FeaturesWrapper>
+
+                            <FeaturesWrapper>
+
+                                <ATag href= "/#/aboutphotos"><FeaturesPhoto src = {about_photos}/></ATag>
+
+                                <Description>About Photos - animation preparation for about page (no use for now) </Description>
+
+                            </FeaturesWrapper>
+
+
+                    </FeaturesContent>
             
                     </IndividualProject3>
                 </ProjectWrapper>

@@ -1,7 +1,8 @@
-import React, {useState} from 'react'
+import React, {useState, Component} from 'react'
 import ChessStats from '../components/ChessStats'
 import ChessCurrentGame from '../components/ChessCurrentGame'
 import ChessBlitzHistory from '../components/ChessBlitzHistory'
+
 
 import {HomeColor,
         ChessWord,
@@ -14,7 +15,8 @@ import {HomeColor,
         FavChessGame,
         FavChessGameText,
         LiveGameText,
-        Profile
+        Profile,
+        GraphWrapper
         } from '../styles/Chess.style'
 
 const chess_link = "https://lichess.org/@/danielwong4"
@@ -78,7 +80,12 @@ function Chess() {
         </Content>
 
         <Content active={active === 2}>
-          <ChessBlitzHistory/>
+          <GraphWrapper>
+            
+            <ChessBlitzHistory/>
+
+          </GraphWrapper>
+          
         </Content>
 
         </BoardWrapper>
