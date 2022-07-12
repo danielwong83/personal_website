@@ -13,12 +13,13 @@ export const IndividualStat = styled.div`
     display: flex;
     position: relative;
     background: rgba(63, 191, 191, 0.18);
-    width: 50%;
+    width: 175px;
     border-radius: 25px;
     height: 130px;
     flex-direction: column;
     align-items: center;
     margin-bottom: 15px;
+    padding: 15px;
 `
 
 export const Statistics = styled.h1`

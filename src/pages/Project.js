@@ -33,7 +33,6 @@ import websitephoto from '../images/website.svg'
 import football from '../images/football.svg'
 import webscraping from '../images/webscraping.svg'
 import maze from '../images/maze.svg'
-import turtle from '../images/turtle.svg'
 import chess from '../images/chess-board.svg'
 import chelsea from '../images/chelsea.svg'
 import home_page from '../images/home-page.svg'
@@ -63,7 +62,7 @@ const Project = () => {
                                 <Description>To create a prediction model that can calculate the spread between two teams.</Description>
                                 <Description>Languages: Python (for analysis + modelling)</Description>
                                 <Description></Description>
-                                <Updates>Current Status: Reading Relevant Papers + Model Creation Stage (Logit Model)</Updates>    
+                                <Updates>Current Status: Reading Relevant Papers + Model Creation Stage (Logit Model)</Updates>
                             </ProjectContent>
                     </IndividualProject>
 
@@ -101,6 +100,7 @@ const Project = () => {
                             <Description>A fun little JavaScript React project I created with no prior experience.</Description>
                             <Description>Languages: JavaScript (React), HTML</Description>  
                             <Description>Future Plans: use Threejs to create a home scenario; to optimise for mobile device</Description>
+                            <Description>Mini Updates: Home Page + toolbar are currently responsive</Description>
                             <Description>Previous Home Page Progression and Features:  </Description>
                             <DescriptionWebsite><ATagTwo href= "/#/home_vers_1">V1.0 </ATagTwo>
                                 <ListValue>{'\u2022'} name with mountain and moveable stickman</ListValue>
@@ -111,12 +111,18 @@ const Project = () => {
                                 <ListValue>{'\u2022'} drew inspiration from my elementary days, when my name was written on index cards</ListValue>
                                 <ListValue>{'\u2022'} quote by one of my favorite characters from my favorite tv show</ListValue>
                             </DescriptionWebsite>
-                            <DescriptionWebsite> Current Version 
+
+                            <DescriptionWebsite><ATagTwo href= "/#/home_vers_3">V2.2 </ATagTwo> 
                                 <ListValue>{'\u2022'} name on a flippable and hooverable index card</ListValue>
                                 <ListValue>{'\u2022'} flipped side are stickers of my hobbies + interests</ListValue>
                                 <ListValue>{'\u2022'} quote by one of my favorite characters from my favorite tv show</ListValue>
                             </DescriptionWebsite>
-                            <Updates>Last Updated: June 2022 (Current Version 2.1)</Updates>    
+
+                            <DescriptionWebsite> Current Version 
+                                <ListValue>{'\u2022'} 3d avatar of me waving + welcoming you to my website</ListValue>
+
+                            </DescriptionWebsite>
+                            <Updates>Last Updated: July 2022 (Current Version 3.0)</Updates>    
                         </ProjectContent>
                                           
                     </IndividualProject2Website>

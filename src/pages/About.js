@@ -16,7 +16,8 @@ import {AboutMe,
         ChelseaTag,
         ResumeTag,
         PortraitWrapper,
-        PhotoWrapper} from '../styles/About.style'
+        PhotoWrapper,
+        ContentWrapper} from '../styles/About.style'
 
 import resume from '../files/resume.pdf'
 import portrait from '../images/portrait-beach-blue.png'
@@ -69,13 +70,13 @@ class About extends Component{
     return (
         <HomeColor>
 
+          <ContentWrapper>
 
-            <AboutMeWrapper>
+          <AboutMeWrapper>
                 <AboutMe>About Me</AboutMe>
                 <DescriptionOne>Hi, my name's Daniel, I'm from Hong Kong and I'm currently studying a Masters in Risk
                 Management and Financial Engineering at Imperial College London. I am interested in internship and graduate
-                positions in quant trading, research and data science.</DescriptionOne>
-                
+                positions in data science and engineering as well as quant trading and developing.</DescriptionOne>
                 
                 <DescriptionTwo>Some fun facts about me:</DescriptionTwo>
                 <ListValue>{'\u2022'} Favorite football team is <ChelseaTag href= "/#/chelsea">Chelsea</ChelseaTag>. KTBFFH. </ListValue>
@@ -105,8 +106,11 @@ class About extends Component{
                 
             </PortraitWrapper>
 
-        
+          </ContentWrapper>
 
+            
+
+  
         </HomeColor>
     )
 

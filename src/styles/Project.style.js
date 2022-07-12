@@ -18,7 +18,7 @@ export const MainWrapper = styled.div`
     flex-direction: column;
     text-align: left;
     width: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
 `
 
 export const CurrentWord = styled.h1`
@@ -57,6 +57,7 @@ export const IndividualProject = styled.div`
     border-radius: 25px;
     margin-bottom: 25px;
     height: 260px;
+    overflow: auto;
 `
 
 export const IndividualProject2 = styled.div`
@@ -69,6 +70,7 @@ export const IndividualProject2 = styled.div`
     border-radius: 25px;
     margin-bottom: 25px;
     height: 260px;
+    overflow: auto;
 `
 
 export const IndividualProject2Website = styled.div`
@@ -80,7 +82,8 @@ export const IndividualProject2Website = styled.div`
     justify-content: left;
     border-radius: 25px;
     margin-bottom: 25px;
-    height: 750px;
+    height: 800px;
+    overflow: auto;
 `
 
 export const IndividualProject3 = styled.div`
@@ -174,6 +177,7 @@ export const ProjectContent = styled.div`
     position: relative;
     text-align: left;
     flex-direction: column;
+    padding-right: 20px;
 `
 
 export const FeaturesContent = styled.div`
@@ -182,6 +186,8 @@ export const FeaturesContent = styled.div`
     flex-direction: column;
     margin-top: 25px;
     margin-left: 30px;
+    text-align: left;
+    overflow: auto;
 `
 
 export const FeaturesWrapper = styled.div`
@@ -190,6 +196,8 @@ export const FeaturesWrapper = styled.div`
     align-items: center;
     text-align: center;
     flex-direction: row;
+    text-align: left;
+    
 `
 
 export const FeaturesPhoto = styled.img`
@@ -213,6 +221,16 @@ export const Description = styled.p`
     display: flex;
 `
 
+export const Updates = styled.p`
+    font-family: 'PT Sans';
+    font-size: 19px;
+    color: #B7B7B7;
+    display: flex;
+    margin: 0px;
+    margin-top: 15px;
+    padding-bottom: 20px;
+`
+
 export const DescriptionWebsite = styled.p`
     font-family: 'PT Sans';
     font-size: 19px;
@@ -234,14 +252,7 @@ export const ListValue = styled.p`
     margin-left: 10px;
 `
 
-export const Updates = styled.p`
-    font-family: 'PT Sans';
-    font-size: 19px;
-    color: #B7B7B7;
-    margin: 0px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-`
+
 
 export const ATag = styled.a`
     display: flex;

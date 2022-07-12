@@ -10,8 +10,8 @@ import Chess from './pages/Chess'
 import AboutPortraits from './pages/AboutPortraits'
 import HomeVersionOne from './pages/HomeVersionOne'
 import HomeVersionTwo from './pages/HomeVersionTwo'
-
-import Fixture from './components/ChelseaFixture'
+import HomeVersionThree from './pages/HomeVersionThree'
+import WaveObject from './pages/WaveObject'
 
 import NavBar from './components/Navbar'
 
@@ -35,8 +35,10 @@ function App() {
           <Route path="project" element={<Project />}></Route>
           <Route path="chelsea" element={<Chelsea />}></Route>
           <Route path="chess" element={<Chess />}></Route>
+          <Route path="wave" element={<WaveObject />}></Route>
           <Route path="home_vers_1" element={<HomeVersionOne/>}></Route>
           <Route path="home_vers_2" element={<HomeVersionTwo/>}></Route>
+          <Route path="home_vers_3" element={<HomeVersionThree/>}></Route>
         </Routes>
       </div>
     </div>

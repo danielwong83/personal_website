@@ -1,82 +1,165 @@
 import styled from 'styled-components'
 
 export const HomeColor = styled.div`
-    background-color: #fffcf4;
+    background-color: white;
     display: flex;
+    flex-direction: row;
     height: calc( 100vh - 92px);
+    overflow: scroll;
     position: relative;
-    overflow: hidden;
-    overflow-y: scroll;
-    z-index: 1
+`
+
+export const ContentWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    @media (max-width: 768px){
+        flex-direction: column;
+    }
 `
 
 export const AboutMeWrapper = styled.div`
     display: flex;
-    position: relative;
-    margin-left: 75px;
-    margin-top: 40px;
+    margin-left: 4%;
+    margin-top: 2%;
     flex-direction: column;
     text-align: left;
     width: 47%;
-`
 
-export const PortraitWrapper = styled.div`
-    display: flex;
-    position: relative;
-    margin-top: 20px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 53%
+    @media (max-width: 768px){
+        width: 93vw;
+    }
 `
 
 export const AboutMe = styled.h1`
-    font-family: 'PT Sans';
+    font-family: 'Raleway';
     font-size: 51px;
     color: black;
     margin: 0;
+
+    @media (max-width: 400px){
+        font-size: 35px;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        font-size: 40px;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 45px;
+    }
 `
 
 export const DescriptionOne = styled.p`
-    font-family: 'PT Sans';
+    font-family: 'Raleway';
     font-size: 21px;
     color: black;
     margin-top: 12px;
+
+    @media (max-width: 400px){
+        font-size: 12px;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        font-size: 14px;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 16px;
+    }
 `
 
 export const DescriptionTwo = styled.p`
-    font-family: 'PT Sans';
+    font-family: 'Raleway';
     font-size: 21px;
     color: black;
     margin-top: 10px;
     margin-bottom: 10px;
+
+    @media (max-width: 400px){
+        font-size: 12px;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        font-size: 14px;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 16px;
+    }
 `
 
 export const ListValue = styled.p`
-    font-family: 'PT Sans';
+    font-family: 'Raleway';
     font-size: 21px;
     color: black;
     margin-top: 0px;
     margin-bottom: 10px;
     margin-left: 10px;
+
+    @media (max-width: 400px){
+        font-size: 12px;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        font-size: 14px;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 16px;
+    }
+`
+
+
+export const PortraitWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53%;
+
+    @media (max-width: 768px){
+        margin: 0px;
+        margin-top: 40px;
+        padding-bottom: 25px;
+        width: 100vw;
+    }
 `
 
 export const PhotoWrapper = styled.div`
-background: rgba(63, 191, 191, 0.18);
-    width: 50%;
+    background: rgba(198, 255, 255, 0.6);
     border-radius: 25px;
-    margin-bottom: 25px;
-    height: auto;
+    height: 65%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 768px){
+        height: auto;
+        width: auto;
+    }
+
 `
 
 export const Portrait = styled.img`
-    width: 88%;
-    height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    height: 100%;
+    width: auto;
     border-radius: 25px;
     filter: contrast(105%);
     user-select: none;
+
+    @media (max-width: 400px){
+        height: 35vh;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        height: 45vh;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        height: 55vh;
+    }
+
 `
 
 export const SocialWrapper = styled.div`
