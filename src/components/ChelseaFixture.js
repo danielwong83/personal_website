@@ -41,18 +41,14 @@ class ChelseaFixture extends Component {
         return (
             this.state.data.map((fixtures) =>
 
-            
-
             <div>
                 {
                     <div>
 
-                        
-
                         {fixtures.homeTeam.name === "Chelsea FC"? <Fixture>Next Fixture: {fixtures.awayTeam.name} (Home)</Fixture>
                         : <Fixture>Next Fixture: {fixtures.homeTeam.name} (Away)</Fixture>}
 
-                        <Fixture>Game Time: {moment(fixtures.utcDate).format('MMMM Do YYYY, h:mm a')} ~ {' '}{moment(fixtures.utcDate).endOf('hour').fromNow()}</Fixture>
+                        <Fixture>Game Time: {moment(fixtures.utcDate).format('MMMM Do YYYY, h:mm a')} - {' '}{moment(fixtures.utcDate).endOf('hour').fromNow()}</Fixture>
                     </div>
                 }
             </div>

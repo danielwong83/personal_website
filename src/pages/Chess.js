@@ -1,4 +1,4 @@
-import React, {useState, Component} from 'react'
+import React, {useState} from 'react'
 import ChessStats from '../components/ChessStats'
 import ChessCurrentGame from '../components/ChessCurrentGame'
 import ChessBlitzHistory from '../components/ChessBlitzHistory'
@@ -6,8 +6,7 @@ import ChessBlitzHistory from '../components/ChessBlitzHistory'
 
 import {HomeColor,
         ChessWord,
-        BottomWrapper,
-        StatsWrapper,
+        LeftWrapper,
         BoardWrapper,
         Tabs,
         Tab,
@@ -16,7 +15,8 @@ import {HomeColor,
         FavChessGameText,
         LiveGameText,
         Profile,
-        GraphWrapper
+        GraphWrapper,
+        ContentWrapper,
         } from '../styles/Chess.style'
 
 const chess_link = "https://lichess.org/@/danielwong4"
@@ -34,69 +34,54 @@ function Chess() {
   return (
     <HomeColor>
 
-      <ChessWord>Chess Stats</ChessWord>
+      <ContentWrapper>
 
-      <BottomWrapper>
-      
-        <StatsWrapper>
+        <LeftWrapper>
 
+          <ChessWord>Chess Stats</ChessWord>
           <ChessStats/>
-
           <Profile href={chess_link} target='_blank' rel='noopener noreferrer'> See Full Profile </Profile>
           
-
-        </StatsWrapper>
-
-
-
+        </LeftWrapper>
 
         <BoardWrapper>
 
-        <Tabs>
-          <Tab onClick={handleClick} active={active === 0} id={0}>
-            Favorite Game
-          </Tab>
+          <Tabs>
+            <Tab onClick={handleClick} active={active === 0} id={0}>
+              Favorite Game
+            </Tab>
 
-          <Tab onClick={handleClick} active={active === 1} id={1}>
-            Live Game
-          </Tab>
+            <Tab onClick={handleClick} active={active === 1} id={1}>
+              Live Game
+            </Tab>
 
-          <Tab onClick={handleClick} active={active === 2} id={2}>
-            Blitz Rating Graph
-          </Tab>
-        </Tabs>
+            <Tab onClick={handleClick} active={active === 2} id={2}>
+              Blitz Rating Graph
+            </Tab>
+          </Tabs>
 
 
-        <Content active={active === 1}>
-          <LiveGameText>~not playing at the current moment. come back later</LiveGameText>
-          <ChessCurrentGame/>
-        </Content>
-
-        <Content active={active === 0}>
-          <FavChessGameText>
-            My most accurate game played according to engine: 0 inaccuracies, 0 mistakes, 0 blunders, and an average centipawn lost of 15. 
-          </FavChessGameText>
-          <FavChessGame src="https://lichess.org/embed/yHOicQND?theme=blue&bg=light"></FavChessGame>
-        </Content>
-
-        <Content active={active === 2}>
-          <GraphWrapper>
+          <Content active={active === 1}>
             
-            <ChessBlitzHistory/>
+            <ChessCurrentGame/>
 
-          </GraphWrapper>
-          
-        </Content>
+          </Content>
+
+          <Content active={active === 0}>
+            <FavChessGameText>
+              My most accurate game played according to engine: 0 inaccuracies, 0 mistakes, 0 blunders, and an average centipawn lost of 15. 
+            </FavChessGameText>
+            <FavChessGame src="https://lichess.org/embed/yHOicQND?theme=blue&bg=light"></FavChessGame>
+          </Content>
+
+          <Content active={active === 2}>
+            <LiveGameText>Feature Currently Unavailable</LiveGameText>
+            {/* <ChessBlitzHistory/> */}
+          </Content>
 
         </BoardWrapper>
 
-      </BottomWrapper>
-
-      
-
-      
-
-
+      </ContentWrapper>
 
     </HomeColor>
   );

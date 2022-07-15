@@ -28,10 +28,14 @@ import {HomeColor,
         LeagueSticker,
         AlcarazSticker,
         ChecoSticker,
-        VersionTwo,
+        VersionThree,
         IndexCardArea,
         PreviousPage,
-        Words} from '../styles/HomeVersionThree.style'
+        Words,
+        Everything,
+        UnavailableWords,
+        UnavailableWrapper,
+        Suggestion} from '../styles/HomeVersionThree.style'
 
 
 import {useSpring} from 'react-spring'
@@ -69,87 +73,87 @@ const Home = () => {
     
             <HomeColor>
 
-            <Words>
-            <VersionTwo>Version 2.2 </VersionTwo>
-            <PreviousPage href= "/#/project"> Previous Page</PreviousPage>
-            
-            </Words>
-            
-            <IndexCardArea>
+              <Words>
+                <VersionThree>Version 2.2 </VersionThree>
+                <PreviousPage href= "/#/project"> Previous Page</PreviousPage>
+              </Words>
 
-            <IndexCardWrapper onClick={() => set(state => !state)}
-            onMouseMove={({clientX: x, clientY: y}) => (setflip({xys: calc(x,y)}))}
-            onMouseLeave={() => (setflip({xys: [0,0,1]}))}
-            style={{transform: props.xys.interpolate(trans)}}>
+              <UnavailableWrapper>
+                  <UnavailableWords>Sorry, this feature is not supported for this current device. Please use another device to view this feature.  </UnavailableWords>
+                  <Suggestion>(Works better on laptops and desktops)</Suggestion>
+              </UnavailableWrapper>
 
-            <IndexCard
-            style={{ opacity: opacity.to(o => 1 - o), transform }}>
+              <Everything>
+              
+                <IndexCardArea>
 
+                  <IndexCardWrapper onClick={() => set(state => !state)}
+                  onMouseMove={({clientX: x, clientY: y}) => (setflip({xys: calc(x,y)}))}
+                  onMouseLeave={() => (setflip({xys: [0,0,1]}))}
+                  style={{transform: props.xys.interpolate(trans)}}>
 
-                    <Main>
+                    <IndexCard
+                    style={{ opacity: opacity.to(o => 1 - o), transform }}>
 
-                    <LeftSide>
-                      <Name>Daniel WONG</Name>
-                      <Student>Financial Engineering Student </Student>
-                      <Email>daniel.wong121@imperial.ac.uk</Email>
+                        <Main>
 
-                    </LeftSide>
-                    
-                    <RightSide>
-                      <ImpierialPhoto src = {imperialphoto}/>
+                          <LeftSide>
+                            <Name>Daniel WONG</Name>
+                            <Student>Financial Engineering Student </Student>
+                            <Email>daniel.wong121@imperial.ac.uk</Email>
+                          </LeftSide>
+                        
+                          <RightSide>
+                            <ImpierialPhoto src = {imperialphoto}/>
+                            <ImperialCollegeArea>
+                                <ImperialCollege>Imperial College</ImperialCollege>
+                                <London>London</London>
+                            </ImperialCollegeArea>
+                          </RightSide>
+                        
+                        </Main>
 
-                      <ImperialCollegeArea>
-                          <ImperialCollege>Imperial College</ImperialCollege>
-                          <London>London</London>
-                      </ImperialCollegeArea>
-                    </RightSide>
-                    
-                    </Main>
+                        <Bottom>
+                          <WhiteWords>© Daniel Wong</WhiteWords>
+                        </Bottom>
 
-                    <Bottom>
-                      <WhiteWords>© Daniel Wong</WhiteWords>
-                    </Bottom>
+                    </IndexCard>
 
-            </IndexCard>
-
-            <IndexCard
-            style={{
-                opacity,
-                transform,
-                rotateY: '180deg',
-              }}>
-
-
-                    <ChelseaSticker src = {chelsea}/>
-                    <ChessSticker src = {chess}/>
-                    <DwightSticker src = {schrute}/>
-                    <GuitarSticker src = {guitar}/>
-                    <MaxSticker src = {max}/>
-                    <NgoloSticker src = {ngolo}/>
-                    <DogeSticker src = {doge}/>
-                    <ElonSticker src = {elon}/>
-                    <LeagueSticker src = {league}/>
-                    <RamosSticker src = {ramos}/>
-                    <AlcarazSticker src = {alcaraz}/>
-                    <ChecoSticker src = {checo}/>
+                    <IndexCard
+                        style={{
+                        opacity,
+                        transform,
+                        rotateY: '180deg'}}>
 
 
-                    <Bottom>
-                      <WhiteWordsBack>"Who's your worm guy?" - Creed Bratton</WhiteWordsBack>
-                    </Bottom>
+                        <ChelseaSticker src = {chelsea}/>
+                        <ChessSticker src = {chess}/>
+                        <DwightSticker src = {schrute}/>
+                        <GuitarSticker src = {guitar}/>
+                        <MaxSticker src = {max}/>
+                        <NgoloSticker src = {ngolo}/>
+                        <DogeSticker src = {doge}/>
+                        <ElonSticker src = {elon}/>
+                        <LeagueSticker src = {league}/>
+                        <RamosSticker src = {ramos}/>
+                        <AlcarazSticker src = {alcaraz}/>
+                        <ChecoSticker src = {checo}/>
 
 
+                        <Bottom>
+                          <WhiteWordsBack>"Who's your worm guy?" - Creed Bratton</WhiteWordsBack>
+                        </Bottom>
 
-            </IndexCard>
+                    </IndexCard>
 
-            </IndexCardWrapper>
+                  </IndexCardWrapper>
 
-            </IndexCardArea>
+                </IndexCardArea>
+
+              </Everything>
             
             </HomeColor>
 
-  
-        
       );
     }
   

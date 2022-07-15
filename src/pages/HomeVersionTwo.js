@@ -22,7 +22,11 @@ import {HomeColor,
         VersionTwo,
         IndexCardArea,
         PreviousPage,
-        Words} from '../styles/HomeVersionTwo.style'
+        Words,
+        Everything,
+        UnavailableWords,
+        UnavailableWrapper,
+        Suggestion} from '../styles/HomeVersionTwo.style'
 
 
 import {useSpring} from 'react-spring'
@@ -47,136 +51,130 @@ const Home = () => {
             
             <HomeColor>
             
-            <Words>
-            <VersionTwo>Version 2.0 </VersionTwo>
-            <PreviousPage href= "/#/project"> Previous Page</PreviousPage>
-            
-            </Words>
-            
-            <IndexCardArea>
+                <Words>
+                    <VersionTwo>Version 2.0 </VersionTwo>
+                    <PreviousPage href= "/#/project"> Previous Page</PreviousPage>
+                </Words>
 
-            <IndexCardWrapper onClick={() => set(state => !state)}
-            onMouseMove={({clientX: x, clientY: y}) => (setflip({xys: calc(x,y)}))}
-            onMouseLeave={() => (setflip({xys: [0,0,1]}))}
-            style={{transform: props.xys.interpolate(trans)}}>
+                <UnavailableWrapper>
+                    <UnavailableWords>Sorry, this feature is not supported for this current device. Please use another device to view this feature. </UnavailableWords>
+                    <Suggestion>(Works better on laptops and desktops)</Suggestion>
+                </UnavailableWrapper>
 
-            <IndexCard
-            style={{ opacity: opacity.to(o => 1 - o), transform }}>
+                <Everything>
+                
+                    <IndexCardArea>
 
-                <IndexCardCircle/>
+                        <IndexCardWrapper onClick={() => set(state => !state)}
+                        onMouseMove={({clientX: x, clientY: y}) => (setflip({xys: calc(x,y)}))}
+                        onMouseLeave={() => (setflip({xys: [0,0,1]}))}
+                        style={{transform: props.xys.interpolate(trans)}}>
 
-                    
-                    <Lines>
-                        <NewLineRed>
-                            <IndexCardRed/>
-                        </NewLineRed>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                    </Lines>
+                            <IndexCard
+                            style={{ opacity: opacity.to(o => 1 - o), transform }}>
 
-                    
-                    <Name>Daniel Wong</Name>
+                                <IndexCardCircle/>
 
-                    <StudentWrapper>
-                        <Student>Financial Engineering at </Student>
+                                <Lines>
+                                    <NewLineRed>
+                                        <IndexCardRed/>
+                                    </NewLineRed>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                </Lines>
+                                    
+                                <Name>Daniel Wong</Name>
 
-                    <ImperialCollegeArea>
-                        <ImperialCollege>Imperial College</ImperialCollege>
-                        <London>London</London>
-                    </ImperialCollegeArea>
+                                <StudentWrapper>
 
-                    </StudentWrapper>
+                                    <Student>Financial Engineering at </Student>
 
+                                    <ImperialCollegeArea>
+                                        <ImperialCollege>Imperial College</ImperialCollege>
+                                        <London>London</London>
+                                    </ImperialCollegeArea>
 
+                                </StudentWrapper>
 
+                            </IndexCard>
 
+                            <IndexCard
+                            style={{
+                                opacity,
+                                transform,
+                                rotateY: '180deg'}}>
 
-            </IndexCard>
+                                <IndexCardCircleBack/>
 
-            <IndexCard
-            style={{
-                opacity,
-                transform,
-                rotateY: '180deg',
-              }}>
+                                <Lines>
+                                    <NewLineRed>
+                                        <IndexCardRed/>
+                                    </NewLineRed>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                    <NewLine>
+                                        <IndexCardBlue/>
+                                    </NewLine>
+                                </Lines>
 
-                <IndexCardCircleBack/>
+                                <FlipWord>HEYY! 😡 flip me back</FlipWord>
 
-                    
-                    <Lines>
-                        <NewLineRed>
-                            <IndexCardRed/>
-                        </NewLineRed>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                        <NewLine>
-                            <IndexCardBlue/>
-                        </NewLine>
-                    </Lines>
+                                <Quote>"Who's your worm guy?" - Creed Bratton</Quote>
 
-                    
+                            </IndexCard>
 
+                        </IndexCardWrapper>
 
-                    <FlipWord>HEYY! 😡 flip me back</FlipWord>
+                    </IndexCardArea>
 
-                    <Quote>"Who's your worm guy?" - Creed Bratton</Quote>
-
-
-
-            </IndexCard>
-
-            </IndexCardWrapper>
-
-            </IndexCardArea>
-
-            
+                </Everything>
 
             </HomeColor>
         

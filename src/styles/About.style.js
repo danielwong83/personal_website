@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 
+
+
+//div formatting
+
 export const HomeColor = styled.div`
     background-color: white;
     display: flex;
     flex-direction: row;
     height: calc( 100vh - 92px);
-    overflow: scroll;
+    overflow-y: auto;
     position: relative;
 `
 
@@ -13,6 +17,7 @@ export const ContentWrapper = styled.div`
     display: flex;
     flex-direction: row;
     position: relative;
+    width: 100%;
 
     @media (max-width: 768px){
         flex-direction: column;
@@ -31,86 +36,6 @@ export const AboutMeWrapper = styled.div`
         width: 93vw;
     }
 `
-
-export const AboutMe = styled.h1`
-    font-family: 'Raleway';
-    font-size: 51px;
-    color: black;
-    margin: 0;
-
-    @media (max-width: 400px){
-        font-size: 35px;
-    }
-
-    @media (min-width: 401px) and (max-width: 600px){
-        font-size: 40px;
-    }
-
-    @media (min-width: 601px) and (max-width: 768px){
-        font-size: 45px;
-    }
-`
-
-export const DescriptionOne = styled.p`
-    font-family: 'Raleway';
-    font-size: 21px;
-    color: black;
-    margin-top: 12px;
-
-    @media (max-width: 400px){
-        font-size: 12px;
-    }
-
-    @media (min-width: 401px) and (max-width: 600px){
-        font-size: 14px;
-    }
-
-    @media (min-width: 601px) and (max-width: 768px){
-        font-size: 16px;
-    }
-`
-
-export const DescriptionTwo = styled.p`
-    font-family: 'Raleway';
-    font-size: 21px;
-    color: black;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-    @media (max-width: 400px){
-        font-size: 12px;
-    }
-
-    @media (min-width: 401px) and (max-width: 600px){
-        font-size: 14px;
-    }
-
-    @media (min-width: 601px) and (max-width: 768px){
-        font-size: 16px;
-    }
-`
-
-export const ListValue = styled.p`
-    font-family: 'Raleway';
-    font-size: 21px;
-    color: black;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-
-    @media (max-width: 400px){
-        font-size: 12px;
-    }
-
-    @media (min-width: 401px) and (max-width: 600px){
-        font-size: 14px;
-    }
-
-    @media (min-width: 601px) and (max-width: 768px){
-        font-size: 16px;
-    }
-`
-
 
 export const PortraitWrapper = styled.div`
     display: flex;
@@ -138,8 +63,129 @@ export const PhotoWrapper = styled.div`
         height: auto;
         width: auto;
     }
-
 `
+
+
+export const SocialWrapper = styled.div`
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 5px;
+    padding-bottom: 20px;
+
+    @media (max-width: 600px){
+        margin-top: 10px;
+    }
+`
+
+
+//text formatting
+
+
+export const AboutMe = styled.h1`
+    font-family: 'Raleway';
+    font-size: 51px;
+    color: black;
+    margin: 0;
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 400px){
+        font-size: 35px;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        font-size: 40px;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 45px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        font-size: 48px;
+    }
+`
+
+export const DescriptionOne = styled.p`
+    font-family: 'Raleway';
+    font-size: 21px;
+    color: black;
+    margin-top: 12px;
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 400px){
+        font-size: 12px;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        font-size: 14px;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 16px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        font-size: 18px;
+    }
+`
+
+export const DescriptionTwo = styled.p`
+    font-family: 'Raleway';
+    font-size: 21px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 400px){
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 16px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        font-size: 18px;
+    }
+`
+
+export const ListValue = styled.p`
+    font-family: 'Raleway';
+    font-size: 21px;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 400px){
+        font-size: 12px;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        font-size: 14px;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 16px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        font-size: 18px;
+    }
+`
+
+
+//image formatting
+
 
 export const Portrait = styled.img`
     height: 100%;
@@ -162,13 +208,6 @@ export const Portrait = styled.img`
 
 `
 
-export const SocialWrapper = styled.div`
-    display: flex;
-    position: relative;
-    margin-top: 20px;
-    margin-left: 5px;
-    padding-bottom: 20px;
-`
 
 export const GmailImg = styled.img`
     height: 33px;
@@ -180,7 +219,12 @@ export const GmailImg = styled.img`
         opacity: 1;
         filter: grayscale(0%) contrast(115%);
     }
-    
+
+    @media (max-width: 600px){
+        height: 29px;
+        width: 29px;
+    }
+
 `
 export const LinkedinImg = styled.img`
     height: 25px;
@@ -191,6 +235,11 @@ export const LinkedinImg = styled.img`
     &:hover {
         opacity: 1;
         filter: grayscale(0%) contrast(160%);
+    }
+
+    @media (max-width: 600px){
+        height: 21px;
+        width: 21px;
     }
 `
 
@@ -205,6 +254,11 @@ export const LichessImg = styled.img`
         opacity: 1;
         filter: grayscale(0%);
     }
+
+    @media (max-width: 600px){
+        height: 23px;
+        width: 23px;
+    }
 `
 
 export const GithubImg = styled.img`
@@ -218,17 +272,25 @@ export const GithubImg = styled.img`
         opacity: 1;
         filter: grayscale(0%);
     }
+
+    @media (max-width: 600px){
+        height: 22px;
+        width: 22px;
+    }
 `
+
+
+//hyperlink formatting
 
 export const ATag = styled.a`
     display: flex;
 `
 
 export const ChelseaTag = styled.a`
-    color: #575c85;
+    color: #004495;
     text-decoration: none;
 `
 
 export const ResumeTag = styled.a`
-    color: #575c85;
+    color: #004495;
 `

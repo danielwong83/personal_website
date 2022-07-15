@@ -5,12 +5,13 @@ import {HomeColor,
         ProjectWord, 
         ProjectWrapper, 
         IndividualProject,
-        IndividualProject2,
-        IndividualProject2Website,
-        IndividualProject3, 
-        ProjectName, 
-        ProjectPhoto, 
-        ProjectPhotoTwo, 
+        WebsiteProject,
+        FeaturesDescription,
+        ProjectName,
+        DescriptionName, 
+        BJPhoto, 
+        DashboardPhoto,
+        WebsiteContent,
         ProjectContent, 
         FeaturesContent,
         FeaturesWrapper,
@@ -19,17 +20,15 @@ import {HomeColor,
         DescriptionWebsite,
         ListValue,
         Updates,
-        TurtlePhoto,
         ScraperPhoto,
-        CurrentWord,
-        FootballPhoto,
+        SquarePhoto,
         NBAPhoto,
         ATag,
-        ATagTwo} from '../styles/Project.style'
+        ATagTwo,
+        Disclaimer} from '../styles/Project.style'
 
 import blackjack from '../images/blackjack.svg'
 import dashboard from '../images/dashboard.svg'
-import websitephoto from '../images/website.svg'
 import football from '../images/football.svg'
 import webscraping from '../images/webscraping.svg'
 import maze from '../images/maze.svg'
@@ -49,9 +48,12 @@ const mazelink = "https://github.com/danielwong83/maze_game"
 const Project = () => {
 
     return (
+
         <HomeColor>
+
             <MainWrapper>
-                <CurrentWord>Current Projects</CurrentWord>
+
+                <ProjectWord>Current Projects</ProjectWord>
 
                 <ProjectWrapper>
                     
@@ -59,172 +61,157 @@ const Project = () => {
                         <NBAPhoto src = {nba}/>
                             <ProjectContent>
                                 <ProjectName><ATag href= "/"> Systematic Spread Trading in the NBA Betting Market</ATag></ProjectName> 
-                                <Description>To create a prediction model that can calculate the spread between two teams.</Description>
+                                <Description>To create a prediction model that can calculate the spread between two teams. </Description>
                                 <Description>Languages: Python (for analysis + modelling)</Description>
                                 <Description></Description>
-                                <Updates>Current Status: Reading Relevant Papers + Model Creation Stage (Logit Model)</Updates>
+                                <Updates>Current Status: Reading relevant papers + model creation stage (logit model)</Updates>
                             </ProjectContent>
                     </IndividualProject>
 
                     <IndividualProject>
-                        <FootballPhoto src = {football}/>
+                        <SquarePhoto src = {football}/>
                             <ProjectContent>
                                 <ProjectName><ATag href= "/">Football xG Modelling + Betting</ATag></ProjectName> 
                                 <Description>To find the expected goals scored per football match, and using the results to 
                                     bet on Over/Under 2.5 goal prop. </Description>
-                                <Description>Languages: R programming (for data), Python (for analysis + modelling)</Description>
+                                <Description>Languages: R (for data), Python (for analysis + modelling)</Description>
                                 <Description></Description>
-                                <Updates>Current Status: Cleaning Data + OLS</Updates>    
+                                <Updates>Current Status: Cleaning data + OLS</Updates>    
                             </ProjectContent>
                     </IndividualProject>
 
                     <IndividualProject>
-                        <FootballPhoto src = {maze}/>
+                        <SquarePhoto src = {maze}/>
                             <ProjectContent>
                                 <ProjectName><ATag href= {mazelink} target='_blank' rel='noopener noreferrer'>Maze Memory Game</ATag></ProjectName> 
                                 <Description>A Game where you have to have to memorize the path process to reach the finishing point. </Description>
                                 <Description>Languages: Python</Description>
                                 <Description></Description>
-                                <Updates>Current Status: Creating Frontend for gameplay</Updates>    
+                                <Updates>Current Status: Planning frontend process</Updates>    
                             </ProjectContent>
                     </IndividualProject>
                 </ProjectWrapper>
 
+
                 <ProjectWord>Projects</ProjectWord>
 
                 <ProjectWrapper>
-                    <IndividualProject2Website>
-                        <ProjectPhotoTwo src = {websitephoto}/>
+
+                    <IndividualProject>
+                            <DashboardPhoto src = {dashboard}/>
                         <ProjectContent>
-                            <ProjectName><ATag href= "/">Personal Website</ATag></ProjectName> 
-                            <Description>A fun little JavaScript React project I created with no prior experience.</Description>
-                            <Description>Languages: JavaScript (React), HTML</Description>  
-                            <Description>Future Plans: use Threejs to create a home scenario; to optimise for mobile device</Description>
-                            <Description>Mini Updates: Home Page + toolbar are currently responsive</Description>
-                            <Description>Previous Home Page Progression and Features:  </Description>
-                            <DescriptionWebsite><ATagTwo href= "/#/home_vers_1">V1.0 </ATagTwo>
+                            <ProjectName><ATag href= {dashboardlink} target='_blank' rel='noopener noreferrer'>Actuarial Dashboard</ATag></ProjectName>
+                            <Description>A dashboard with relevant actuarial statistics for the life insurance industry, including mortality and critical illness data.</Description>
+                            <Description>Languages: R (R Shiny)</Description>  
+                            <Description>Future Plans: N/A</Description>
+                            <Updates>Last Updated: May 2021</Updates>    
+                        </ProjectContent>                                    
+                    </IndividualProject>
+
+                    <IndividualProject>
+                            <ScraperPhoto src = {webscraping}/>
+                        <ProjectContent>
+                            <ProjectName><ATag href= {yahoofinancelink} target='_blank' rel='noopener noreferrer'>Yahoo Finance Scraper</ATag></ProjectName>
+                            <Description>A tool that scrapes Yahoo Finance and finds current and historic prices of financial derivatives, and data can be exported to an excel.
+                            </Description>
+                            <Description>Languages: Python (beautifulSoup4) </Description>  
+                            <Description>Future Plans: N/A</Description>
+                            <Updates>Last Updated: January 2022</Updates>    
+                        </ProjectContent>                                         
+                    </IndividualProject>
+
+                    <IndividualProject>
+                        <BJPhoto src = {blackjack}/>
+                        <ProjectContent>
+                            <ProjectName><ATag href= {blackjacklink} target='_blank' rel='noopener noreferrer'>BlackJack (4 Players)</ATag></ProjectName>
+                            <Description>A recreation of the famous casino game, and one of my first code where OOP was utilised.</Description>
+                            <Description>Languages: Python</Description>  
+                            <Description>Future Plans: to create a UI for the game</Description>
+                            <Updates>Last Updated: June 2019</Updates>    
+                        </ProjectContent>                                        
+                    </IndividualProject>
+                    
+                </ProjectWrapper>
+
+
+
+                <ProjectWord>Website</ProjectWord>
+                
+                <ProjectWrapper>
+
+                    <WebsiteProject>
+
+                        <WebsiteContent>
+                            <ProjectName>Description: </ProjectName> 
+                            <Description>A fun little JS React project I created with no prior experience. I have worked on this website on and off since January 2022. </Description>
+                            <Description>Future Plans: New Features / New Projects</Description>
+
+                            <DescriptionName>Previous Features: </DescriptionName>
+
+                            <Disclaimer>(Disclaimer: All of these previous features here are not optimised for mobile devices. )</Disclaimer>
+
+                            <DescriptionWebsite><ATagTwo href= "/#/home_vers_1">Homepage V1.0 </ATagTwo>
                                 <ListValue>{'\u2022'} name with mountain and moveable stickman</ListValue>
-                                <ListValue>{'\u2022'} 24 different spawn locations fo the stickman, dependant on viewer's local time </ListValue> 
+                                <ListValue>{'\u2022'} 24 different spawn locations fo the stickman, dependent on device local time </ListValue>
                             </DescriptionWebsite>
-                            <DescriptionWebsite><ATagTwo href= "/#/home_vers_2">V2.0 </ATagTwo> 
+                            <DescriptionWebsite><ATagTwo href= "/#/home_vers_2">Homepage V2.0 </ATagTwo> 
                                 <ListValue>{'\u2022'} name on a flippable and hooverable index card</ListValue>
                                 <ListValue>{'\u2022'} drew inspiration from my elementary days, when my name was written on index cards</ListValue>
                                 <ListValue>{'\u2022'} quote by one of my favorite characters from my favorite tv show</ListValue>
                             </DescriptionWebsite>
 
-                            <DescriptionWebsite><ATagTwo href= "/#/home_vers_3">V2.2 </ATagTwo> 
+                            <DescriptionWebsite><ATagTwo href= "/#/home_vers_3">Homepage V2.2 </ATagTwo> 
                                 <ListValue>{'\u2022'} name on a flippable and hooverable index card</ListValue>
-                                <ListValue>{'\u2022'} flipped side are stickers of my hobbies + interests</ListValue>
-                                <ListValue>{'\u2022'} quote by one of my favorite characters from my favorite tv show</ListValue>
+                                <ListValue>{'\u2022'} similar to a name card</ListValue>
+                                <ListValue>{'\u2022'} flipped side are stickers of my interests and hobbies</ListValue>
                             </DescriptionWebsite>
 
-                            <DescriptionWebsite> Current Version 
-                                <ListValue>{'\u2022'} 3d avatar of me waving + welcoming you to my website</ListValue>
-
+                            <DescriptionWebsite><ATagTwo href= "/#/chelsea_21_22">Chelsea 2021-2022 </ATagTwo> 
+                                <ListValue>{'\u2022'} draggable player objects on a pitch (starting 11 and subs)</ListValue>
+                                <ListValue>{'\u2022'} used react-konva for objects, but hard to resize / make objects responsive</ListValue>
                             </DescriptionWebsite>
-                            <Updates>Last Updated: July 2022 (Current Version 3.0)</Updates>    
-                        </ProjectContent>
+                            
+
+                            <DescriptionName>Website Features: </DescriptionName>
+
+                            <FeaturesContent>
+
+                                <FeaturesWrapper>
+                                    <ATag href= "/"><FeaturesPhoto src = {home_page}/></ATag>
+                                    <FeaturesDescription>Homepage - 3d avatar waving to strangers on my website</FeaturesDescription>
+                                </FeaturesWrapper>
+
+
+                                <FeaturesWrapper>
+                                    <ATag href= "/#/chelsea"><FeaturesPhoto src = {chelsea}/></ATag>
+                                    <FeaturesDescription>Chelsea - my preferred XI, transfer opinions, and upcoming fixture</FeaturesDescription>
+                                </FeaturesWrapper>
+
+                                <FeaturesWrapper>
+                                    <ATag href= "/#/chess"><FeaturesPhoto src = {chess}/></ATag>
+                                    <FeaturesDescription>Chess - current chess ratings, favorite game, live game watching, and rating history (Rating history is currently unavailable)</FeaturesDescription>
+                                </FeaturesWrapper>
+
+                                <FeaturesWrapper>
+                                    <ATag href= "/#/aboutphotos"><FeaturesPhoto src = {about_photos}/></ATag>
+                                    <FeaturesDescription>About Photos - animation preparation for about page (Currently unavailable feature) </FeaturesDescription>
+                                </FeaturesWrapper>
+
+                            </FeaturesContent> 
+
+                            <Updates>Last Updated: July 2022 (Current Version 3.0)</Updates>
+
+                        </WebsiteContent>
                                           
-                    </IndividualProject2Website>
+                    </WebsiteProject>
 
-                    <IndividualProject2>
-                            <ProjectPhotoTwo src = {dashboard}/>
-                        <ProjectContent>
-                            <ProjectName><ATag href= {dashboardlink} target='_blank' rel='noopener noreferrer'>Actuarial Dashboard</ATag></ProjectName>
-                            <Description>A dashboard with relevant actuarial statistics for the life insurance industry, including mortality and critical illness.</Description>
-                            <Description>Languages: R programming (R Shiny)</Description>  
-                            <Description>Future Plans: N/A</Description>
-                            <Updates>Last Updated: May 2021</Updates>    
-                        </ProjectContent>
-                                          
-                    </IndividualProject2>
-
-                    <IndividualProject2>
-                        <ScraperPhoto src = {webscraping}/>
-                        <ProjectContent>
-                            <ProjectName><ATag href= {yahoofinancelink} target='_blank' rel='noopener noreferrer'>Yahoo Finance Scraper</ATag></ProjectName>
-                            <Description>A scraper tool that finds prices of financial derivatives on Yahoo Finance. </Description>
-                            <Description>Languages: Python (beautifulSoup4) </Description>  
-                            <Description>Future Plans: N/A</Description>
-                            <Updates>Last Updated: January 2022</Updates>    
-                        </ProjectContent>
-                                          
-                    </IndividualProject2>
-
-                    <IndividualProject2>
-                        <ProjectPhoto src = {blackjack}/>
-                        <ProjectContent>
-                            <ProjectName><ATag href= {blackjacklink} target='_blank' rel='noopener noreferrer'>BlackJack (4 Players)</ATag></ProjectName>
-                            <Description>A recreation of the casino game, and my first code where I utilised OOP.</Description>
-                            <Description>Languages: Python</Description>  
-                            <Description>Future Plans: to create a UI for the game</Description>
-                            <Updates>Last Updated: June 2019</Updates>    
-                        </ProjectContent>
-                                          
-                    </IndividualProject2>
-                    
-                    {/*<IndividualProject>
-                        <TurtlePhoto src = {turtle}/>
-                        <ProjectContent>
-                            <ProjectName>Blank</ProjectName>    
-                        </ProjectContent>
-                                          
-                    </IndividualProject>*/}
-                    
-
-                </ProjectWrapper>
-
-                <ProjectWord>Website Features</ProjectWord>
-                
-                <ProjectWrapper>
-
-                    <IndividualProject3>
-
-                    <FeaturesContent>
-
-                            <FeaturesWrapper>
-
-                                <ATag href= "/"><FeaturesPhoto src = {home_page}/></ATag>
-
-                                <Description>Homepage - hooverable, flippable name card</Description>
-
-                            </FeaturesWrapper>
-
-
-                            <FeaturesWrapper>
-
-                                <ATag href= "/#/chelsea"><FeaturesPhoto src = {chelsea}/></ATag>
-
-                                <Description>Chelsea - draggable player objects and upcoming fixture</Description>
-
-                            </FeaturesWrapper>
-
-                            <FeaturesWrapper>
-
-                                <ATag href= "/#/chess"><FeaturesPhoto src = {chess}/></ATag>
-
-                                <Description>Chess - current chess ratings, favorite game, and rating history</Description>
-
-                            </FeaturesWrapper>
-
-                            <FeaturesWrapper>
-
-                                <ATag href= "/#/aboutphotos"><FeaturesPhoto src = {about_photos}/></ATag>
-
-                                <Description>About Photos - animation preparation for about page (no use for now) </Description>
-
-                            </FeaturesWrapper>
-
-
-                    </FeaturesContent>
-            
-                    </IndividualProject3>
                 </ProjectWrapper>
                 
 
             </MainWrapper>
+            
         </HomeColor>
     )
 }
 
-export default Project
+export default Project;

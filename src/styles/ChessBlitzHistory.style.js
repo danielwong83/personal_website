@@ -1,16 +1,10 @@
 import styled from 'styled-components'
 
 export const Statistics = styled.h1`
-    font-family: 'PT Sans';
+    font-family: 'Raleway';
     font-size: 25px;
-    color: black;
     margin: 0;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 `
 
-export const DateDivider = styled.div`
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-
-`

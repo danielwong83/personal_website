@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import {Statistics,
-        DateDivider} from '../styles/ChessBlitzHistory.style'
+        } from '../styles/ChessBlitzHistory.style'
 
 import moment from 'moment'
 
 class BlitzHistory extends Component {
-
 
     constructor(){
 
@@ -24,7 +23,6 @@ class BlitzHistory extends Component {
             .then((response) => response.json())
             .then((response) => 
 
-
             {
                 console.log(([response[1]]))
                 this.setState({
@@ -38,47 +36,45 @@ class BlitzHistory extends Component {
 
         return (
 
-
             this.state.data.map(statistics =>
 
-                    // <DateDivider>
+                <div>
+                    {statistics.points.map(dates => (
 
-                    // {statistics.points.map(dates => (
-                    //     <Statistics>Date: {moment((String(dates[0])+ "0" + String(dates[1] + 1)) + 
-                    //     String(dates[2])).format("MMM Do YY")}; Rating: {dates[3]}</Statistics>
-                            
-                    // ))}
+                        <div>
+                        {dates[1] <= 9 &&
 
-                    //     <Statistics>Date: {moment((String(statistics.points[0][0])+ "0" + String(statistics.points[0][1] + 1)) + 
-                    //     String(statistics.points[0][2])).format("MMM Do YY")}; Rating: {statistics.points[0][3]}</Statistics>
+                            <div>
+                                {dates[2] < 10 &&
+                                    <Statistics>Date: {moment((String(dates[0]) + "0" + String(dates[1] + 1)) + "0" + 
+                                    String(dates[2])).format("MMM Do YY")}; Rating: {dates[3]}</Statistics>
+                                }
+                                {dates[2] >= 10 &&
+                                    <Statistics>Date: {moment((String(dates[0]) + "0" + String(dates[1] + 1)) + 
+                                    String(dates[2])).format("MMM Do YY")}; Rating: {dates[3]}</Statistics>
+                                }
+                            </div>
+                        }
 
-                    //     <Statistics>^does not work for september onwards... need fixing</Statistics>
+                        {dates[1] > 9 &&
 
-                    // </DateDivider>
+                            <div>
+                                {dates[2] < 10 &&
+                                    <Statistics>Date: {moment((String(dates[0]) + String(dates[1] + 1)) + "0" + 
+                                    String(dates[2])).format("MMM Do YY")}; Rating: {dates[3]}</Statistics>
+                                }
+                                {dates[2] >= 10 &&
+                                    <Statistics>Date: {moment((String(dates[0]) + String(dates[1] + 1)) + 
+                                    String(dates[2])).format("MMM Do YY")}; Rating: {dates[3]}</Statistics>
+                                }
+                            </div>
+                        }
 
-                    // <DateDivider>
-
-
-                    // {statistics.points.map(dates => (
-
-                    //     <div>
-
-                    //     <Statistics>Date: {moment((String(dates[0])+ "0" + String(dates[1] + 1)) + 
-                    //     String(dates[2])).format("MMM Do YY")}; Rating: {dates[3]}</Statistics>
-
-                    //     <Statistics>yes</Statistics>
-
-                    //     </div>
-                            
-                    // ))}
-
-                    // </DateDivider>
-
-                    <Statistics>Currently Broken and fixing</Statistics>
+                        </div>
 
                         
-
-
+                    ))}
+                </div>
                     
             )
         );

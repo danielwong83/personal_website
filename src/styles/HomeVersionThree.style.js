@@ -1,50 +1,54 @@
 import styled from 'styled-components'
 import {animated} from 'react-spring'
 
+
+//div formatting
+
 export const Words = styled.div`
     flex-direction: column;
 `
 
+export const UnavailableWrapper = styled.div`
+    display: none;
 
-export const VersionTwo = styled.h1`
-    font-family: 'PT Sans';
-    font-size: 51px;
-    color: black;
-    margin: 0;
-    margin-left: 75px;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    @media (max-width: 1000px){
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 10%;
+    }
 `
 
-export const PreviousPage = styled.a`
-    font-family: 'PT Sans';
-    font-size: 20px;
-    color: #575c85;
-    margin: 0;
-    margin-left: -35px;
-    text-decoration: underline;
-`
+export const Everything = styled.div`
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin-top: 30vh;
 
+    @media (max-width: 1000px){
+        display: none;
+    }
+
+`
 
 
 export const HomeColor = styled.div`
     background-color: #fffcf4;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: calc( 100vh - 92px);
-    position: relative;
     overflow: hidden;
-    z-index: 1
 `
 
 export const IndexCardArea = styled.div`
     background-color: #fffcf4;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    margin-left: 50%;
-    margin-top: 25%;
-    z-index: 1
+    display: flex;
 `
 
 export const IndexCardWrapper = styled(animated.div)`
@@ -101,6 +105,86 @@ export const RightSide = styled.div`
     width: 35%;
 `
 
+export const ImperialCollegeArea = styled.div`
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    user-select: none;
+`
+export const Sticker = styled.div`
+    display: flex;
+    padding: 10px;
+    background-color: white;
+`
+
+
+
+
+//text formatting
+
+export const UnavailableWords = styled.h1`
+    display: flex;
+    font-family: 'Raleway';
+    font-size: 25px;
+    color: black;
+    margin: 0;
+    margin-bottom: 5%;
+`
+
+export const Suggestion = styled.h1`
+    display: flex;
+    font-family: 'Raleway';
+    font-size: 15px;
+    color: black;
+    margin: 0;
+`
+
+
+
+
+export const VersionThree = styled.h1`
+    display: flex;
+    font-family: 'Raleway';
+    font-size: 51px;
+    color: black;
+    margin: 0;
+    margin-left: 4%;
+    margin-top: 2%;
+    margin-bottom: 15px;
+    width: 100%;
+
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 400px){
+        font-size: 35px;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        font-size: 40px;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 45px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        font-size: 48px;
+    }
+    
+`
+
+export const PreviousPage = styled.a`
+    font-family: 'Raleway';
+    font-size: 20px;
+    color: #004495;
+    margin: 0;
+    text-decoration: underline;
+    display: flex;
+    margin-left: 4.5%;
+`
+
+
 
 export const Name = styled.h1`
     direction: flex;
@@ -127,13 +211,7 @@ export const Student = styled.h1`
     //font-style: italic;
 `
 
-export const ImperialCollegeArea = styled.div`
-    margin-left: 0px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    user-select: none;
-`
+
 
 
 
@@ -184,8 +262,6 @@ export const WhiteWordsBack = styled.h1`
 `
 
 
-
-
 export const FlipWord = styled.h1`
     font-family: 'PT Sans';
     font-size: 45px;
@@ -199,13 +275,19 @@ export const FlipWord = styled.h1`
     transform: rotate(-30deg);
 `
 
-export const Sticker = styled.div`
+export const Quote = styled.h1`
+    font-family: 'PT Sans';
+    font-size: 13px;
+    color: black;
+    margin: 0px;
+    margin-left: 490px;
+    user-select: none;
+    justify-content: center;
     display: flex;
-    padding: 10px;
-    background-color: white;
-
-
 `
+
+
+//image formatting
 
 export const ChelseaSticker = styled.img`
     height: 120px;
@@ -416,16 +498,6 @@ export const ChecoSticker = styled.img`
     background-color: white;
 `
 
-export const Quote = styled.h1`
-    font-family: 'PT Sans';
-    font-size: 13px;
-    color: black;
-    margin: 0px;
-    margin-left: 490px;
-    user-select: none;
-    justify-content: center;
-    display: flex;
-`
 
 export const ImpierialPhoto = styled.img`
     display: flex;

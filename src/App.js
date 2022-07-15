@@ -1,11 +1,12 @@
 import React from "react"
-import { Routes, Route, Link, useLocation } from "react-router-dom"
+import { Routes, Route, useLocation } from "react-router-dom"
 import "./App.css"
 
 import Home from './pages/Home'
 import Project from './pages/Project'
 import About from './pages/About'
 import Chelsea from './pages/Chelsea'
+import OldChelsea from './pages/Chelsea2122'
 import Chess from './pages/Chess'
 import AboutPortraits from './pages/AboutPortraits'
 import HomeVersionOne from './pages/HomeVersionOne'
@@ -14,8 +15,6 @@ import HomeVersionThree from './pages/HomeVersionThree'
 import WaveObject from './pages/WaveObject'
 
 import NavBar from './components/Navbar'
-
-
 
 
 
@@ -34,6 +33,7 @@ function App() {
           <Route path="about" element={<About />}></Route>
           <Route path="project" element={<Project />}></Route>
           <Route path="chelsea" element={<Chelsea />}></Route>
+          <Route path="chelsea_21_22" element={<OldChelsea />}></Route>
           <Route path="chess" element={<Chess />}></Route>
           <Route path="wave" element={<WaveObject />}></Route>
           <Route path="home_vers_1" element={<HomeVersionOne/>}></Route>

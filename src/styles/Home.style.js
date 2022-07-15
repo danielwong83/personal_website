@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+
+//div formatting
+
+
 export const HomeColor = styled.div`
     background-color: white;
     display: flex;
@@ -25,7 +29,7 @@ export const Name = styled.div`
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 50vw;
+    width: 100%;
     height: auto;
 
     @media (max-width: 768px){
@@ -54,7 +58,6 @@ export const LeftSide = styled.div`
     flex-direction: column;
     text-align: left;
     width: 50vw;
-    height: auto;
     justify-content: space-between;
 
     @media (max-width: 768px){
@@ -95,7 +98,7 @@ export const Circle = styled.div`
 `
 
 export const ObjectWrapper = styled.div`
-    margin-top: 80px;
+    margin-top: 100px;
     margin-left: 100px;
     width: 35vw;
     height: 60vh;
@@ -120,63 +123,79 @@ export const ObjectWrapper = styled.div`
         margin-left: 0px;
         width: 100vw;
     }
+
 `
 
 
+
+//Text Formatting
+
 export const Daniel = styled.h1`
-    font-family: 'Dancing Script';
-    font-size: 180px;
+    font-family: 'Ruthligos';
+    font-size: max(9vw, 110px);
     color: black;
     margin: 0;
-    margin-left: 12%;
-    margin-top: 10%;
+    margin-top: 15vh;
+    margin-left: 23%;
+    transition: all 1.5s ease-in-out;
+    user-select: none;
+
+    &:hover {
+        color: #004495;
+    }
 
     @media (max-width: 400px){
-        font-size: 120px;
+        font-size: 70px;
         margin: 0;
-        margin-left: -20px;
-        margin-top: 20px;
+        margin-top: 25px;
     }
 
     @media (min-width: 401px) and (max-width: 600px){
-        font-size: 140px;
+        font-size: 90px;
         margin: 0;
-        margin-left: -20px;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     @media (min-width: 601px) and (max-width: 768px){
-        font-size: 160px;
+        font-size: 125px;
         margin: 0;
-        margin-left: -20px;
-        margin-top: 20px;
+        margin-top: 35px;
     }
 `
 
 export const Wong = styled.h1`
-    font-family: 'Dancing Script';
-    font-size: 150px;
+    font-family: 'Ruthligos';
+    font-size: max(6.5vw, 68px);
     color: black;
     margin: 0;
-    margin-top: -40px;
-    margin-left: 12%;
+    margin-top: -17%;
+    margin-left: 24%;
+    transition: all 1.5s ease-in-out;
+    user-select: none;
+
+    &:hover {
+        color: #004495;
+    }
 
     @media (max-width: 400px){
-        font-size: 100px;
+        font-size: 45px;
         margin: 0;
-        margin-top: -40px;
+        margin-top: -70px;
+        margin-left: -5%;
     }
 
     @media (min-width: 401px) and (max-width: 600px){
-        font-size: 120px;
+        font-size: 55px;
         margin: 0;
-        margin-top: -40px;
+        margin-top: -90px;
+        margin-left: -3%;
     }
 
     @media (min-width: 601px) and (max-width: 768px){
-        font-size: 140px;
+        font-size: 80px;
         margin: 0;
-        margin-top: -40px;
+        margin-top: -120px;
+        margin-left: -2%;
     }
 `
 
@@ -185,26 +204,27 @@ export const Role = styled.a`
     font-size: 22px;
     color: black;
     margin: 0;
-    margin-left: 15%;
+    margin-left: 19%;
+    transition: all 1.5s ease-in-out;
+    user-select: none;
 
     @media (max-width: 400px){
         font-size: 10px;
         margin: 0;
-        margin-top: 30px;
+        margin-top: 12px;
     }
 
     @media (min-width: 401px) and (max-width: 600px){
         font-size: 14px;
         margin: 0;
-        margin-top: 40px;
+        margin-top: 15px;
     }
 
     @media (min-width: 601px) and (max-width: 768px){
         font-size: 18px;
         margin: 0;
-        margin-top: 40px;
+        margin-top: 30px;
     }
-
 `
 
 export const WelcomeMessage = styled.a`
@@ -212,27 +232,29 @@ export const WelcomeMessage = styled.a`
     font-size: 22px;
     color: black;
     margin: 0;
-    margin-top: 30px;
-    margin-left: 15%;
-    margin-bottom: 5%;
+    margin-top: 3%;
+    margin-left: 19%;
+    margin-bottom: 7%;
     margin-right: 5px;
+    transition: all 1.5s ease-in-out;
+    user-select: none;
 
     @media (max-width: 400px){
         font-size: 10px;
         margin: 0;
-        margin-top: 30px;
+        margin-top: 15px;
     }
 
     @media (min-width: 401px) and (max-width: 600px){
         font-size: 14px;
         margin: 0;
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     @media (min-width: 601px) and (max-width: 768px){
         font-size: 18px;
         margin: 0;
-        margin-top: 40px;
+        margin-top: 20px;
     }
 `
 

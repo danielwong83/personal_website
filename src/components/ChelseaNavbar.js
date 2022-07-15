@@ -1,8 +1,4 @@
 import {NavbarContainer, 
-    LeftContainer, 
-    RightContainer, 
-    NavbarInnerContainer, 
-    NavbarLinkContainer,
     NavbarLink,
     Logo
 } from '../styles/ChelseaNavbar.style'
@@ -12,19 +8,12 @@ import chelseapic from '../images/chelsea.svg'
 function ChelseaNavBar(){
     return(
         <NavbarContainer>
-            <NavbarInnerContainer>
-                <LeftContainer>
-                    <NavbarLinkContainer>
-                        <NavbarLink to="/about" >Back</NavbarLink>
-                    </NavbarLinkContainer>
-                </LeftContainer>
-                <RightContainer>
-                    <Logo src = {chelseapic}></Logo>
-                </RightContainer>
-            </NavbarInnerContainer>
+                <NavbarLink to="/project" >Back
+                </NavbarLink>
+                <Logo src = {chelseapic}></Logo>
         </NavbarContainer>
         
     )
 }
 
-export default ChelseaNavBar
+export default ChelseaNavBar;

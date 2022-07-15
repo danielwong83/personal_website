@@ -24,9 +24,9 @@ const Navbar = () => {
                         <span/>
                     </Hamburger>
                     <NavbarLinkContainer isOpen = {isOpen}>
-                        <NavbarLink to="/" >Home</NavbarLink>
-                        <NavbarLink to="/project" >Projects</NavbarLink>
-                        <NavbarLink to="/about" >About</NavbarLink>
+                        <NavbarLink to="/" onClick={() => setIsOpen(false)}>Home</NavbarLink>
+                        <NavbarLink to="/project" onClick={() => setIsOpen(false)}>Projects</NavbarLink>
+                        <NavbarLink to="/about" onClick={() => setIsOpen(false)}>About</NavbarLink>
                     </NavbarLinkContainer>
         </NavbarContainer>
         

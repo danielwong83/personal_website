@@ -1,174 +1,70 @@
 import styled from 'styled-components'
 
+
+//Div Formatting
+
 export const HomeColor = styled.div`
-    background-color: #fffcf4;
+    background-color: white;
     display: flex;
+    flex-direction: row;
     height: calc( 100vh - 92px);
+    overflow-y: auto;
     position: relative;
-    overflow: hidden;
-    z-index: 1
 `
 
 export const MainWrapper = styled.div`
     display: flex;
     position: relative;
     margin: 0 px;
-    margin-left: 75px;
+    margin-top: 2%;
+    padding-right: 4%;
     margin-bottom: 10px;
     flex-direction: column;
     text-align: left;
-    width: 100%;
-    overflow-y: auto;
-`
-
-export const CurrentWord = styled.h1`
-    font-family: 'PT Sans';
-    font-size: 51px;
-    color: black;
-    margin: 0;
-    margin-top: 40px;
-    margin-bottom: 30px;
-`
-
-export const ProjectWord = styled.h1`
-    font-family: 'PT Sans';
-    font-size: 51px;
-    color: black;
-    margin: 0;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    width: 100vw;
 `
 
 export const ProjectWrapper = styled.div`
     display: flex;
-    position: relative;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 `
 
+
 export const IndividualProject = styled.div`
     display: flex;
-    position: relative;
-    //background: rgba(236,165,150,0.16);
-    background: rgba(63, 191, 191, 0.18);
-    width: 73%;
-    justify-content: left;
+    background: rgba(198, 255, 255, 0.7);
+    width: 74%;
     border-radius: 25px;
     margin-bottom: 25px;
-    height: 260px;
-    overflow: auto;
+    height: auto;
+    align-items: center;
+
+    @media (max-width: 768px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
 `
 
-export const IndividualProject2 = styled.div`
+
+
+export const WebsiteProject = styled.div`
     display: flex;
-    position: relative;
-    //background: rgba(179,97,122,0.19);
-    background: rgba(63, 191, 191, 0.18);
-    width: 73%;
-    justify-content: left;
+    background: rgba(198, 255, 255, 0.7);
+    width: 74%;
     border-radius: 25px;
     margin-bottom: 25px;
-    height: 260px;
-    overflow: auto;
-`
+    height: auto;
+    align-items: center;
 
-export const IndividualProject2Website = styled.div`
-    display: flex;
-    position: relative;
-    //background: rgba(179,97,122,0.19);
-    background: rgba(63, 191, 191, 0.18);
-    width: 73%;
-    justify-content: left;
-    border-radius: 25px;
-    margin-bottom: 25px;
-    height: 800px;
-    overflow: auto;
-`
-
-export const IndividualProject3 = styled.div`
-    display: flex;
-    position: relative;
-    //background: rgba(87,92,133,0.22);
-    background: rgba(63, 191, 191, 0.18);
-    width: 73%;
-    justify-content: left;
-    border-radius: 25px;
-    margin-bottom: 25px;
-    height: 370px;
-`
-
-export const ProjectName = styled.h1`
-    font-family: 'PT Sans';
-    opacity: 1;
-    font-size: 31px;
-    color: black;
-    text-align: left;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    
-`
-
-export const ProjectPhoto = styled.img`
-    display: flex;
-    height: 240px;
-    width: auto;
-    margin-top: 10px;
-    margin-left: 25px;
-    margin-bottom: 10px;
-    margin-right: 25px;
-`
-
-export const ProjectPhotoTwo = styled.img`
-    display: flex;
-    height: 220px;
-    width: auto;
-    margin-top: 20px;
-    margin-left: 35px;
-    margin-bottom: 0px;
-    margin-right: 35px;
-`
-
-export const FootballPhoto = styled.img`
-    display: flex;
-    height: 180px;
-    width: auto;
-    margin-top: 40px;
-    margin-left: 55px;
-    margin-bottom: 0px;
-    margin-right: 55px;
-`
-
-export const NBAPhoto = styled.img`
-    display: flex;
-    height: 180px;
-    width: auto;
-    margin-top: 40px;
-    margin-left: 105px;
-    margin-bottom: 0px;
-    margin-right: 105px;
-`
-
-export const ScraperPhoto = styled.img`
-    display: flex;
-    height: 210px;
-    width: auto;
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-bottom: 0px;
-    margin-right: 40px;
-
-`
-
-export const TurtlePhoto = styled.img`
-    display: flex;
-    height: 240px;
-    width: auto;
-    margin-top: 10px;
-    margin-left: 25px;
-    margin-bottom: 10px;
-    margin-right: 25px;
-    filter: contrast(70%)
+    @media (max-width: 768px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
 `
 
 
@@ -178,81 +74,572 @@ export const ProjectContent = styled.div`
     text-align: left;
     flex-direction: column;
     padding-right: 20px;
+
+    @media (max-width: 768px){
+        padding-left: 5%;
+        padding-right: 4%;
+    }
+`
+
+export const WebsiteContent = styled.div`
+    display: flex;
+    position: relative;
+    text-align: left;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 5%;
+
+    @media (max-width: 768px){
+        padding-right: 5%;
+    }
+
 `
 
 export const FeaturesContent = styled.div`
     display: flex;
-    position: relative;
     flex-direction: column;
-    margin-top: 25px;
-    margin-left: 30px;
-    text-align: left;
-    overflow: auto;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    @media (max-width: 600px){
+        flex-direction: row;
+        margin-bottom: 10px;
+        width: 100%;
+    }
 `
 
 export const FeaturesWrapper = styled.div`
     display: flex;
-    position: relative;
     align-items: center;
-    text-align: center;
     flex-direction: row;
+`
+
+
+
+
+
+//Text Formatting
+
+
+export const ProjectWord = styled.h1`
+    font-family: 'Raleway';
+    font-size: 51px;
+    color: black;
+    margin: 0;
+    padding-left: 4%;
+    transition: all 1.5s ease-in-out;
+    margin-bottom: 30px;
+    text-decoration: bold;
+
+    @media (max-width: 400px){
+        font-size: 35px;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        font-size: 40px;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 45px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        font-size: 48px;
+    }
+`
+
+export const ProjectName = styled.h1`
+    font-family: 'Raleway';
+    opacity: 1;
+    font-size: 31px;
+    color: black;
     text-align: left;
-    
+    margin-top: 12px;
+    margin-bottom: 25px;
+
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 400px){
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 21px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        font-size: 23px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px){
+        font-size: 26px;
+    }
 `
 
-export const FeaturesPhoto = styled.img`
-    display: flex;
-    height: 65px;
-    width: auto;
-    margin-bottom: 15px;
-    margin-right: 25px; 
-    border-radius: 120px;
+export const DescriptionName = styled.h1`
+    font-family: 'Raleway';
+    opacity: 1;
+    font-size: 31px;
+    color: black;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 25px;
+
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 400px){
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 21px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        font-size: 23px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px){
+        font-size: 26px;
+    }
 `
-
-
 
 export const Description = styled.p`
-    font-family: 'PT Sans';
+    font-family: 'Raleway';
     font-size: 19px;
     color: black;
     margin: 0px;
     margin-bottom: 15px;
-    margin-right: 20px;
+    padding-right: 20px;
     display: flex;
+
+
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 400px){
+        font-size: 9px;
+        margin-bottom: 12px;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        font-size: 14px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px){
+        font-size: 16px;
+    }
+`
+
+export const Disclaimer = styled.p`
+    font-family: 'Raleway';
+    font-size: 13px;
+    color: black;
+    margin: 0px;
+    margin-top: -18px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    display: flex;
+
+
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 400px){
+        font-size: 5px;
+        margin-top: -5px;
+        margin-bottom: 15px;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        font-size: 7px;
+        margin-top: -5px;
+        margin-bottom: 15px;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 9px;
+        margin-top: -5px;
+        margin-bottom: 15px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        font-size: 9px;
+        margin-top: -18px;
+        margin-bottom: 18px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px){
+        font-size: 11px;
+        margin-top: -18px;
+        margin-bottom: 18px;
+    }
 `
 
 export const Updates = styled.p`
-    font-family: 'PT Sans';
+    font-family: 'Raleway';
     font-size: 19px;
     color: #B7B7B7;
     display: flex;
     margin: 0px;
     margin-top: 15px;
     padding-bottom: 20px;
+
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 400px){
+        font-size: 9px;
+        margin-top: 1px;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        font-size: 10px;
+        margin-top: 3px;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        font-size: 14px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px){
+        font-size: 16px;
+    }
 `
 
 export const DescriptionWebsite = styled.p`
-    font-family: 'PT Sans';
+    font-family: 'Raleway'; 
     font-size: 19px;
     color: black;
     flex-direction: column;
     margin: 0px;
     margin-bottom: 15px;
-    margin-left: 15px;
-    margin-right: 20px;
     display: flex;
+
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 400px){
+        font-size: 12px;
+        margin-top: -5px;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        font-size: 14px;
+        margin-top: -5px;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 16px;
+    }
 `
 
 export const ListValue = styled.p`
-    font-family: 'PT Sans';
+    font-family: 'Raleway';
     font-size: 19px;
     color: black;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 10px;
+
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 400px){
+        font-size: 9px;
+        margin-top: 1px;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        font-size: 10px;
+        margin-top: 3px;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        font-size: 14px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px){
+        font-size: 16px;
+    }
+`
+
+export const FeaturesDescription = styled.p`
+    font-family: 'Raleway';
+    font-size: 19px;
+    color: black;
+    margin: 0px;
+    margin-bottom: 15px;
+    padding-right: 20px;
+    display: flex;
+
+
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 600px){
+        display: none;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        font-size: 14px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px){
+        font-size: 16px;
+    }
 `
 
 
+
+
+
+
+//Image Formatting
+
+
+export const NBAPhoto = styled.img`
+    display: flex;
+    height: 180px;
+    width: auto;
+    margin-left: 105px;
+    margin-right: 105px;
+
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 768px){
+        height: 140px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        height: 160px;
+        width: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px){
+        height: 160px;
+        width: auto;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+`
+
+
+export const SquarePhoto = styled.img`
+    display: flex;
+    height: 150px;
+    width: auto;
+    margin-left: 70px;
+    margin-right: 70px;
+
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 768px){
+        height: 110px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        height: 110px;
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px){
+        height: 130px;
+        width: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+`
+
+
+export const DashboardPhoto = styled.img`
+    display: flex;
+    height: 190px;
+    width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 768px){
+        height: 110px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        height: 110px;
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px){
+        height: 140px;
+        width: auto;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+`
+
+
+export const ScraperPhoto = styled.img`
+    display: flex;
+    height: 210px;
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 768px){
+        height: 110px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        height: 110px;
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px){
+        height: 150px;
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+`
+
+export const BJPhoto = styled.img`
+    display: flex;
+    height: 200px;
+    width: auto;
+    margin-left: 45px;
+    margin-right: 45px;
+
+    transition: all 1.5s ease-in-out;
+
+    @media (max-width: 768px){
+        height: 120px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1000px){
+        height: 120px;
+        width: auto;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px){
+        height: 150px;
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+`
+
+
+export const FeaturesPhoto = styled.img`
+    display: flex;
+    height: 65px;
+    width: auto;
+    margin-bottom: 15px;
+    margin-left: 12.5px;
+    margin-right: 12.5px; 
+    border-radius: 120px;
+
+    transition: all 1.5s ease-in-out;
+
+    
+
+    @media (max-width: 200px){
+        height: 20px;
+        margin-left: 5px;
+        margin-right: 5px; 
+    }
+
+    @media (min-width: 201px) and (max-width: 300px){
+        height: 24px;
+        margin-left: 8px;
+        margin-right: 8px; 
+    }
+
+    @media (min-width: 301px) and (max-width: 400px){
+        height: 25px;
+        margin-left: 10px;
+        margin-right: 10px; 
+    }
+
+    @media (min-width: 401px) and (max-width: 500px){
+        height: 35px;
+        margin-left: 15px;
+        margin-right: 15px; 
+    }
+
+    @media (min-width: 501px) and (max-width: 600px){
+        height: 42px;
+        margin-left: 15px;
+        margin-right: 15px; 
+    }
+`
+
+
+
+
+//Hyperlink Formatting
 
 export const ATag = styled.a`
     display: flex;
@@ -262,5 +649,5 @@ export const ATag = styled.a`
 
 export const ATagTwo = styled.a`
     display: flex;
-    color: #575c85;
+    color: #004495;
 `

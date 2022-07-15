@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import {Statistics,
         Online,
         Offline,
-        StatsWrapper,
+        OverallWrapper,
         IndividualStat,
-        Rating
+        Rating,
+        StatsWrapper
         } from '../styles/ChessStats.style'
 
 import moment from 'moment'
@@ -44,8 +45,9 @@ class ChessStats extends Component {
         return (
             this.state.data.map((statistics) =>
                         
+                    <OverallWrapper>
 
-                    <StatsWrapper>
+                        <StatsWrapper>
 
                         <IndividualStat>
                             <Statistics>Blitz Rating: </Statistics>
@@ -58,10 +60,13 @@ class ChessStats extends Component {
                             <Rating>{statistics.perfs.puzzle.rating} </Rating>
 
                         </IndividualStat>
-                        
+
+                        </StatsWrapper>
+
                         {statistics.online === true? <Online> Currently Online </Online>
                         : <Offline>Last Seen Online: {moment(statistics.seenAt).endOf('second').fromNow()}</Offline>}
-                    </StatsWrapper>
+
+                    </OverallWrapper>
 
             )
         );

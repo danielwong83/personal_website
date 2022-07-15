@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 import {HomeColor, 
         LeftSide, 
@@ -11,7 +11,7 @@ import {HomeColor,
         ContentWrapper,
         ObjectWrapper,
         Name,
-        Description} from '../styles/Home.style'
+        Description,} from '../styles/Home.style'
 
 import WaveObject from '../pages/WaveObject'
 
@@ -23,22 +23,15 @@ const Home = () => {
         <ContentWrapper>
 
         <LeftSide>
-
           <Name>
-            <Daniel>Daniel</Daniel>
-            <Wong>Wong</Wong>
+              <Daniel>Daniel</Daniel>
+              <Wong>Wong</Wong>
           </Name>
 
           <Description>
-
             <Role>Financial Engineering Student</Role>
-            <WelcomeMessage>Welcome to my website. Feel free to browse around. </WelcomeMessage>
-
+            <WelcomeMessage>Welcome to my website, feel free to browse around. </WelcomeMessage>
           </Description>
-
-          
-
-          
 
           </LeftSide>
 
@@ -55,10 +48,9 @@ const Home = () => {
 
         </ContentWrapper>
 
-      
     
       </HomeColor>
   )
 }
 
-export default Home
+export default Home;

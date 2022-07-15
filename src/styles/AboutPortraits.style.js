@@ -1,68 +1,74 @@
 import styled from 'styled-components'
 
+
+//div formatting
+
 export const HomeColor = styled.div`
-    background-color: #fffcf4;
+    background-color: white;
     display: flex;
+    flex-direction: row;
     height: calc( 100vh - 92px);
+    overflow-y: auto;
     position: relative;
-    overflow: hidden;
-    overflow-y: scroll;
-    z-index: 1;
-    flex-direction: column;
 `
 
-
-export const PortraitWrapperOne = styled.div`
+export const PortraitWrapper = styled.div`
     display: flex;
     position: relative;
-    margin-top: 50px;
     flex-direction: row;
     align-items: center;
+    width: 100%;
     justify-content: center;
-    height: calc( 100vh - 92px);
-    width: 100%
+
+    @media (max-width: 1200px){
+        flex-direction: column;
+        justify-content: unset;
+    }
 `
 
 
-
-export const PhotoWrapperOne = styled.div`
-    background: rgba(236,165,150,0.6);
-    width: 26%;
+export const PhotoWrapper = styled.div`
+    background: rgba(198, 255, 255, 0.6);
     border-radius: 25px;
-    margin-bottom: 25px;
-    height: auto;
-    margin-right: 40px;
-    margin-left: 40px;
+    height: 65%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+
+    @media (max-width: 1200px){  
+        height: auto;
+        width: auto;
+        margin-top: 3.5%;
+        margin-bottom: 3.5%;
+    }
 `
 
-export const PhotoWrapperTwo = styled.div`
-    background: rgba(179,97,122,0.6);
-    width: 26%;
-    border-radius: 25px;
-    margin-bottom: 25px;
-    height: auto;
-    margin-right: 40px;
-    margin-left: 40px;
-`
 
-export const PhotoWrapperThree = styled.div`
-    background: rgba(87,92,133,0.6);
-    width: 26%;
-    border-radius: 25px;
-    margin-bottom: 25px;
-    height: auto;
-    margin-right: 40px;
-    margin-left: 40px;
-`
-
+//image formatting
 
 export const Portrait = styled.img`
-    width: 88%;
-    height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    height: 100%;
+    width: auto;
     border-radius: 25px;
     filter: contrast(105%);
     user-select: none;
+
+    @media (max-width: 400px){
+        height: 35vh;
+    }
+
+    @media (min-width: 401px) and (max-width: 600px){
+        height: 45vh;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        height: 55vh;
+    }
+
+    @media (min-width: 769px) and (max-width: 1200px){
+        height: 60vh;
+    }
 `
 

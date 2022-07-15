@@ -72,8 +72,10 @@ class About extends Component{
 
           <ContentWrapper>
 
-          <AboutMeWrapper>
+            <AboutMeWrapper>
+
                 <AboutMe>About Me</AboutMe>
+                
                 <DescriptionOne>Hi, my name's Daniel, I'm from Hong Kong and I'm currently studying a Masters in Risk
                 Management and Financial Engineering at Imperial College London. I am interested in internship and graduate
                 positions in data science and engineering as well as quant trading and developing.</DescriptionOne>
@@ -88,7 +90,7 @@ class About extends Component{
 
                 <DescriptionTwo>Feel free to message me! My contact info is below and this is my {' '}
                     <ResumeTag href= {resume} target='_blank' rel='noopener noreferrer'>
-                        resume</ResumeTag>.</DescriptionTwo>
+                      resume</ResumeTag>.</DescriptionTwo>
                 
                 <SocialWrapper>
                     <ATag href = {linkedin} target='_blank' rel='noopener noreferrer'><LinkedinImg src={linkedinpic}/></ATag>
@@ -97,20 +99,17 @@ class About extends Component{
                     <ATag href = {lichess} target='_blank' rel='noopener noreferrer'><LichessImg src={lichesspic}/></ATag>       
                 </SocialWrapper>
 
-            </AboutMeWrapper>
+              </AboutMeWrapper>
         
             <PortraitWrapper>
                 <PhotoWrapper>
                     <Portrait src = {this.state.selectedImage}></Portrait>
                 </PhotoWrapper>
-                
             </PortraitWrapper>
 
           </ContentWrapper>
 
             
-
-  
         </HomeColor>
     )
 

@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Stage, Layer, Group, Circle, Line, Path } from 'react-konva';
+import { Stage, Layer, Group, Circle, Line } from 'react-konva';
 
 
 import {HomeColor, 
@@ -14,7 +14,10 @@ import {HomeColor,
         Everything,
         Words,
         VersionOne,
-        PreviousPage} from '../styles/HomeVersionOne.style'
+        PreviousPage,
+        UnavailableWords,
+        UnavailableWrapper,
+        Suggestion} from '../styles/HomeVersionOne.style'
 
 
 class Home extends Component {
@@ -39,11 +42,6 @@ class Home extends Component {
                             {"x":1338,"y":252},{"x":1391,"y":282},{"x":1443,"y":328},
                             {"x":1495,"y":383},{"x":1547,"y":447},{"x":1600,"y":517}]
 
-        const p = "M" + coordinates[0].x + " " + coordinates[0].y
-
-        for (const i = 1; i < coordinates; i = i+1){
-            p = p + " L" + coordinates[i].x + " " + coordinates[i].y
-            }
 
         const x = coordinates[hours].x
         const y = coordinates[hours].y
@@ -55,99 +53,101 @@ class Home extends Component {
 
             <HomeColor>
 
-            <Words>
-                <VersionOne>Version 1.0 </VersionOne>
-                <PreviousPage href= "/#/project"> Previous Page</PreviousPage>
-            </Words>
+                <Words>
+                    <VersionOne>Version 1.0 </VersionOne>
+                    <PreviousPage href= "/#/project"> Previous Page</PreviousPage>
+                </Words>
+
+                <UnavailableWrapper>
+                    <UnavailableWords>Sorry, this feature is not supported for this current device. Please use another device to view this feature. </UnavailableWords>
+                    <Suggestion>(Works better on laptops and desktops)</Suggestion>
+                </UnavailableWrapper>
+
 
                 <Everything>
 
-                <NameWrapper>
-                    <Name>Daniel Wong</Name>
-                </NameWrapper>
+                    <NameWrapper>
+                        <Name>Daniel Wong</Name>
+                    </NameWrapper>
 
-                <StudentWrapper>
-                    <StudentArea>
-                        <Student>Financial Engineering at </Student>
-                    </StudentArea>
-                    <ImperialCollegeArea>
-                        <ImperialCollege>Imperial College</ImperialCollege>
-                        <London>London</London>
-                    </ImperialCollegeArea>
-                </StudentWrapper>
+                    <StudentWrapper>
+                        <StudentArea>
+                            <Student>Financial Engineering at </Student>
+                        </StudentArea>
+                        <ImperialCollegeArea>
+                            <ImperialCollege>Imperial College</ImperialCollege>
+                            <London>London</London>
+                        </ImperialCollegeArea>
+                    </StudentWrapper>
 
-                <Stage width={2000} height={1000}>
-                    <Layer>
-                        <Group
-                        x={this.state.x}
-                        y={this.state.y}
-                        draggable
-                        onDragStart={() => {
-                        this.setState({
-                            isDragging: true
-                        });
-                        }}
-                        onDragEnd={e => {
-                        this.setState({
-                            isDragging: false,
-                            x: e.target.x(),
-                            y: e.target.y()
-                        });
-                        }}>
-                            <Circle
-                                x={frameStartx}
-                                y={frameStarty}
-                                radius={5}
-                                fill="black"
+                    <Stage width={2000} height={1000}>
+                        <Layer>
+                            <Group
+                            x={this.state.x}
+                            y={this.state.y}
+                            draggable
+                            onDragStart={() => {
+                            this.setState({
+                                isDragging: true
+                            });
+                            }}
+                            onDragEnd={e => {
+                            this.setState({
+                                isDragging: false,
+                                x: e.target.x(),
+                                y: e.target.y()
+                            });
+                            }}>
+                                <Circle
+                                    x={frameStartx}
+                                    y={frameStarty}
+                                    radius={5}
+                                    fill="black"
+                                />
+                                <Line
+                                    x={frameStartx}
+                                    y={frameStarty}
+                                    points={[0, 0, 0, 15]}
+                                    stroke="black"
+                                    />
+                                <Line
+                                    x={frameStartx}
+                                    y={frameStarty}
+                                    points={[0, 15, -5, 30]}
+                                    stroke="black"
+                                    />
+                                <Line
+                                    x={frameStartx}
+                                    y={frameStarty}
+                                    points={[0, 15, 5, 30]}
+                                    stroke="black"
+                                    />
+                                <Line
+                                    x={frameStartx}
+                                    y={frameStarty}
+                                    points={[0, 7, -5, 13]}
+                                    stroke="black"
+                                    />
+                                <Line
+                                    x={frameStartx}
+                                    y={frameStarty}
+                                    points={[0, 7, 5, 13]}
+                                    stroke="black"
+                                    />
+                            </Group>
+
+                            <Line
+                                x={0}
+                                y={0}
+                                points={[400, 555, 700, 310, 900, 420, 1300, 270, 1600, 555]}
+                                tension={0.33}
+                                stroke="#468C26"
+                                //stroke="#1566E9"
                             />
-                            <Line
-                                x={frameStartx}
-                                y={frameStarty}
-                                points={[0, 0, 0, 15]}
-                                stroke="black"
-                                />
-                            <Line
-                                x={frameStartx}
-                                y={frameStarty}
-                                points={[0, 15, -5, 30]}
-                                stroke="black"
-                                />
-                            <Line
-                                x={frameStartx}
-                                y={frameStarty}
-                                points={[0, 15, 5, 30]}
-                                stroke="black"
-                                />
-                            <Line
-                                x={frameStartx}
-                                y={frameStarty}
-                                points={[0, 7, -5, 13]}
-                                stroke="black"
-                                />
-                            <Line
-                                x={frameStartx}
-                                y={frameStarty}
-                                points={[0, 7, 5, 13]}
-                                stroke="black"
-                                />
-                            <Path
-                                fill="blue"
-                                data={p}
-                                />
-                        </Group>
+                        </Layer>
+                    </Stage>
 
-                        <Line
-                            x={0}
-                            y={0}
-                            points={[400, 555, 700, 310, 900, 420, 1300, 270, 1600, 555]}
-                            tension={0.33}
-                            stroke="#468C26"
-                            //stroke="#1566E9"
-                        />
-                    </Layer>
-                </Stage>
-
-            </Everything>
+                </Everything>
 
             </HomeColor>
 

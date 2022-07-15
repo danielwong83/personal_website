@@ -25,6 +25,7 @@ export const NavbarLinkContainer = styled.div`
         overflow: hidden;
         flex-direction: column;
         width: 100%;
+        padding-right: 0;
         max-height: ${({isOpen}) => (isOpen ? "300px" : "0")};
         transition: max-height 0.2s ease-in;
     }
@@ -74,7 +75,7 @@ export const Logo = styled.img`
     height: 71px;
     user-select: none;
     padding: 0.4rem 0;
-    padding-left: 1rem;
+    margin-left: 1rem;
 
 `
 
