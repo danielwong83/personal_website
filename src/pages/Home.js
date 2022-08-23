@@ -29,7 +29,7 @@ const Home = () => {
           </Name>
 
           <Description>
-            <Role>Financial Engineering Student</Role>
+            <Role>Financial Engineering Graduate</Role>
             <WelcomeMessage>Welcome to my website, feel free to browse around. </WelcomeMessage>
           </Description>
 

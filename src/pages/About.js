@@ -46,25 +46,25 @@ class About extends Component{
         };
       }
 
-      componentDidMount() {
-        setInterval(() => {
-          this.setState(prevState => {
-            if (prevState.selectedImage === this.state.images[0]) {
+    componentDidMount() {
+      setInterval(() => {
+        this.setState(prevState => {
+          if (prevState.selectedImage === this.state.images[0]) {
+            return {
+              selectedImage: this.state.images[1]
+            };
+          } else if (prevState.selectedImage === this.state.images[1]){
               return {
-                selectedImage: this.state.images[1]
+                selectedImage: this.state.images[2]
               };
-            } else if (prevState.selectedImage === this.state.images[1]){
-                return {
-                  selectedImage: this.state.images[2]
-                };
-            } else {
-              return {
-                selectedImage: this.state.images[0]
-              };
-            }
-          });
-        }, 6500);
-      }
+          } else {
+            return {
+              selectedImage: this.state.images[0]
+            };
+          }
+        });
+      }, 6500);
+    }
 
     render(){
     return (

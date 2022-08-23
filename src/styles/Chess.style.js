@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 export const HomeColor = styled.div`
-    background-color: white;
+    background-color: ${props => props.theme.everyBackground};
     display: flex;
     flex-direction: row;
-    height: calc( 100vh - 92px);
+    height: calc( 100vh - 86px);
     overflow-y: auto;
     position: relative;
 `
@@ -39,7 +39,7 @@ export const LeftWrapper = styled.div`
 export const ChessWord = styled.h1`
     font-family: 'Raleway';
     font-size: 51px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin: 0;
     transition: all 1.5s ease-in-out;
     margin-bottom: 5%;
@@ -65,7 +65,7 @@ export const Profile = styled.a`
     font-family: 'Raleway';
     font-size: 20px;
     display: flex;
-    color: #004495;
+    color: ${props => props.theme.hyperLink};
     margin: 0;
     margin-left: 4%;
     margin-top: 30px;
@@ -112,7 +112,7 @@ export const GraphWrapper = styled.div`
 
 export const Tabs = styled.div`
     overflow: hidden;
-    background-color: white;
+    background-color: ${props => props.theme.everyBackground};
     margin-top: 3%;
 `;
 
@@ -126,14 +126,14 @@ export const Tab = styled.button`
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     padding-bottom: 4px;
+    color: ${props => props.theme.chessTabTextColor};
 
-    border: ${(props) => (props.active ? "1px solid #004495" : "1px solid #004495")};
-    border-bottom: ${(props) => (props.active ? "none" : "none")};
-    background-color: ${(props) => (props.active ? "white" : "rgba(198, 255, 255, 0.7)")};
+    border: ${props => props.theme.chessTabBorder};
+    background-color: ${(props) => (props.active ? props.theme.chessCurrentTab : props.theme.chessTab)};
     height: ${(props) => (props.active ? "56px" : "50px; top:6px")};
 
     :hover {
-        background-color: white;
+        background-color: ${props => props.theme.chessCurrentTab};
     }
 
     @media (max-width: 600px){
@@ -159,8 +159,10 @@ export const Content = styled.div`
 export const FavChessGame = styled.iframe`
     width: 90%;
     height: 95%;
-    border: 1px solid #004495;
+    border: ${props => props.theme.chessFavGameBorder}; 
     margin: 0px;
+    background-image: url(${props => props.theme.chessFav});
+    transition: all 1.5s ease-in-out;
 
     @media (max-width: 768px){
         width: 100%;
@@ -172,7 +174,7 @@ export const FavChessGame = styled.iframe`
 export const FavChessGameText = styled.h1`
     font-family: 'Raleway';
     font-size: 15px;
-    color: black;
+    color: ${props => props.theme.textColor};
     transition: all 1.5s ease-in-out;
 
     @media (max-width: 400px){
@@ -187,7 +189,7 @@ export const FavChessGameText = styled.h1`
 export const LiveGameText = styled.h1`
     font-family: 'Raleway';
     font-size: 30px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin: 0;
     margin-top: 40px;
     width: 100%;

@@ -13,7 +13,7 @@ export const HomeColor = styled.div`
     background-color: #BEE0ED;
     display: flex;
     flex-direction: row;
-    height: calc( 100vh - 92px);
+    height: calc( 100vh - 86px);
     overflow: auto;
     position: relative;
 `

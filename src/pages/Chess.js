@@ -3,6 +3,8 @@ import ChessStats from '../components/ChessStats'
 import ChessCurrentGame from '../components/ChessCurrentGame'
 import ChessBlitzHistory from '../components/ChessBlitzHistory'
 
+import { useTheme } from 'styled-components';
+
 
 import {HomeColor,
         ChessWord,
@@ -30,6 +32,8 @@ function Chess() {
       setActive(index);
     }
   };
+  const theme = useTheme();
+
 
   return (
     <HomeColor>
@@ -71,7 +75,7 @@ function Chess() {
             <FavChessGameText>
               My most accurate game played according to engine: 0 inaccuracies, 0 mistakes, 0 blunders, and an average centipawn lost of 15. 
             </FavChessGameText>
-            <FavChessGame src="https://lichess.org/embed/yHOicQND?theme=blue&bg=light"></FavChessGame>
+            <FavChessGame src={theme.chessFav}></FavChessGame>
           </Content>
 
           <Content active={active === 2}>

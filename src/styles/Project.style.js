@@ -4,10 +4,10 @@ import styled from 'styled-components'
 //Div Formatting
 
 export const HomeColor = styled.div`
-    background-color: white;
+    background-color: ${props => props.theme.everyBackground};
     display: flex;
     flex-direction: row;
-    height: calc( 100vh - 92px);
+    height: calc( 100vh - 86px);
     overflow-y: auto;
     position: relative;
 `
@@ -33,9 +33,10 @@ export const ProjectWrapper = styled.div`
 
 export const IndividualProject = styled.div`
     display: flex;
-    background: rgba(198, 255, 255, 0.7);
+    background: ${props => props.theme.projectDiv};
     width: 74%;
     border-radius: 25px;
+    /* box-shadow: 26px 26px 52px #a8a8a8, -26px -26px 52px #f7f7f7; */
     margin-bottom: 25px;
     height: auto;
     align-items: center;
@@ -52,7 +53,7 @@ export const IndividualProject = styled.div`
 
 export const WebsiteProject = styled.div`
     display: flex;
-    background: rgba(198, 255, 255, 0.7);
+    background: ${props => props.theme.projectDiv};
     width: 74%;
     border-radius: 25px;
     margin-bottom: 25px;
@@ -101,7 +102,7 @@ export const FeaturesContent = styled.div`
     justify-content: center;
     margin-bottom: 15px;
 
-    @media (max-width: 600px){
+    @media (max-width: 768px){
         flex-direction: row;
         margin-bottom: 10px;
         width: 100%;
@@ -124,7 +125,7 @@ export const FeaturesWrapper = styled.div`
 export const ProjectWord = styled.h1`
     font-family: 'Raleway';
     font-size: 51px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin: 0;
     padding-left: 4%;
     transition: all 1.5s ease-in-out;
@@ -152,7 +153,7 @@ export const ProjectName = styled.h1`
     font-family: 'Raleway';
     opacity: 1;
     font-size: 31px;
-    color: black;
+    color: ${props => props.theme.textColor};
     text-align: left;
     margin-top: 12px;
     margin-bottom: 25px;
@@ -190,7 +191,7 @@ export const DescriptionName = styled.h1`
     font-family: 'Raleway';
     opacity: 1;
     font-size: 31px;
-    color: black;
+    color: ${props => props.theme.textColor};
     text-align: left;
     margin-top: 30px;
     margin-bottom: 25px;
@@ -227,7 +228,7 @@ export const DescriptionName = styled.h1`
 export const Description = styled.p`
     font-family: 'Raleway';
     font-size: 19px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin: 0px;
     margin-bottom: 15px;
     padding-right: 20px;
@@ -263,7 +264,7 @@ export const Description = styled.p`
 export const Disclaimer = styled.p`
     font-family: 'Raleway';
     font-size: 13px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin: 0px;
     margin-top: -18px;
     margin-bottom: 20px;
@@ -342,7 +343,7 @@ export const Updates = styled.p`
 export const DescriptionWebsite = styled.p`
     font-family: 'Raleway'; 
     font-size: 19px;
-    color: black;
+    color: ${props => props.theme.textColor};
     flex-direction: column;
     margin: 0px;
     margin-bottom: 15px;
@@ -368,7 +369,7 @@ export const DescriptionWebsite = styled.p`
 export const ListValue = styled.p`
     font-family: 'Raleway';
     font-size: 19px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 10px;
@@ -402,7 +403,7 @@ export const ListValue = styled.p`
 export const FeaturesDescription = styled.p`
     font-family: 'Raleway';
     font-size: 19px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin: 0px;
     margin-bottom: 15px;
     padding-right: 20px;
@@ -411,14 +412,14 @@ export const FeaturesDescription = styled.p`
 
     transition: all 1.5s ease-in-out;
 
-    @media (max-width: 600px){
+    @media (max-width: 768px){
         display: none;
     }
 
-    @media (min-width: 601px) and (max-width: 768px){
+    /* @media (min-width: 601px) and (max-width: 768px){
         font-size: 12px;
         margin-bottom: 12px;
-    }
+    } */
 
     @media (min-width: 769px) and (max-width: 1000px){
         font-size: 14px;
@@ -612,9 +613,9 @@ export const FeaturesPhoto = styled.img`
     }
 
     @media (min-width: 201px) and (max-width: 300px){
-        height: 24px;
-        margin-left: 8px;
-        margin-right: 8px; 
+        height: 21px;
+        margin-left: 7px;
+        margin-right: 7px; 
     }
 
     @media (min-width: 301px) and (max-width: 400px){
@@ -634,6 +635,12 @@ export const FeaturesPhoto = styled.img`
         margin-left: 15px;
         margin-right: 15px; 
     }
+
+    @media (min-width: 601px) and (max-width: 768px){
+        height: 55px;
+        margin-left: 23px;
+        margin-right: 23px; 
+    }
 `
 
 
@@ -644,10 +651,10 @@ export const FeaturesPhoto = styled.img`
 export const ATag = styled.a`
     display: flex;
     text-decoration: None;
-    color: black;
+    color: ${props => props.theme.textColor};
 `
 
 export const ATagTwo = styled.a`
     display: flex;
-    color: #004495;
+    color: ${props => props.theme.hyperLink};
 `

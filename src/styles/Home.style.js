@@ -5,10 +5,11 @@ import styled from 'styled-components'
 
 
 export const HomeColor = styled.div`
-    background-color: white;
+    background-color: ${props => props.theme.everyBackground};
+    background-image: url(${props => props.theme.homeBackgroundImage});
     display: flex;
     flex-direction: row;
-    height: calc( 100vh - 92px);
+    height: calc( 100vh - 86px);
     overflow: hidden;
     position: relative;
 `
@@ -86,7 +87,7 @@ export const Circle = styled.div`
     width: 100%;
     height: 100%;
     border-top-left-radius: 100%;
-    background-color: #C6FFFF;
+    background-color: ${props => props.theme.circleColor};
     display: flex;
     position: absolute;
     bottom: 0px;
@@ -133,7 +134,7 @@ export const ObjectWrapper = styled.div`
 export const Daniel = styled.h1`
     font-family: 'Ruthligos';
     font-size: max(9vw, 110px);
-    color: black;
+    color: ${props => props.theme.textColor};
     margin: 0;
     margin-top: 15vh;
     margin-left: 23%;
@@ -141,7 +142,7 @@ export const Daniel = styled.h1`
     user-select: none;
 
     &:hover {
-        color: #004495;
+        color: ${props => props.theme.nameHoverColor};
     }
 
     @media (max-width: 400px){
@@ -166,7 +167,7 @@ export const Daniel = styled.h1`
 export const Wong = styled.h1`
     font-family: 'Ruthligos';
     font-size: max(6.5vw, 68px);
-    color: black;
+    color: ${props => props.theme.textColor};
     margin: 0;
     margin-top: -17%;
     margin-left: 24%;
@@ -174,7 +175,7 @@ export const Wong = styled.h1`
     user-select: none;
 
     &:hover {
-        color: #004495;
+        color: ${props => props.theme.nameHoverColor};
     }
 
     @media (max-width: 400px){
@@ -202,7 +203,7 @@ export const Wong = styled.h1`
 export const Role = styled.a`
     font-family: 'Raleway';
     font-size: 22px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin: 0;
     margin-left: 19%;
     transition: all 1.5s ease-in-out;
@@ -230,7 +231,7 @@ export const Role = styled.a`
 export const WelcomeMessage = styled.a`
     font-family: 'Raleway';
     font-size: 22px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin: 0;
     margin-top: 3%;
     margin-left: 19%;

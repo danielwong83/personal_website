@@ -21,10 +21,10 @@ export const UnavailableWrapper = styled.div`
 `
 
 export const HomeColor = styled.div`
-    background-color: #fffcf4;
+    background-color: ${props => props.theme.everyBackground};
     display: flex;
     flex-direction: column;
-    height: calc( 100vh - 92px);
+    height: calc( 100vh - 86px);
     overflow: hidden;
 `
 
@@ -93,7 +93,7 @@ export const VersionOne = styled.h1`
     display: flex;
     font-family: 'Raleway';
     font-size: 51px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin: 0;
     margin-left: 4%;
     margin-top: 2%;
@@ -125,7 +125,7 @@ export const UnavailableWords = styled.h1`
     display: flex;
     font-family: 'Raleway';
     font-size: 25px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin: 0;
     margin-bottom: 5%;
     transition: all 1.5s ease-in-out;
@@ -135,7 +135,7 @@ export const Suggestion = styled.h1`
     display: flex;
     font-family: 'Raleway';
     font-size: 15px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin: 0;
 `
 
@@ -144,7 +144,7 @@ export const Suggestion = styled.h1`
 export const PreviousPage = styled.a`
     font-family: 'Raleway';
     font-size: 20px;
-    color: #004495;
+    color: ${props => props.theme.hyperLink};
     margin: 0;
     text-decoration: underline;
     display: flex;
@@ -157,7 +157,7 @@ export const PreviousPage = styled.a`
 export const Student = styled.h1`
     font-family: 'Indie Flower';
     font-size: 45px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin-top: 40px;
 `
 
@@ -176,5 +176,5 @@ export const London = styled.h1`
 export const Name = styled.h1`
     font-family: 'Indie Flower';
     font-size: 170px;
-    color: black;
+    color: ${props => props.theme.textColor};
 ` 

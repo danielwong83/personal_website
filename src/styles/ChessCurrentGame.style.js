@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const CurrentGameText = styled.h1`
     font-family: 'Raleway';
     font-size: 15px;
-    color: black;
+    color: ${props => props.theme.textColor};
     transition: all 1.5s ease-in-out;
 
     @media (max-width: 400px){
@@ -18,7 +18,7 @@ export const CurrentGameText = styled.h1`
 export const NoGameText = styled.h1`
     font-family: 'Raleway';
     font-size: 27px;
-    color: black;
+    color: ${props => props.theme.textColor};
     transition: all 1.5s ease-in-out;
 
     @media (max-width: 400px){

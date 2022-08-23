@@ -4,6 +4,7 @@ import {Statistics,
 
 import moment from 'moment'
 
+
 class BlitzHistory extends Component {
 
     constructor(){
@@ -52,8 +53,11 @@ class BlitzHistory extends Component {
                                 {dates[2] >= 10 &&
                                     <Statistics>Date: {moment((String(dates[0]) + "0" + String(dates[1] + 1)) + 
                                     String(dates[2])).format("MMM Do YY")}; Rating: {dates[3]}</Statistics>
+                                    
                                 }
                             </div>
+
+                            
                         }
 
                         {dates[1] > 9 &&

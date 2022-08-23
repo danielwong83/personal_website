@@ -1,10 +1,14 @@
 import React, {Component} from 'react'
 import {Stage, Layer, Group, Circle, Line} from 'react-konva'
 
+import { useTheme } from 'styled-components';
+
 export const Stickman = () => {
 
     const frameStartx = 400
     const frameStarty = 515
+
+    const theme = useTheme();
 
     return (
         <Stage width={2000} height={1000}>
@@ -15,13 +19,13 @@ export const Stickman = () => {
                         x={frameStartx}
                         y={frameStarty}
                         radius={5}
-                        fill="black"
+                        fill={theme.stickman}
                     />
                     <Line
                         x={frameStartx}
                         y={frameStarty}
                         points={[0, 0, 0, 15]}
-                        stroke="black"
+                        stroke="white"
                         />
                     <Line
                         x={frameStartx}

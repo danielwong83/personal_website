@@ -13,7 +13,7 @@ export const UnavailableWrapper = styled.div`
         align-items: center;
         display: flex;
         flex-direction: column;
-        height: calc( 100vh - 92px);
+        height: calc( 100vh - 86px);
     }
 `
 
@@ -25,7 +25,7 @@ export const Overall = styled.div`
 export const ChelseaColor = styled.div`
     background-color: #BEE0ED;
     display: flex;
-    height: calc( 100vh - 92px);
+    height: calc( 100vh - 86px);
     position: relative;
     overflow: auto;
     z-index: 1;

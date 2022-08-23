@@ -33,7 +33,7 @@ export const StatsWrapper = styled.div`
 
 export const IndividualStat = styled.div`
     display: flex;
-    background: rgba(198, 255, 255, 0.7);
+    background: ${props => props.theme.chessDiv};
     width: 175px;
     border-radius: 25px;
     height: 110px;
@@ -56,7 +56,7 @@ export const IndividualStat = styled.div`
 export const Statistics = styled.h1`
     font-family: 'Raleway';
     font-size: 15px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin-top: 15px;
     margin-bottom: 10px;
     text-align: left;
@@ -74,7 +74,7 @@ export const Statistics = styled.h1`
 export const Rating = styled.h1`
     font-family: 'Raleway';
     font-size: 55px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin: 0;
     justify-content: center;
     transition: all 1.5s ease-in-out;

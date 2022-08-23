@@ -62,9 +62,9 @@ const Project = () => {
                             <ProjectContent>
                                 <ProjectName><ATag href= "/"> Systematic Spread Trading in the NBA Betting Market</ATag></ProjectName> 
                                 <Description>To create a prediction model that can calculate the spread between two teams. </Description>
-                                <Description>Languages: Python (for analysis + modelling)</Description>
+                                <Description>Languages: Python</Description>
                                 <Description></Description>
-                                <Updates>Current Status: Reading relevant papers + model creation stage (logit model)</Updates>
+                                <Updates>Current Status: Completed Project (current model not reliable), but constantly improving</Updates>
                             </ProjectContent>
                     </IndividualProject>
 
@@ -199,7 +199,7 @@ const Project = () => {
 
                             </FeaturesContent> 
 
-                            <Updates>Last Updated: July 2022 (Current Version 3.0)</Updates>
+                            <Updates>Last Updated: August 2022 (Current Version 3.0)</Updates>
 
                         </WebsiteContent>
                                           

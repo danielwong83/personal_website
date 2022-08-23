@@ -4,10 +4,10 @@ import styled from 'styled-components'
 //div formatting
 
 export const HomeColor = styled.div`
-    background-color: white;
+    background-color: ${props => props.theme.everyBackground};
     display: flex;
     flex-direction: row;
-    height: calc( 100vh - 92px);
+    height: calc( 100vh - 86px);
     overflow-y: auto;
     position: relative;
 `
@@ -28,7 +28,7 @@ export const PortraitWrapper = styled.div`
 
 
 export const PhotoWrapper = styled.div`
-    background: rgba(198, 255, 255, 0.6);
+    background: ${props => props.theme.aboutPhotosWrapper};
     border-radius: 25px;
     height: 65%;
     padding: 20px;

@@ -5,10 +5,10 @@ import styled from 'styled-components'
 //div formatting
 
 export const HomeColor = styled.div`
-    background-color: white;
+    background-color: ${props => props.theme.everyBackground};
     display: flex;
     flex-direction: row;
-    height: calc( 100vh - 92px);
+    height: calc( 100vh - 86px);
     overflow-y: auto;
     position: relative;
 `
@@ -52,14 +52,14 @@ export const PortraitWrapper = styled.div`
 `
 
 export const PhotoWrapper = styled.div`
-    background: rgba(198, 255, 255, 0.6);
+    background: ${props => props.theme.backgroundPhoto};
     border-radius: 25px;
     height: 65%;
     padding: 20px;
     display: flex;
     justify-content: center;
 
-    @media (max-width: 768px){
+    @media (max-width: 1000px){
         height: auto;
         width: auto;
     }
@@ -85,7 +85,7 @@ export const SocialWrapper = styled.div`
 export const AboutMe = styled.h1`
     font-family: 'Raleway';
     font-size: 51px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin: 0;
     transition: all 1.5s ease-in-out;
 
@@ -109,7 +109,7 @@ export const AboutMe = styled.h1`
 export const DescriptionOne = styled.p`
     font-family: 'Raleway';
     font-size: 21px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin-top: 12px;
     transition: all 1.5s ease-in-out;
 
@@ -133,7 +133,7 @@ export const DescriptionOne = styled.p`
 export const DescriptionTwo = styled.p`
     font-family: 'Raleway';
     font-size: 21px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin-top: 10px;
     margin-bottom: 10px;
     transition: all 1.5s ease-in-out;
@@ -160,7 +160,7 @@ export const DescriptionTwo = styled.p`
 export const ListValue = styled.p`
     font-family: 'Raleway';
     font-size: 21px;
-    color: black;
+    color: ${props => props.theme.textColor};
     margin-top: 0px;
     margin-bottom: 10px;
     margin-left: 10px;
@@ -206,6 +206,10 @@ export const Portrait = styled.img`
         height: 55vh;
     }
 
+    @media (min-width: 768px) and (max-width: 1000px){
+        height: 45vh;
+    }
+
 `
 
 
@@ -249,10 +253,10 @@ export const LichessImg = styled.img`
     margin-top: 4px;
     margin-left: 16px;
     opacity: 0.35;
-    filter: grayscale(70%);
+    filter: ${props => props.theme.filterImages};
     &:hover {
         opacity: 1;
-        filter: grayscale(0%);
+        filter: ${props => props.theme.hooverfilterImages};
     }
 
     @media (max-width: 600px){
@@ -267,10 +271,10 @@ export const GithubImg = styled.img`
     margin-top: 3px;
     margin-left: 17px;
     opacity: 0.35;
-    filter: grayscale(70%);
+    filter: ${props => props.theme.filterImages};
     &:hover {
         opacity: 1;
-        filter: grayscale(0%);
+        filter: ${props => props.theme.hooverfilterImages};
     }
 
     @media (max-width: 600px){
@@ -287,10 +291,12 @@ export const ATag = styled.a`
 `
 
 export const ChelseaTag = styled.a`
-    color: #004495;
+    color: ${props => props.theme.hyperLink};
     text-decoration: none;
+    transition: all 1.5s ease-in-out;
 `
 
 export const ResumeTag = styled.a`
-    color: #004495;
+    color: ${props => props.theme.hyperLink};
+    transition: all 1.5s ease-in-out;
 `
