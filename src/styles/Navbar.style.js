@@ -65,6 +65,23 @@ export const Hamburger = styled.div`
     }
 `
 
+// export const NavWordsWrapper = styled.div`
+//     display: flex;
+//     background: ${props => props.theme.projectDiv};
+//     width: 100%;
+//     border-radius: 15px;
+//     height: 20%;
+//     align-items: center;
+//     justify-content: center;
+
+//     /* @media (max-width: 768px){
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         width: 80%;
+//     } */
+// `
+
 
 
 export const NavbarLink = styled(NavLink)`
@@ -73,7 +90,8 @@ export const NavbarLink = styled(NavLink)`
     font-family: 'Megrim';
     text-decoration: none;
     flex-direction: column;
-    padding: 0.4rem 1rem;
+    padding: 0.2rem 0.5rem;
+    margin: 0.2rem 0.5rem;
 
     &:hover {
         font-weight: bold;
@@ -81,7 +99,18 @@ export const NavbarLink = styled(NavLink)`
 
     &.active {
         font-weight: bold;
+        background: ${props => props.theme.projectDiv};
+        border-radius: 13px;
     }
+
+    @media (max-width: 768px){
+
+        &.active{
+            background: none;
+        }
+    }
+
+    
 
 `
 
@@ -99,13 +128,14 @@ export const ATag = styled.a`
 
 export const SliderWrapper = styled.div`
     position: relative;
-    margin-bottom: 18px;
-    padding-right: 5px;
-    margin-left: 5px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 5px;
 
     @media (max-width: 768px){
     top: -6px;
-    left: -2px;
+    margin-left: -3px;
+    margin-right: 0px;
     }
 `
 
@@ -149,7 +179,7 @@ export const SliderBox = styled.input`
       height: 18px;
       margin-left: 19px;
       margin-top: 1px;
-      box-shadow: inset -6px -3px 0px 0px #fff000;
+      box-shadow: inset -6px -2.5px 1px 0px #fff000;
       transition: 0.3s;
     }
   }

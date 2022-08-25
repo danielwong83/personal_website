@@ -178,7 +178,7 @@ const Project = () => {
 
                                 <FeaturesWrapper>
                                     <ATag href= "/"><FeaturesPhoto src = {home_page}/></ATag>
-                                    <FeaturesDescription>Homepage - 3d avatar waving to strangers on my website</FeaturesDescription>
+                                    <FeaturesDescription>Homepage - 3d avatar waving to strangers on my website; light/dark mode on all pages</FeaturesDescription>
                                 </FeaturesWrapper>
 
 

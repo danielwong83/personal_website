@@ -14,12 +14,10 @@ import {AboutMe,
         LichessImg,
         GithubImg,
         ChelseaTag,
-        ResumeTag,
         PortraitWrapper,
         PhotoWrapper,
         ContentWrapper} from '../styles/About.style'
 
-import resume from '../files/resume.pdf'
 import portrait from '../images/portrait-beach-blue.png'
 import chessportrait from '../images/chess-photo.png'
 import hikingportrait from '../images/hiking.png'
@@ -76,21 +74,19 @@ class About extends Component{
 
                 <AboutMe>About Me</AboutMe>
                 
-                <DescriptionOne>Hi, my name's Daniel, I'm from Hong Kong and I'm currently studying a Masters in Risk
-                Management and Financial Engineering at Imperial College London. I am interested in internship and graduate
-                positions in data science and engineering as well as quant trading and developing.</DescriptionOne>
+                <DescriptionOne>Hi, my name's Daniel, I'm from Hong Kong and I've currently graduated from Imperial College London with a Masters in
+                Risk Management and Financial Engineering. I'm interested in internship and graduate
+                roles in data science/engineering as well as quant trading/developing.</DescriptionOne>
                 
                 <DescriptionTwo>Some fun facts about me:</DescriptionTwo>
                 <ListValue>{'\u2022'} Favorite football team is <ChelseaTag href= "/#/chelsea">Chelsea</ChelseaTag>. KTBFFH. </ListValue>
-                <ListValue>{'\u2022'} d4 over e4 any day. </ListValue>
-                <ListValue>{'\u2022'} I sometimes replace rice with canned corn. </ListValue>
+                {/* <ListValue>{'\u2022'} d4 over e4 any day. </ListValue>
+                <ListValue>{'\u2022'} I sometimes replace rice with canned corn. </ListValue> */}
                 <ListValue>{'\u2022'} Favorite champion on League is Nocturne. </ListValue>
                 <ListValue>{'\u2022'} One of my drawings appeared in a children's newspaper when I was 9. </ListValue>
                 <ListValue>{'\u2022'} I want to go skydiving. </ListValue>
 
-                <DescriptionTwo>Feel free to message me! My contact info is below and this is my {' '}
-                    <ResumeTag href= {resume} target='_blank' rel='noopener noreferrer'>
-                      resume</ResumeTag>.</DescriptionTwo>
+                <DescriptionTwo>Feel free to message me! My contact info is below.</DescriptionTwo>
                 
                 <SocialWrapper>
                     <ATag href = {linkedin} target='_blank' rel='noopener noreferrer'><LinkedinImg src={linkedinpic}/></ATag>

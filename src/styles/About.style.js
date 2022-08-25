@@ -295,8 +295,3 @@ export const ChelseaTag = styled.a`
     text-decoration: none;
     transition: all 1.5s ease-in-out;
 `
-
-export const ResumeTag = styled.a`
-    color: ${props => props.theme.hyperLink};
-    transition: all 1.5s ease-in-out;
-`
