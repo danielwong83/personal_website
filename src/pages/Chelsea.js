@@ -46,8 +46,8 @@ const Chelsea = () => {
                             <PositionWrapper>
                                 <Category>
                                     <Position>LB:</Position>
-                                    <Name>Ben Chilwell</Name>
-                                    <Flag>🏴󠁧󠁢󠁥󠁮󠁧󠁿</Flag>
+                                    <Name>Marc Cucurella</Name>
+                                    <Flag>🇪🇸</Flag>
                                 </Category>
                                 <Category>
                                     <Position>CB:</Position>
@@ -90,8 +90,8 @@ const Chelsea = () => {
                                 </Category>
                                 <Category>
                                     <Position>ST:</Position>
-                                    <Name>Kai Havertz</Name>
-                                    <Flag>🇩🇪</Flag>
+                                    <Name>Pierre-Emerick Aubameyang</Name>
+                                    <Flag>🇬🇦</Flag>
                                 </Category>
                                 <Category>
                                     <Position>RW:</Position>
@@ -107,7 +107,7 @@ const Chelsea = () => {
                                 <ChelseaFixture/>
                             </FixtureWrapper>
                             
-                            <HeaderText>Wishful signings this summer: </HeaderText>
+                            <HeaderText>Wishful signings this summer (2022): </HeaderText>
                                 <PlayerWrapper>
                                     <Name>Robert Lewandowski 🇵🇱</Name>
                                     <Team>Current Team: FC Bayern</Team>
@@ -133,6 +133,8 @@ const Chelsea = () => {
                                         liability at times. Great goal-scoring threat though. 
                                     </Description>
                                 </PlayerWrapper>
+
+                                <Description>Nice. They left. </Description>
 
 
                         </RightSide>
