@@ -4,7 +4,6 @@ import photo from '../images/logo_no_background.png'
 import {NavbarContainer, 
     NavbarLink,
     NavbarLinkContainer,
-    NavWordsWrapper,
     Logo,
     ATag,
     Hamburger,
@@ -20,8 +19,8 @@ const Navbar = ({switchTheme}) => {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const defaultDarkChecked = window.matchMedia('(prefers-check-scheme: true)').matches;
-    const [checked, setChecked] = useLocalStorage('checked', defaultDarkChecked ? true : false);
+    // const defaultDarkChecked = window.matchMedia('(prefers-check-scheme: true)').matches;
+    const [checked, setChecked] = useLocalStorage('checked', true ? true : false);
     const switchChecked = () => {
       const newChecked = checked === false ? true : false;
       setChecked(newChecked);

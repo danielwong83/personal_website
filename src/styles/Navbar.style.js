@@ -118,7 +118,11 @@ export const Logo = styled.img`
     height: 71px;
     user-select: none;
     padding: 0.4rem 0;
-    margin-left: 1rem;
+    margin-left: 0.8rem;
+
+    @media (max-width: 768px){
+        margin-left: 0;
+    }
 
 `
 

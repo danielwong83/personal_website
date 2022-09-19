@@ -2,7 +2,7 @@
 import { Routes, Route, useLocation } from "react-router-dom"
 import "./App.css"
 
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./styles/themes.style";
 
@@ -28,8 +28,8 @@ function App() {
   const location = useLocation()
   const atChelsea = location.pathname.includes('chelsea')
 
-  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+  // const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [theme, setTheme] = useLocalStorage('theme', true ? 'dark' : 'light');
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
