@@ -42,6 +42,10 @@ export const HomeColor = styled.div`
     flex-direction: column;
     height: calc( 100vh - 86px);
     overflow: hidden;
+
+    @media (max-width: 768px){
+        height: calc( 100vh - 65px);
+    }
 `
 
 export const IndexCardArea = styled.div`
@@ -158,18 +162,22 @@ export const VersionThree = styled.h1`
 
     @media (max-width: 400px){
         font-size: 35px;
+        margin-top: 4%;
     }
 
     @media (min-width: 401px) and (max-width: 600px){
         font-size: 40px;
+        margin-top: 4%;
     }
 
     @media (min-width: 601px) and (max-width: 768px){
         font-size: 45px;
+        margin-top: 4%;
     }
 
     @media (min-width: 769px) and (max-width: 1000px){
         font-size: 48px;
+        margin-top: 3.5%;
     }
     
 `

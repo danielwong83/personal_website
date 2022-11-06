@@ -12,6 +12,10 @@ export const HomeColor = styled.div`
     height: calc( 100vh - 86px);
     overflow: hidden;
     position: relative;
+
+    @media (max-width: 768px){
+        height: calc( 100vh - 65px);
+    }
 `
 
 export const ContentWrapper = styled.div`
@@ -79,6 +83,7 @@ export const RightSide = styled.div`
         width: 100vw;
         height: auto;
         justify-content: center;
+        margin-top: 45px;
         
     }
 `

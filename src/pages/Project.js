@@ -199,7 +199,7 @@ const Project = () => {
 
                             </FeaturesContent> 
 
-                            <Updates>Last Updated: August 2022 (Current Version 3.0)</Updates>
+                            <Updates>Last Updated: October 2022 (Current Version 3.0.1)</Updates>
 
                         </WebsiteContent>
                                           

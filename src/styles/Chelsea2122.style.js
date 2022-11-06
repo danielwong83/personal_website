@@ -6,7 +6,7 @@ import styled from 'styled-components'
 export const UnavailableWrapper = styled.div`
     display: none;
 
-    @media (max-width: 1000px){
+    @media (min-width: 769px) and (max-width: 1000px){
         background-color: #BEE0ED;
         justify-content: center;
         text-align: center;
@@ -14,6 +14,16 @@ export const UnavailableWrapper = styled.div`
         display: flex;
         flex-direction: column;
         height: calc( 100vh - 86px);
+    }
+
+    @media (max-width: 768px){
+        background-color: #BEE0ED;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: calc( 100vh - 65px);
     }
 `
 
@@ -30,9 +40,15 @@ export const ChelseaColor = styled.div`
     overflow: auto;
     z-index: 1;
 
-    @media (max-width: 1000px){
+    @media (min-width: 769px) and (max-width: 1000px){
         display: none;
     }
+
+    @media (max-width: 768px){
+        height: calc( 100vh - 65px);
+        display: none;
+    }
+    
 
 `
 export const SquadWrapper = styled.div`

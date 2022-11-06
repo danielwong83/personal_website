@@ -36,15 +36,15 @@ export const Hamburger = styled.div`
     display: none;
     flex-direction: column;
     cursor: pointer;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 
     span{
         height: 2px;
-        width: 24px;
+        width: 20px;
         background: ${props => props.theme.textColor};
         margin-bottom: 4px;
-        border-radius: 5px;
-        transform-origin: 3.5px;
+        border-radius: 4px;
+        transform-origin: 1.5px;
         transition: all 0.2s linear;
 
         &:nth-child(1) {
@@ -122,6 +122,7 @@ export const Logo = styled.img`
 
     @media (max-width: 768px){
         margin-left: 0;
+        height: 50px;
     }
 
 `

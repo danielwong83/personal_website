@@ -80,7 +80,7 @@ function Chess() {
 
           <Content active={active === 2}>
             <LiveGameText>Feature Currently Unavailable</LiveGameText>
-            {/* <ChessBlitzHistory/> */}
+            <ChessBlitzHistory/>
           </Content>
 
         </BoardWrapper>

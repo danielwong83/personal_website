@@ -107,35 +107,27 @@ const Chelsea = () => {
                                 <ChelseaFixture/>
                             </FixtureWrapper>
                             
-                            <HeaderText>Wishful signings this summer (2022): </HeaderText>
+                            <HeaderText>Wishful signings this winter (2023): </HeaderText>
                                 <PlayerWrapper>
-                                    <Name>Robert Lewandowski 🇵🇱</Name>
-                                    <Team>Current Team: FC Bayern</Team>
-                                    <Description>Lewandowski wants to leave Bayern, and we desperately need a goal-scoring striker.
-                                        Our last decent striker was Diego Costa, who has left over half a decade ago. Though he is 33
-                                        years old, he still has some firepower in him, and I think it would solve our goal-scoring problems
-                                        for at least a few years. He's most likely going to Barcelona FC though.
+                                    <Name>Christopher Nkunku 🇫🇷</Name>
+                                    <Team>Current Team: RB Leipzig</Team>
+                                    <Description>Sources say that it is a done deal. Until Fabrizio says here we go, I will not trust anyone.
                                     </Description>
                                 </PlayerWrapper>
                             
                             <HeaderText>Players I think should leave: </HeaderText>
 
-                                <PlayerWrapper>
-                                    <Name>Ross Barkley</Name>
-                                    <Description>He is quite low in Tuchel's midfield pecking order, and with his talent, he can probably be 
-                                        a first-team player elsewhere in the Premier League.
-                                    </Description>
-                                </PlayerWrapper>
+                            <PlayerWrapper>
+                                <Name>Jorginho</Name>
+                                <Description>Sideways merchant needs to go. Gallagher and Chukwuemeka needs more game time. 
+                                </Description>
+                            </PlayerWrapper>
 
-                                <PlayerWrapper>
-                                    <Name>Marcos Alonso</Name>
-                                    <Description>Marcos Alonso was honestly not bad when Chilwell was injured, but he seems to be a defensive
-                                        liability at times. Great goal-scoring threat though. 
-                                    </Description>
-                                </PlayerWrapper>
-
-                                <Description>Nice. They left. </Description>
-
+                            <PlayerWrapper>
+                                <Name>Hakim Ziyech</Name>
+                                <Description>Is he still in the squad?
+                                </Description>
+                            </PlayerWrapper>
 
                         </RightSide>
 

@@ -10,6 +10,10 @@ export const HomeColor = styled.div`
     height: calc( 100vh - 86px);
     overflow-y: auto;
     position: relative;
+
+    @media (max-width: 768px){
+        height: calc( 100vh - 65px);
+    }
 `
 
 export const PortraitWrapper = styled.div`

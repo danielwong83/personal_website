@@ -28,4 +28,9 @@ export const Logo = styled.img`
     width: auto;
     margin-right: 1rem;
 
+    @media (max-width: 768px){
+        height: 34px;
+        margin-right: 0.5rem;
+    }
+
 `
