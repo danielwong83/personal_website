@@ -14,20 +14,18 @@ import {NavbarContainer,
 
 import useLocalStorage from 'use-local-storage';
 
-const Navbar = ({switchTheme}) => {
+const Navbar = ({switchTheme, darkMode }) => {
     
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const defaultDarkChecked = window.matchMedia('(prefers-check-scheme: true)').matches;
-    const [checked, setChecked] = useLocalStorage('checked', !defaultDarkChecked ? false : true);
     const switchChecked = () => {
-      const newChecked = checked === false ? true : false;
-      setChecked(newChecked);
-    }
-    useEffect(() => {
-      document.documentElement.setAttribute("data-checked", checked);
-    }, [checked]);
+        switchTheme();
+      };
+    
+      useEffect(() => {
+        document.documentElement.setAttribute('data-checked', darkMode);
+      }, [darkMode]);
 
 
 
@@ -47,7 +45,7 @@ const Navbar = ({switchTheme}) => {
                 <NavbarLink to="/project" onClick={() => setIsOpen(false)}>Projects</NavbarLink>
                 <NavbarLink to="/about" onClick={() => setIsOpen(false)}>About</NavbarLink>
                 <SliderWrapper>
-                    <SliderBox id="checkbox" type="checkbox" onClick={switchTheme} checked={checked} onChange={switchChecked}/>
+                    <SliderBox id="checkbox" type="checkbox" onClick={switchChecked} checked={darkMode} onChange={switchChecked}/>
                     <SliderLabel htmlFor="checkbox" />
                 </SliderWrapper>
             </NavbarLinkContainer>

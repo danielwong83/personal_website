@@ -29,19 +29,20 @@ function App() {
   const atChelsea = location.pathname.includes('chelsea')
 
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const [theme, setTheme] = useLocalStorage('theme', !defaultDark ? 'dark' : 'light');
+  const [darkMode, setDarkMode] = useLocalStorage('darkMode', !defaultDark);
+  
   const switchTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-  }
+    setDarkMode(!darkMode);
+  };
+  
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-  }, [theme]);
+    document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+  }, [darkMode]);
 
   return (
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <div className="App">
-        {!atChelsea && <NavBar switchTheme = {switchTheme}/>}
+        {!atChelsea && <NavBar switchTheme={switchTheme} darkMode={darkMode}/>}
         <div className="main">
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
